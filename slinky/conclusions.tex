@@ -1,0 +1,67 @@
+\chapter{Conclusions and Future Directions}
+\label{chap:conclusions}
+
+\section{Homomorphic Filters}
+We described an online algorithm to learn MDP homomorphisms in
+continuous state spaces through gradient descent in the family of
+homomorphisms, and evaluated the same using the family of affine
+homomorphisms. This family of homomorphisms subsumes many existing
+selection algorithms which only consider variable remappings. When run
+on the Cart Pole domain, the algorithm finds intuitively obvious
+approximate homomorphisms which an exact homomorphism solver could not
+find. The lifted policy in perturbed domains performs comparably to an
+agent trained to learn in that domain. We also used the lifted policy to
+bootstrap an agent in the perturbed domain, and observed that the agent
+performed better than its counterpart without the lifted policy.
+
+% Experimental results
+We believe the homomorphic filter is a novel approach to finding
+continuous homomorphisms, backed by a solid theoretical foundation in
+MDP homomorphisms. Of particular interest to the authors would be to
+study if complex tasks could be solved given models of simpler subtasks.
+For example, could we learn how to behave in the Cart Pole domain faster
+if we were given a model of an inverted pendulum. This approach
+motivates the use of self-paced learning in reinforcement learning.
+Though it is straightforward to extend the current work to continuous
+action spaces, it remains to be seen how well homomorphic filtering
+performs in such domains. Finally, though we have restricted ourselves
+to the class of affine homomorphisms, the method described is general
+enough to capture other differentiable families, for example regression
+trees. Studying alternative homomorphism classes is planned future work.
+
+
+\section{Small World Options}
+
+% Contributions
+% - new scheme for generating options
+We have devised a new scheme to generate options based on small world
+network model. The options generated satisfy an intuitive criteria, that
+the subtasks learnt should be easily composed to solve any other task.
+The options greatly improve the connectivity properties of the domain,
+without leading to a state space blow up. 
+
+% - absolutely model-free
+Experiments run on standard domains show significantly faster learning
+rates using small world options. At the same time, we have shown that
+learning small world options can be cheaper than learning bottleneck
+options, using a natural algorithm that extracts options from a handful
+of tasks it has solved. Another advantage of the scheme is that is does
+not require a model of the MDP. 
+
+% Further work
+% - dynamically add/remove options
+% - figuring out r
+As future work, we would like to characterise what the exponent $r$
+should be in a general domain. There are some technicalities to be
+worked out in extending our results to the continuous domain; however,
+as most real-life applications are continuous in nature, this is an
+important further direction we are looking at.  Given the ease with
+which options can be discovered, it would be interesting to experiment
+with a dynamic scheme that adds options on the fly, while solving tasks.
+\cite{Liben-Nowell2005} extend Kleinberg's results to arbitrary graphs
+by using rank instead of lattice distance. It would be interesting to
+extend this approach to the reinforcement learning setting. The
+logarithmic bounds on the number of decisions presented may have some
+interesting consequences on theoretical guarantees of sample complexity
+as well.
+

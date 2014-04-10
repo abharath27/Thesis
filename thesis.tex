@@ -1,0 +1,99 @@
+\documentclass[Dual]{iitm-thesis}
+
+\usepackage{palatino}
+
+\usepackage{graphicx}
+\usepackage{hyperref} % hyperlinks for references.
+\hypersetup{ 
+  pdftitle          = {MAUT Based Recommendation},
+  pdfauthor         = {Bharath Reddy <bharath270392@gmail.com>},
+}
+\usepackage{amsmath} % easier math formulae, align, subequations \ldots
+\usepackage{amsfonts}   
+\usepackage{amssymb}   
+\usepackage{amsthm}   
+
+\usepackage{longtable}% for long tables
+\usepackage{booktabs} % Table rules
+\usepackage{subfig} 
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e} 
+
+\usepackage{tikz} 
+
+
+
+\input{macros}
+\input{rl-macros}
+\input{gp-macros}
+\input{sw-macros}
+
+\newcommand{\mytitle}{MAUT Based Recommendation}
+\newcommand{\myauthor}{Bharath Reddy A}
+
+\title{\mytitle}
+\author{\myauthor}
+\date{April 2014}
+\department{COMPUTER SCIENCE AND ENGINEERING}
+
+\begin{document}
+
+% Title page
+%\nocite{*}
+\maketitle
+
+% Certificate
+\input{trivia/certificate}
+
+% Acknowledgements
+\input{trivia/ack}
+
+% Abstract
+\input{abstract}
+
+\pagebreak
+
+% Table of contents etc.
+% Uncomment these lines when this report is done...
+%\begin{singlespace}
+%\tableofcontents
+%\thispagestyle{empty}
+%\listoftables
+%\addcontentsline{toc}{chapter}{LIST OF TABLES}
+%\listoffigures
+%\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+%\end{singlespace}
+
+% Abbreviations
+%\input{trivia/abbreviations.tex}
+%\pagebreak
+%\input{trivia/notation.tex}
+%\pagebreak
+\clearpage
+
+% The main text will follow from this point so set the page numbering
+% to arabic from here on.
+\pagenumbering{arabic}
+
+% Chapters-old
+%\input{slinky/intro}
+%\input{slinky/background}
+%\input{slinky/related-work}
+%\input{slinky/searching-homomorphisms}
+%\input{slinky/small-world-options}
+%\input{slinky/conclusions}
+%\input{slinky/papers}
+
+% Chapters-new
+\input{intro}
+
+% Appendices.
+%\appendix
+
+%\input{slinky/alt-hom-approaches}
+
+%\begin{singlespace}
+  \nocite{*}
+  \bibliography{thesis}
+%\end{singlespace}
+
+\end{document}

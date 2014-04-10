@@ -1,0 +1,18 @@
+\begin{thebibliography}{2}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Burke(2000)}]{burkeRentMe}
+{\bf Burke, R.} (2000).
+\newblock Knowledge-based recommender systems.
+\newblock {\em Encyclopedia of library and information systems\/}, {\bf
+  69}(Supplement 32), 175--186.
+
+\bibitem[{Koren {\em et~al.\/}(2009)Koren, Bell, and Volinsky}]{koren}
+{\bf Koren, Y.}, {\bf R.~Bell}, and {\bf C.~Volinsky} (2009).
+\newblock Matrix factorization techniques for recommender systems.
+\newblock {\em Computer\/}, {\bf 42}(8), 30--37.
+
+\end{thebibliography}

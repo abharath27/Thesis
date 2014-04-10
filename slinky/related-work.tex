@@ -1,0 +1,105 @@
+\chapter{Related Work}
+\label{chap:related-work}
+
+In this chapter we will review existing methods for option-discovery and
+transfer learning.
+
+\section{MDP Minimisation and Homomorphism Discovery in Discrete MDPs}
+\label{sec:related-work:homs}
+
+In order to answer the minimisation question, Narayanamurthy and
+Ravindran reduced the MDP homomorphism query to a graph automorphism
+problem in \cite{Narayanamurthy2008} by constructing an equivalent
+weighted digraph from an MDP $M \tuple{\states, \actions, \transitions,
+\rewards}$. 
+
+We briefly describe the reduction: Construct a graph $G_{M}$, with
+$\states$ as nodes. For each node $s$, add an edge to the node $s'$ if
+there is some action $a$ that takes the agent from $s$ to $s'$. Each
+edge is weighted with the vectors, $\tuple{p_{a_1}, \cdots,
+p_{a_|\actions|}}$ and $\tuple{r_{a_1}, \cdots, r_{a_|\actions|} }$,
+where $p_{a_i} = \transitions(s, a_i, s')$, and $r_{a_i} = \rewards(s,
+a_i, s')$. We could also view this as a construction of two graphs, one
+for $\transitions$, and the other for $\rewards$; the graph isomorphisms
+we are looking for belong to the common subset.  
+
+There are cases for which using the symmetry group may not suffice to
+capture the symmetries present; Section 4.1.1 of \cite{Ravindran2004}
+presents one such example. This method can not be extended to continuous
+domains easily, as the number of states is no longer countable, and
+hence a reduction to a graph isomorphism problem is not possible.
+
+% Description of finding symmetries in discrete case.
+\section{Approximate Homomorphisms for Discrete MDPs}
+
+In practice, exact symmetries are rarely found. In such situations,
+approximate homomorphisms may be more suitable. The most common approach
+is to aggregate states within a certain error bound $\epsilon$ of the
+transition and reward functions; this is the approach followed in
+\citet{Ravindran2004b} and \citet{Taylor2009}. Both papers also present
+a bound on the approximation loss, which is linearly dependent on the
+maximum error in expected reward ($R$) and transition probability. 
+
+Another approach to approximate homomorphisms, proposed by
+\citet{Sorg2009}, is to probabilistically map states onto the
+homomorphic image through ``soft homomorphisms''; i.e. $h: S \to
+\measure(S')$, such that,
+\begin{eqnarray*}
+  \sum_{\him{s} \in S'} P'(\him{s},a,\him{s'}) h(\him{s}|s)  &=& \sum_{s' \in S} P(s,a,s') h(\him{s'}|s') \\
+  \sum_{\him{s} \in S'} R'(\him{s},a) h(\him{s}|s)  &=& R(s,a).
+\end{eqnarray*}
+
+Finding these soft homomorphisms can be shown to be a quadratic program,
+\begin{eqnarray*}
+  \forall_a H P'^a &=& P^a H \\
+  \forall_a H R'^a &=& R^a \\
+  H 1_{|S'|}  &=& 1_{|S|} \\
+  H_{ij} &\ge& 0.
+\end{eqnarray*}
+\noindent
+where,
+\begin{eqnarray*}
+  H: |S| \times |S'| &=& h(\him{s'}|s) \\
+  P^a: |S| \times |S| &=& P(s'|s,a) \\
+  R^a: |S| \times 1 &=& R(s,a) \\
+  P'^a: |S'| \times |S'| &=& P(\him{s'}|\him{s},a) \\
+  R'^a: |S'| \times 1 &=& R(\him{s},a).
+\end{eqnarray*}
+
+\citet{Sorg2009} further show how soft homomorphisms can be used to map
+learning to a scaled up version of the state space, as well as map
+a continuous state space to a discrete one. One of the drawbacks of this
+approach however, is the lack of state dependent action recoding. 
+
+Of the two approaches, using soft homomorphisms seems more easily
+applicable in the continuous domain. In fact, we attempted to approach
+the problem in this fashion, however we found the optimisation problem
+to be intractable (\secref{sec:alt-hom-approaches:bayesian}).
+
+\section{Option Discovery}
+\label{sec:related-work:options}
+
+One of the first option discovery schemes was by \citet{McGovern2001},
+who identify states that are visited frequently through an empirical
+count. The problem is cast as a multiple-instance learning problem,
+where an option or ``concept'' that explains the most number of
+successful trajectories is chosen. Our approach of constructing options
+from multiple trajectories is similar to \citet{McGovern2001}'s method
+of using several trajectories to find the minimal explanation.
+
+\citet{Menache2002} approaches the option discovery also through the
+angle of finding bottlenecks. They make the observations that bottleneck
+states join well connected regions of the state-space graph, and use
+a graph cut algorithm to find bottlenecks, which are nodes in the cut set. 
+
+The state-of-the-art option discovery technique uses the betweenness
+scores of states as a measure of importance \citep{Simsek2008}. This is
+an intuitive measure, since graph betweenness measures the proportion of
+paths that go through a particular node. In a domain like Taxi, the
+pickup and drop actions are states with high betweenness values. In
+navigational domains likes Rooms, doorways are high betweenness centers.
+\citet{Simsek2008} also show how a locally constructed model of the MDP
+can be used to compute betweenness scores.
+
+%Shie Mannor
+%Betweenness

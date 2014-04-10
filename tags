@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FIGURES	Makefile	/^FIGURES =$/;"	m
+FILE	Makefile	/^FILE = thesis$/;"	m
+INTRODUCTION	thesis.tex	/^\\chapter{INTRODUCTION}$/;"	c
+LATEX	Makefile	/^LATEX=pdflatex --file-line-error --interaction=nonstopmode$/;"	m
+OUTPUT	Makefile	/^OUTPUT = $(shell basename $(PWD))$/;"	m
+SECTIONS	Makefile	/^SECTIONS = #abstract.tex intro.tex background.tex continuous-hom.tex homomorphic-filters.tex experiments.tex conclusions.tex$/;"	m
+VERSION	Makefile	/^VERSION=0$/;"	m
+centerline NOTATION	thesis.tex	/^\\chapter*{\\centerline{NOTATION}}$/;"	c
