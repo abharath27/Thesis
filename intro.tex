@@ -3,7 +3,12 @@
 \label{chap:intro}
 "Which digital camera should I buy? Which movie should I rent? Which book should I buy for my next vacation?" These are some situations where people have to make decisions about how they are going to spend money, or in a broader level, about their future.
 Traditionally, people have used a variety of strategies to solve such decision making problems: conversations with friends, obtaining information from a trusted third party, hiring an expert team or simply follow the crowd. It would be great to have an affordable personal advisor who helps us make good decisions efficiently.
-The construction of systems that supports a user in his (online) decision-making is the main goal of the field of recommender systems. In particular, the goal of recommender systems is to provide easily accessible, high-quality recommendations for a large user community.
+Recommender systems are constructed for this purpose - assisting a user in his/her (online) decision-making.
+In the present age when e-commerce is flourishing, user has often a large number of alternative to choose from. 
+Recommender systems play an extremely important role in matching users to products or items that they might find interesting. 
+Recommender systems filter huge amounts of information to give personalized suggestions that its users might be interested in. 
+This reduces the cognitive effort on the users who are spared of the need to examine a large number of irrelevant items before reaching their desired product.
+
 Recommender Systems are broadly classified into three categories: Collaborative, Content Based and Knowledge Based.
 
 \section{Collaborative Recommender Systems}
@@ -27,16 +32,46 @@ In the movie domain, such latent factors can correspond to some aspects of a mov
 
 \subsection{Limitations of CF}
 \label{sec:limCF}
-In real-world applications, the user-item ratings matrix tends to be very sparse, as customers generally provide ratings for very few items. CF systems have a limitation called the "cold-start problem". It has two aspects - how to recommend items who has given zero/very low number of ratings; and how to recommend those items that haven't received ratings yet.
+\textbf{Cold Start Problem:} To provide recommendations for a user \textit{u}, pure CF techniques rely on \textit{u}'s ratings. This means that for a new user who has not yet rated a single item, there is no way of generating personalized recommendations (new-user problem). 
+Similarly, a new item that has been recently added to the catalog and has not been rated by a single user, has no possibility of being recommended to a user (new-item problem)
+\textbf{Sparsity:} The relavance and accuracy of CF recommender's predictions increases with increase in density of the user-item ratings matrix.
+But in real-world systems, the rating matrices are typically very sparse and thus, the quality of recommendations of pure CF approaches may not be good.
+If there is a movie that has been rated by only a few users, it would be recommended to other users very rarely, even if it received favourable ratings from the few users who rated it (\cite{adom2005})
+Also, users who have their rating patterns very different from most of the other users (users with unusual tastes), would find it difficult to receive useful recommendations (\cite{balab1997})
+
+
+
 
 %
 
 %
 
 \section{Content based recommender systems}
-Content based recommender systems rely on item descriptions and user profiles to recommend items.
+Collaborative Filtering Systems do not require any knowledge about underlying users/items to make recommendations.
+As opposed to this, content based recommender systems rely on item descriptions and explicit/learned user profiles to recommend items.
 If the system knows that "Harry Potter" is a fantasy novel and the user \textit{Alice} has always like fantasy novels, the system can recommend the new "Harry Potter" book right away. So the system need not rely on the existence of a large user base to generate recommendations.
 It overcomes the cold-start problem described in the section ~\ref{sec:limCF}. However, item characteristics are hard to acquire normally and hence, they have to be entered manually into the system, which can be potentially expensive for some domains.
+
+Having its roots in IR, content based recommendation most often focus on textual products - items which can be described in terms of textual features like documents and websites. \cite{adom2005}
+Most news recommendation systems use content based recommendation to recommend relavant news article to users.
+The user model is structured in a similar way, i.e it also contains the feature/keywords that are more likely to occur in her preferred items. 
+Items can then be recommended based on the comparison between their content and the user model. 
+The recommender system can construct the user's profile by asking the user to rate a set of items, either as a whole or along different dimensions
+
+\subsection{Limitations of Content-based Recommendation}
+\textbf{Limited Content Analysis:} Content-based recommender systems perform a shallow content analysis which might not be sufficient in many scenarios (\cite{jannach}). Particularly for recommending resources such as web pages, aspects other than the keywords like aesthetics, usability and correctness of hyperlinks play a part in establishing the quality of recommendations (\cite{jannach}).
+
+Also, content based recommender systems using limited content analysis based on just keyword, have no way to distinguish between well written and poorly written articles, both of which use the same set of keywords. 
+The usability of content-based recommender systems is limited in multimedia domain because - while feature extraction techniques for text documents is relatively mature, the same cannot be said about many multimedia objects like images and videos(\cite{adom2005})
+
+\textbf{Overspecialization:}  Another drawback of content based recommender systems is that they tend to recommend items that the user might have already seen/rated. 
+A general goal therefore is to increase the serendipity of the recommendation lists - that is, to include \textit{unexpected} items in which the user might be interested, because expected items are of little value for the use.
+
+The system described by \cite{billsus} therefore defines a threshold to filter out not only items that are too different from the profile but also those that are too similar
+
+\textbf{New user problem:} The cold-start problem discussed in Section \ref{sec:limCF} also exists for content based recommender systems.
+Although content-based techniques do not require a large user community, they require at least an initial set of ratings from the user, typically a set of explicit \textit{like} and \textit{dislike} statements.
+The prediction accuracy of these systems improves with increase in the number of ratings.
 
 \section{Knowledge based recommender systems}
 Typically, we do not buy a house, a car or a computer very frequently. In such a scenario, a pure CF system will not perform well because of the low number of available ratings
@@ -53,7 +88,7 @@ Conversational systems assume that a user's initial query is merely a starting p
   \centering
   \includegraphics[width=1\linewidth]{figures-bharath/critiquing.png}
   \captionof{figure}{Critiquing}
-  \label{fig:test1}
+  \label{fig:critiquing}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
@@ -63,17 +98,20 @@ Conversational systems assume that a user's initial query is merely a starting p
 \end{minipage}
 \end{figure}
 \textit{\textbf{Critiquing}} is one of the most popular forms of feedback in conversational recommender systems. In each interaction cycle, the user is presented with a list of products.
-User selects a product and expresses directional preference(s) over one or more item feature values. For example, one might indicate that he/she is looking for a less expensive restaurant or a more formal setting. These are two individual critiques, first critique being on the \textit{price} attribute and the second critique on the \textit{setting} attribute. The recommender updates it's user model according to this feedback provides another set of products and proceeds to the next recommendation cycle. This continues till the user finally chooses a product.
+User selects a product and expresses directional preference(s) over one or more item feature values. 
+For example, one might indicate that he/she is looking for a less expensive restaurant or a more formal setting(Figure \ref{fig:rentMe}). These are two individual critiques, first critique being on the \textit{price} attribute and the second critique on the \textit{setting} attribute. 
+The recommender updates it's user model according to this feedback provides another set of products and proceeds to the next recommendation cycle. This continues till the user finally chooses a product. (Figure \ref{fig:critiquing})
 
 \textit{\textbf{Unit critiques}} allow users to express their preference over one attribute in each interaction cycle. \textit{\textbf{Compound critiques}} enable users to input their preferences on several attributes at a time. This can potentially shorten the number of interaction cycles in finding a target product.
-The early FindMe Systems \cite{burkeEarlierSystems} had \textit{static} critiques. The critiques wouldn't change when users selected a particular critique. 
+The early FindMe Systems \cite{burkeEarlierSystems} had \textit{\textbf{static critiques}}. The critiques wouldn't change when users selected a particular critique. 
 This can lead to some serious limitations.
 For example, the critique 'cheaper' would continue to be visible, even if there are no cheaper apartments available and when user clicks on 'cheaper', there would be no results displayed at all.
 Static critiques also do not represent the best set of tweaks that a user will want to make given his preference model.
-The notion of \textit{dynamic critiquing} was first proposed by \cite{mccarthy2004dynamic} to overcome the limitations of static critiques.
-Compound critiques are generated on-the-fly for each recommendation cycle. Dynamic critiquing has been shown to improve user-experience and lower the average number of interaction cycles it takes for a customer to find his desired product
+The notion of \textit{\textbf{dynamic critiquing}} was first proposed by \cite{mccarthy2004dynamic} to overcome the limitations of static critiques.
+Compound critiques are generated on-the-fly for each recommendation cycle. Dynamic critiquing has been shown to improve user-experience and lower the average number of interaction cycles it takes for a customer to find his desired product.
+
+There are two popular approaches to dynamic critiquing: Apriori algorithm based generation of compound critiques (\cite{mccarthy2004dynamic}) and MAUT based generation of compound critiques (\cite{mautPaper}). The algorithm for MAUT based recommendation will be discussed in Section \ref{chap:background}.
 
 
 \section{Our contribution: Improvements to MAUT based recommendation}
 \section{Organization of the Thesis}
-

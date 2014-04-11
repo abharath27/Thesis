@@ -1,8 +1,26 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{9}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Adomavicius and Tuzhilin(2005)}]{adom2005}
+{\bf Adomavicius, G.} and {\bf A.~Tuzhilin} (2005).
+\newblock Toward the next generation of recommender systems: A survey of the
+  state-of-the-art and possible extensions.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on\/}, {\bf
+  17}(6), 734--749.
+
+\bibitem[{Balabanovi{\'c} and Shoham(1997)}]{balab1997}
+{\bf Balabanovi{\'c}, M.} and {\bf Y.~Shoham} (1997).
+\newblock Fab: content-based, collaborative recommendation.
+\newblock {\em Communications of the ACM\/}, {\bf 40}(3), 66--72.
+
+\bibitem[{Billsus and Pazzani(1999)}]{billsus}
+{\bf Billsus, D.} and {\bf M.~J. Pazzani}, A personal news agent that talks,
+  learns and explains.
+\newblock {\em In\/} {\em Proceedings of the third annual conference on
+  Autonomous Agents\/}. ACM, 1999.
 
 \bibitem[{Burke(2000)}]{burkeRentMe}
 {\bf Burke, R.} (2000).
@@ -10,9 +28,36 @@
 \newblock {\em Encyclopedia of library and information systems\/}, {\bf
   69}(Supplement 32), 175--186.
 
+\bibitem[{Burke {\em et~al.\/}(1996)Burke, Hammond, and
+  Young}]{burkeEarlierSystems}
+{\bf Burke, R.~D.}, {\bf K.~J. Hammond}, and {\bf B.~C. Young}, Knowledge-based
+  navigation of complex information spaces.
+\newblock {\em In\/} {\em Proceedings of the national conference on artificial
+  intelligence\/}, volume 462. 1996.
+
+\bibitem[{Jannach {\em et~al.\/}(2010)Jannach, Zanker, Felfernig, and
+  Friedrich}]{jannach}
+{\bf Jannach, D.}, {\bf M.~Zanker}, {\bf A.~Felfernig}, and {\bf G.~Friedrich},
+  {\em Recommender systems: an introduction\/}.
+\newblock Cambridge University Press, 2010.
+
 \bibitem[{Koren {\em et~al.\/}(2009)Koren, Bell, and Volinsky}]{koren}
 {\bf Koren, Y.}, {\bf R.~Bell}, and {\bf C.~Volinsky} (2009).
 \newblock Matrix factorization techniques for recommender systems.
 \newblock {\em Computer\/}, {\bf 42}(8), 30--37.
+
+\bibitem[{McCarthy {\em et~al.\/}(2004)McCarthy, Reilly, McGinty, and
+  Smyth}]{mccarthy2004dynamic}
+{\bf McCarthy, K.}, {\bf J.~Reilly}, {\bf L.~McGinty}, and {\bf B.~Smyth}, On
+  the dynamic generation of compound critiques in conversational recommender
+  systems.
+\newblock {\em In\/} {\em Adaptive Hypermedia and Adaptive Web-Based
+  Systems\/}. Springer, 2004.
+
+\bibitem[{Zhang and Pu(2006)}]{mautPaper}
+{\bf Zhang, J.} and {\bf P.~Pu}, A comparative study of compound critique
+  generation in conversational recommender systems.
+\newblock {\em In\/} {\em Adaptive Hypermedia and Adaptive Web-Based
+  Systems\/}. Springer, 2006.
 
 \end{thebibliography}
