@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  11 APR 2014 12:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  18 APR 2014 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,7 +809,7 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 43.
 
-<iitm.pdf, id=67, 109.40875pt x 109.40875pt>
+<iitm.pdf, id=75, 109.40875pt x 109.40875pt>
 File: iitm.pdf Graphic file (type pdf)
  <use iitm.pdf>
 Package pdftex.def Info: iitm.pdf used on input line 43.
@@ -851,67 +851,77 @@ CHAPTER 1.
 
 
 ] [2] [3]
-Overfull \hbox (6.1964pt too wide) in paragraph at lines 70--71
-[]\OT1/ppl/m/n/12 The sys-tem de-scribed by []Bill-sus and Paz-zani[] ([]1999[]
-) there-fore de-fines a thresh-
+Underfull \hbox (badness 10000) in paragraph at lines 72--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--84
+
  []
 
 [4]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 80.
- <figures-bharath/critiquing.png, id=133, 487.8225pt x 524.96124pt>
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 93.
+ [5] <figures-bharath/critiquing.png, id=143, 487.8225pt x 524.96124pt>
 File: figures-bharath/critiquing.png Graphic file (type png)
 
 <use figures-bharath/critiquing.png>
-Package pdftex.def Info: figures-bharath/critiquing.png used on input line 89.
+Package pdftex.def Info: figures-bharath/critiquing.png used on input line 107.
+
 (pdftex.def)             Requested size: 208.41644pt x 224.28708pt.
 
-<figures-bharath/rentMe.png, id=134, 497.86pt x 323.2075pt>
+<figures-bharath/rentMe.png, id=144, 497.86pt x 323.2075pt>
 File: figures-bharath/rentMe.png Graphic file (type png)
 
 <use figures-bharath/rentMe.png>
-Package pdftex.def Info: figures-bharath/rentMe.png used on input line 95.
+Package pdftex.def Info: figures-bharath/rentMe.png used on input line 113.
 (pdftex.def)             Requested size: 208.41644pt x 135.30237pt.
- [5] [6 <./figures-bharath/critiquing.png> <./figures-bharath/rentMe.png>]
-Overfull \hbox (7.1969pt too wide) in paragraph at lines 116--116
+ [6 <./figures-bharath/critiquing.png> <./figures-bharath/rentMe.png>]
+Overfull \hbox (7.1969pt too wide) in paragraph at lines 135--135
 []\OT1/ppl/b/n/17.28 Our con-tri-bu-tion: Im-prove-ments to MAUT based
  []
 
 ) (./background.tex [7]
 CHAPTER 2.
-) [8
+[8
 
-] (./thesis.bbl [9])
+] [9]) [10] (./thesis.bbl [11] [12
+
+])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
- [10
-
-]
+ [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5131554B96306439EFAFAEF99FFC4564;1066.
+(rerunfilecheck)             Checksum: B8E1AC061B598C1A7DDCFD2A86BD2875;1229.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 17605 strings out of 493633
- 301837 string characters out of 3143377
- 393554 words of memory out of 3000000
- 20517 multiletter control sequences out of 15000+200000
+ 17645 strings out of 493633
+ 302422 string characters out of 3143377
+ 394984 words of memory out of 3000000
+ 20543 multiletter control sequences out of 15000+200000
  15376 words of font info for 46 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 56i,8n,55p,521b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,8n,55p,434b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
-011/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2011/te
-xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dis
-t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (14 pages, 468553 bytes).
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
+/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+11/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+1/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2011/texmf
+-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2011/texmf-dist/
+fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (17 pages, 524710 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
