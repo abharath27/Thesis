@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -28,6 +28,11 @@
 \newblock {\em In\/} {\em Proceedings of the third annual conference on
   Autonomous Agents\/}. ACM, 1999.
 
+\bibitem[{Bridge and Ferguson(2002)}]{bridge02}
+{\bf Bridge, D.} and {\bf A.~Ferguson} (2002).
+\newblock An expressive query language for product recommender systems.
+\newblock {\em Artificial Intelligence Review\/}, {\bf 18}(3-4), 269--307.
+
 \bibitem[{Burke(2000)}]{burkeRentMe}
 {\bf Burke, R.} (2000).
 \newblock Knowledge-based recommender systems.
@@ -52,6 +57,11 @@
 \newblock Matrix factorization techniques for recommender systems.
 \newblock {\em Computer\/}, {\bf 42}(8), 30--37.
 
+\bibitem[{Mc~Ginty and Smyth(2002)}]{comparisonbr}
+{\bf Mc~Ginty, L.} and {\bf B.~Smyth}, Comparison-based recommendation.
+\newblock {\em In\/} {\em Advances in Case-Based Reasoning\/}. Springer, 2002,
+  575--589.
+
 \bibitem[{McCarthy {\em et~al.\/}(2004)McCarthy, Reilly, McGinty, and
   Smyth}]{mccarthy2004dynamic}
 {\bf McCarthy, K.}, {\bf J.~Reilly}, {\bf L.~McGinty}, and {\bf B.~Smyth}, On
@@ -60,14 +70,55 @@
 \newblock {\em In\/} {\em Adaptive Hypermedia and Adaptive Web-Based
   Systems\/}. Springer, 2004.
 
+\bibitem[{McSherry(2002)}]{mcsherry02}
+{\bf McSherry, D.}, Diversity-conscious retrieval.
+\newblock {\em In\/} {\em Advances in Case-Based Reasoning\/}. Springer, 2002,
+  219--233.
+
+\bibitem[{McSherry(2003)}]{mcsherry03}
+{\bf McSherry, D.}, Similarity and compromise.
+\newblock {\em In\/} {\em Case-Based Reasoning Research and Development\/}.
+  Springer, 2003, 291--305.
+
+\bibitem[{Reilly {\em et~al.\/}(2004)Reilly, McCarthy, McGinty, and
+  Smyth}]{reilly04}
+{\bf Reilly, J.}, {\bf K.~McCarthy}, {\bf L.~McGinty}, and {\bf B.~Smyth},
+  Dynamic critiquing.
+\newblock {\em In\/} {\em Advances in Case-Based Reasoning\/}. Springer, 2004,
+  763--777.
+
+\bibitem[{Shimazu(2001)}]{expertclerk}
+{\bf Shimazu, H.}, Expertclerk: navigating shoppers' buying process with the
+  combination of asking and proposing.
+\newblock {\em In\/} {\em Proceedings of the 17th international joint
+  conference on Artificial intelligence-Volume 2\/}. Morgan Kaufmann Publishers
+  Inc., 2001.
+
+\bibitem[{Simazu {\em et~al.\/}(2001)Simazu, Shibata, and Nihei}]{shimazu01}
+{\bf Simazu, H.}, {\bf A.~Shibata}, and {\bf K.~Nihei} (2001).
+\newblock Expertguide: A conversational case-based reasoning tool for
+  developing mentors in knowledge spaces.
+\newblock {\em Applied Intelligence\/}, {\bf 14}(1), 33--48.
+
 \bibitem[{Smyth(2007)}]{smyth2007}
 {\bf Smyth, B.}, Case-based recommendation.
 \newblock {\em In\/} {\em The adaptive web\/}. Springer, 2007, 342--376.
+
+\bibitem[{Smyth and Cotter(1999)}]{smyth99tv}
+{\bf Smyth, B.} and {\bf P.~Cotter}, Surfing the digital wave.
+\newblock {\em In\/} {\em Case-Based Reasoning Research and Development\/}.
+  Springer, 1999, 561--571.
 
 \bibitem[{Smyth and McClave(2001)}]{boundedGreedy}
 {\bf Smyth, B.} and {\bf P.~McClave}, Similarity vs. diversity.
 \newblock {\em In\/} {\em Case-Based Reasoning Research and Development\/}.
   Springer, 2001, 347--361.
+
+\bibitem[{Thompson {\em et~al.\/}(2004)Thompson, G{\"o}ker, and
+  Langley}]{thompson04}
+{\bf Thompson, C.~A.}, {\bf M.~H. G{\"o}ker}, and {\bf P.~Langley} (2004).
+\newblock A personalized system for conversational recommendations.
+\newblock {\em J. Artif. Intell. Res.(JAIR)\/}, {\bf 21}, 393--428.
 
 \bibitem[{Wilke {\em et~al.\/}(1998)Wilke, Lenz, and Wess}]{wilke98}
 {\bf Wilke, W.}, {\bf M.~Lenz}, and {\bf S.~Wess}, Intelligent sales support
