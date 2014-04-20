@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  19 APR 2014 17:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  20 APR 2014 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,11 +688,7 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 \c@note=\count157
 \c@property=\count158
 ) (./rl-macros.tex)
-(./gp-macros.tex) (./sw-macros.tex) (./thesis.aux
-
-LaTeX Warning: Label `fig:apriori' multiply defined.
-
-)
+(./gp-macros.tex) (./sw-macros.tex) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -710,7 +706,8 @@ LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 38.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 *geometry* driver: auto-detecting
@@ -812,68 +809,16 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 43.
 
-<iitm.pdf, id=107, 109.40875pt x 109.40875pt>
+<iitm.pdf, id=99, 109.40875pt x 109.40875pt>
 File: iitm.pdf Graphic file (type pdf)
  <use iitm.pdf>
 Package pdftex.def Info: iitm.pdf used on input line 43.
 (pdftex.def)             Requested size: 109.40846pt x 109.40846pt.
-
-(./trivia/certificate.tex [0
+ [0
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./iitm.
 pdf>]
-Certificate
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
-(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-))
-(./trivia/ack.texpdfTeX warning (ext4): destination with the same identifier (n
-ame{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \acknowledgements
-                      [0
-
-]) (./abstract.tex [1
-
-]) [2
-
-] (./thesis.toc)
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
-
- [3
-
-] [4]
-(./thesis.lot)
-\tf@lot=\write6
-\openout6 = `thesis.lot'.
-
- [5
-
-] (./thesis.lof
-Overfull \hbox (1.8677pt too wide) in paragraph at lines 7--7
- [][] [][]\OT1/ppl/m/n/12 Screenshot of dig-i-tal cam-era rec-om-mender sys-tem
- that uses Apri- 
- []
-
-)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
-
- [6
-
-] (./intro.tex
+(./intro.tex
 CHAPTER 1.
 [1
 
@@ -889,9 +834,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--86
  []
 
 [4]
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/it' tried instead on input line 98.
- [5] <figures-bharath/critiquing.png, id=249, 487.8225pt x 524.96124pt>
+ [5]
+<figures-bharath/critiquing.png, id=157, 487.8225pt x 524.96124pt>
 File: figures-bharath/critiquing.png Graphic file (type png)
 
 <use figures-bharath/critiquing.png>
@@ -899,7 +854,7 @@ Package pdftex.def Info: figures-bharath/critiquing.png used on input line 113.
 
 (pdftex.def)             Requested size: 208.41644pt x 224.28708pt.
 
-<figures-bharath/rentMe.png, id=250, 497.86pt x 323.2075pt>
+<figures-bharath/rentMe.png, id=158, 497.86pt x 323.2075pt>
 File: figures-bharath/rentMe.png Graphic file (type png)
 
 <use figures-bharath/rentMe.png>
@@ -936,7 +891,7 @@ Overfull \hbox (36.34294pt too wide) in paragraph at lines 110--125
  [][] 
  []
 
-<figures-bharath/pbf.png, id=346, 885.3075pt x 522.95375pt>
+<figures-bharath/pbf.png, id=256, 885.3075pt x 522.95375pt>
 File: figures-bharath/pbf.png Graphic file (type png)
 
 <use figures-bharath/pbf.png>
@@ -956,95 +911,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--159
  []
 
 [12] [13 <./figures-bharath/pbf.png>]
-<figures-bharath/entree.png, id=363, 704.6325pt x 430.60875pt>
+<figures-bharath/entree.png, id=277, 704.6325pt x 430.60875pt>
 File: figures-bharath/entree.png Graphic file (type png)
 
 <use figures-bharath/entree.png>
 Package pdftex.def Info: figures-bharath/entree.png used on input line 170.
 (pdftex.def)             Requested size: 416.83289pt x 254.72714pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--182
-
- []
-
-[14] [15 <./figures-bharath/entree.png>]
-LaTeX Font Info:    Try loading font information for OML+ppl on input line 200.
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 184.
 
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlppl.fd
 File: omlppl.fd 
 )
 LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 200.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 184.
 
-Overfull \hbox (0.25441pt too wide) in paragraph at lines 198--201
-[]\OT1/ppl/m/n/12 Feature cri-tiques typ-i-cally take the form of \OT1/ppl/m/it
-/12 di-rec-tional \OT1/ppl/m/n/12 or \OT1/ppl/m/it/12 re-place-ment \OT1/ppl/m/
-n/12 cri-tiques.
+Underfull \hbox (badness 10000) in paragraph at lines 160--185
+
  []
 
-
-Overfull \hbox (4.2082pt too wide) in paragraph at lines 207--207
+[14] [15 <./figures-bharath/entree.png>] [16]
+Overfull \hbox (4.2082pt too wide) in paragraph at lines 213--213
 []\OT1/ppl/b/n/17.28 Apriori Al-go-rithm Based Gen-er-a-tion of Dy-namic
  []
 
-<figures-bharath/apriori.png, id=379, 629.7126pt x 542.025pt>
+<figures-bharath/apriori.png, id=311, 629.7126pt x 542.025pt>
 File: figures-bharath/apriori.png Graphic file (type png)
 
 <use figures-bharath/apriori.png>
-Package pdftex.def Info: figures-bharath/apriori.png used on input line 211.
+Package pdftex.def Info: figures-bharath/apriori.png used on input line 217.
 (pdftex.def)             Requested size: 333.46758pt x 287.0403pt.
- [16]
-<figures-bharath/critiquePatterns.png, id=386, 912.40875pt x 312.16624pt>
+ [17 <./figures-bharath/apriori.png>]
+<figures-bharath/critiquePatterns.png, id=320, 912.40875pt x 312.16624pt>
 File: figures-bharath/critiquePatterns.png Graphic file (type png)
 
 <use figures-bharath/critiquePatterns.png>
 Package pdftex.def Info: figures-bharath/critiquePatterns.png used on input lin
-e 226.
+e 231.
 (pdftex.def)             Requested size: 416.83289pt x 142.61221pt.
- [17 <./figures-bharath/apriori.png>]
-Overfull \hbox (20.88275pt too wide) in paragraph at lines 236--236
+ [18 <./figures-bharath/critiquePatterns.png>]
+Overfull \hbox (20.88275pt too wide) in paragraph at lines 263--263
 []\OT1/ppl/b/n/17.28 Multi At-tribute Util-ity The-ory (MAUT) based Gen-
  []
 
-<figures-bharath/maut.png, id=397, 652.4375pt x 653.44125pt>
+<figures-bharath/maut.png, id=341, 652.4375pt x 653.44125pt>
 File: figures-bharath/maut.png Graphic file (type png)
 
 <use figures-bharath/maut.png>
-Package pdftex.def Info: figures-bharath/maut.png used on input line 240.
+Package pdftex.def Info: figures-bharath/maut.png used on input line 273.
 (pdftex.def)             Requested size: 333.46758pt x 333.98846pt.
-) (./thesis.bbl [18 <./figures-bharath/critiquePatterns.png>] [19 <./figures-bh
-arath/maut.png>] [20
+ [19]
+<figures-bharath/paperAlgo.png, id=347, 783.92876pt x 633.36626pt>
+File: figures-bharath/paperAlgo.png Graphic file (type png)
 
-] [21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
+<use figures-bharath/paperAlgo.png>
+Package pdftex.def Info: figures-bharath/paperAlgo.png used on input line 280.
+(pdftex.def)             Requested size: 375.14705pt x 303.09424pt.
+ [20 <./figures-bharath/maut.png>]
+<figures-bharath/pc_results.png, id=356, 610.28pt x 401.5pt>
+File: figures-bharath/pc_results.png Graphic file (type png)
+
+<use figures-bharath/pc_results.png>
+Package pdftex.def Info: figures-bharath/pc_results.png used on input line 306.
+
+(pdftex.def)             Requested size: 208.41644pt x 137.1147pt.
+
+<figures-bharath/apartment_results.png, id=357, 614.295pt x 403.5075pt>
+File: figures-bharath/apartment_results.png Graphic file (type png)
+
+<use figures-bharath/apartment_results.png>
+Package pdftex.def Info: figures-bharath/apartment_results.png used on input li
+ne 312.
+(pdftex.def)             Requested size: 208.41644pt x 136.90135pt.
+ [21 <./figures-bharath/paperAlgo.png>] [22 <./figures-bharath/pc_results.png> 
+<./figures-bharath/apartment_results.png>]) (./thesis.bbl [23] [24
+
+] [25])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: E907D4B2DA337A711470BC93A48B2277;1795.
 
 
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: AB9B72AED7B7F4EB3D1327D450F583D9;1871
-(rerunfilecheck)             After:  705B90AC45111B390C5CED86E301E89A;2009.
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 17793 strings out of 493633
- 304884 string characters out of 3143377
- 400238 words of memory out of 3000000
- 20635 multiletter control sequences out of 15000+200000
+ 17798 strings out of 493633
+ 305318 string characters out of 3143377
+ 400943 words of memory out of 3000000
+ 20654 multiletter control sequences out of 15000+200000
  15376 words of font info for 46 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 56i,8n,55p,434b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,8n,55p,443b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
@@ -1057,10 +1021,10 @@ texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2011/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (30 pages, 3343025 bytes).
+Output written on thesis.pdf (27 pages, 3485715 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
+ 452 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
  93 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 
