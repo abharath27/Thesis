@@ -1,6 +1,12 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Recommender System that uses preference based feedback\relax }}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Entree Restaurant Recommender System\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Screenshot of digital camera recommender system that uses Apriori algorithm to generate compound critiques\relax }}{10}{figure.caption.7}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Critique Pattern for the product p(\cite {reilly04})\relax }}{11}{figure.caption.8}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Screenshot of user interface of the recommender system that uses MAUT to generate compound critiques\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Critiquing\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces RentMe Recommender System: \cite {burkeRentMe}\relax }}{6}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Recommender System that uses preference based feedback\relax }}{13}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Entree Restaurant Recommender System\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot of digital camera recommender system that uses Apriori algorithm to generate compound critiques\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Critique Pattern for the product p(\cite {reilly04})\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Screenshot of user interface of the recommender system that uses MAUT to generate compound critiques\relax }}{20}{figure.caption.12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Algorithm for critiquing based on MAUT\relax }}{21}{figure.caption.13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces PC Dataset\relax }}{22}{figure.caption.14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Apartment Dataset\relax }}{22}{figure.caption.14}

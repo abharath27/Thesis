@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: iitm.bst
 Database file #1: thesis.bib
-You've used 27 entries,
+You've used 28 entries,
             2930 wiz_defined-function locations,
-            766 strings with 8909 characters,
-and the built_in function-call counts, 18209 in all, are:
-= -- 1399
-> -- 708
+            772 strings with 9149 characters,
+and the built_in function-call counts, 18954 in all, are:
+= -- 1444
+> -- 757
 < -- 17
-+ -- 239
-- -- 204
-* -- 1425
-:= -- 2500
-add.period$ -- 80
-call.type$ -- 27
-change.case$ -- 230
-chr.to.int$ -- 27
-cite$ -- 27
-duplicate$ -- 1563
-empty$ -- 1559
-format.name$ -- 297
-if$ -- 3724
++ -- 255
+- -- 219
+* -- 1495
+:= -- 2605
+add.period$ -- 83
+call.type$ -- 28
+change.case$ -- 242
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 1627
+empty$ -- 1617
+format.name$ -- 315
+if$ -- 3870
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 269
-newline$ -- 126
-num.names$ -- 108
-pop$ -- 638
+missing$ -- 281
+newline$ -- 130
+num.names$ -- 112
+pop$ -- 669
 preamble$ -- 1
-purify$ -- 174
+purify$ -- 183
 quote$ -- 0
-skip$ -- 537
+skip$ -- 552
 stack$ -- 0
-substring$ -- 833
-swap$ -- 791
+substring$ -- 844
+swap$ -- 823
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
+type$ -- 249
 warning$ -- 0
-while$ -- 130
+while$ -- 133
 width$ -- 0
-write$ -- 333
+write$ -- 344

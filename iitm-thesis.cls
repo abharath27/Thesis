@@ -98,7 +98,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The figure captioning is done correctly via the hang option.
 %%\RequirePackage[hang]{caption2}  -> TeX generates error
-\RequirePackage[hang]{caption}
+%\RequirePackage[hang]{caption}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Bibliography

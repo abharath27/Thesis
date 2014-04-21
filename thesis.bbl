@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -114,6 +114,13 @@
   (2005).
 \newblock Incremental critiquing.
 \newblock {\em Knowledge-Based Systems\/}, {\bf 18}(4), 143--151.
+
+\bibitem[{Reilly {\em et~al.\/}(2007)Reilly, Zhang, McGinty, Pu, and
+  Smyth}]{liveUserStudy}
+{\bf Reilly, J.}, {\bf J.~Zhang}, {\bf L.~McGinty}, {\bf P.~Pu}, and {\bf
+  B.~Smyth}, Evaluating compound critiquing recommenders: a real-user study.
+\newblock {\em In\/} {\em Proceedings of the 8th ACM conference on Electronic
+  commerce\/}. ACM, 2007.
 
 \bibitem[{Shearin and Lieberman(2001)}]{aptDecision}
 {\bf Shearin, S.} and {\bf H.~Lieberman}, Intelligent profiling by example.
