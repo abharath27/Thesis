@@ -1,0 +1,44 @@
+\section{Diversity in Critiques}
+
+A variant of \textit{\textbf{Bounded Greedy Selection}} algorithm described in \cite{boundedGreedy} was used to generate diverse critiques in every cycle.
+The function \textit{GenCritiqueItems(PM, IS)} is modified as follows:\\
+\\
+def GenCritiqueItems(PM, IS):\\
+\noindent\fbox{%
+\begin{varwidth}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+\begin{algorithmic}[1]
+\State R = \{\}
+\State CB' = IS
+\For{i = 1 to k}
+	\State sort CB' by Quality(i, R, PM) for each case in IS
+	\State R = R + First(CB')
+	\State CB' = CB' - First(CB')
+\EndFor
+\State return R
+\end{algorithmic}
+\end{varwidth}%
+}
+\\
+\\
+def Quality(i, R, PM):\\
+\noindent\fbox{%
+\begin{varwidth}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+
+\begin{algorithmic}[1]
+\If{R == \{\}} return 0;
+\Else
+\State $retVal = \alpha \times utility(i, PM)$
+\State $disSim = \sum_{r_j \in R} (1-critiqueSim(i,r_j))/|R|$
+\State $retVal += (1-\alpha) \times disSim$
+\State return retVal
+\EndIf
+\end{algorithmic}
+\end{varwidth}%
+}
+\\
+\\
+$critiqueSim(a, b)$ returns the extent of overlap between the individual attribute directions of products $a$ and $b$.
+We get the best results when $\alpha = 0.5$.
+Introducing diverse critiques in every cycle results in significant improvement in the number of interaction cycles (Table ~\ref{tab:results}) and it also improves user experience (Users don't prefer critiques being very similar to each other).
+
+
