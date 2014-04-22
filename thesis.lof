@@ -6,7 +6,14 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Entree Restaurant Recommender System\relax }}{15}{figure.caption.9}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot of digital camera recommender system that uses Apriori algorithm to generate compound critiques\relax }}{17}{figure.caption.10}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Critique Pattern for the product p(\cite {reilly04})\relax }}{18}{figure.caption.11}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Screenshot of user interface of the recommender system that uses MAUT to generate compound critiques\relax }}{20}{figure.caption.12}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Algorithm for critiquing based on MAUT\relax }}{21}{figure.caption.13}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces PC Dataset\relax }}{22}{figure.caption.14}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Apartment Dataset\relax }}{22}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Screenshot of user interface of the recommender system that uses MAUT to generate compound critiques(\cite {mautPaper}\relax }}{20}{figure.caption.12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Algorithm for critiquing based on MAUT (\cite {mautPaper}\relax }}{21}{figure.caption.13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Average interaction cycles for PC Dataset(\cite {mautPaper})\relax }}{23}{figure.caption.15}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Average interaction cycles for Apartment dataset(\cite {mautPaper})\relax }}{23}{figure.caption.15}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Avg session lengths on camera dataset (\cite {liveUserStudy}\relax }}{25}{figure.caption.16}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Avg recommendation accuracy (\cite {liveUserStudy})\relax }}{25}{figure.caption.16}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Final Questionnaire - Question 1 (Blue - Apriori, Red - MAUT, Yellow - No difference)(\cite {liveUserStudy}\relax }}{27}{figure.caption.17}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Final Questionnaire - Question 2 (\cite {liveUserStudy}\relax }}{27}{figure.caption.17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Before diversifying critique strings\relax }}{30}{figure.caption.20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces After diversification\relax }}{30}{figure.caption.20}

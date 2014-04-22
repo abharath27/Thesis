@@ -1,0 +1,44 @@
+\section{Additional preference to products that are similar to the most recent user selected product}
+In addition to updating weights of numeric attributes and updating value functions of nominal attributes, we give an additional preference to the products that have a similar critique pattern as that of the most recently selected product.
+The method of computing critique patterns for products has been discussed in Section \ref{sec:genCritique}.
+
+The $CalcUtility$ function (Algorithm \ref{algo:utility}) that is used to calculate utility of products at the beginning of each cycle is modified as follows:
+
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+  %\Input{$PM$, $IS$}
+
+  $retVal \gets 0$;\\
+  \For{ each attribute $x_i$ in $u$ }{
+      retVal += $pw_i \times V(x_i)$
+  }
+  $p1 \gets $CritiquePattern(u);\\
+  $p2 \gets $CritiquePattern(previousSelectedProduct);\\
+  retVal += $overlap(p1, p2)$;\\
+  \Return retVal
+  \caption{CalcUtility(PM, u)}
+  \label{algo:wMLT}
+\end{algorithm}
+
+
+
+%\subsection{Generalization of the above where you can have multiple products}
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+  %\Input{$PM$, $IS$}
+
+  $retVal \gets 0$;\\
+  \For{ each attribute $x_i$ in $u$ }{
+      retVal += $pw_i \times V(x_i)$
+  }
+  \For { each product $t_i$ in previouslySelectedProducts} {
+      $p1 \gets $CritiquePattern($u$);\\
+      $p2 \gets $CritiquePattern($t_i$);\\
+      retVal += $w_i \times overlap(p1, p2)$;\\
+  }
+  \Return retVal
+  \caption{CalcUtility(PM, u)}
+  \label{algo:wMLT2}
+\end{algorithm}

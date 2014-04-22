@@ -1,7 +1,7 @@
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{i}{chapter*.1}
 \contentsline {chapter}{ABSTRACT}{ii}{chapter*.2}
-\contentsline {chapter}{LIST OF TABLES}{iv}{chapter*.4}
-\contentsline {chapter}{LIST OF FIGURES}{v}{chapter*.5}
+\contentsline {chapter}{LIST OF TABLES}{v}{chapter*.4}
+\contentsline {chapter}{LIST OF FIGURES}{vi}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Collaborative Recommender Systems}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Memory Based Approaches}{2}{subsection.1.1.1}
@@ -23,5 +23,13 @@
 \contentsline {subsection}{\numberline {2.4.1}Generating Critique Patterns}{18}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Mining Compound Critiques}{19}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Multi Attribute Utility Theory (MAUT) based Generation of Dynamic Critiques}{20}{section.2.5}
-\contentsline {section}{\numberline {2.6}Offline Evaluation}{21}{section.2.6}
-\contentsline {section}{\numberline {2.7}Live User Studies}{23}{section.2.7}
+\contentsline {subsection}{\numberline {2.5.1}Updating value functions of nominal attributes}{22}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Function to calculate utility of products}{23}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Offline Evaluation}{23}{section.2.6}
+\contentsline {section}{\numberline {2.7}Live User Studies}{24}{section.2.7}
+\contentsline {chapter}{\numberline {3}Modifications to MAUT Based Generation of compound critiques}{28}{chapter.3}
+\contentsline {section}{\numberline {3.1}Limitations of MAUT Based Critiquing:}{28}{section.3.1}
+\contentsline {section}{\numberline {3.2}Diversity in Critiques}{29}{section.3.2}
+\contentsline {section}{\numberline {3.3}Selectively updating value functions of nominal attributes}{30}{section.3.3}
+\contentsline {section}{\numberline {3.4}Additional preference to products that are similar to the most recent user selected product}{31}{section.3.4}
+\contentsline {section}{\numberline {3.5}Varying the level of diversity}{32}{section.3.5}
