@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -84,6 +84,13 @@
   systems.
 \newblock {\em In\/} {\em Adaptive Hypermedia and Adaptive Web-Based
   Systems\/}. Springer, 2004.
+
+\bibitem[{McCarthy {\em et~al.\/}(2005)McCarthy, Reilly, McGinty, and
+  Smyth}]{aprioriUserStudy}
+{\bf McCarthy, K.}, {\bf J.~Reilly}, {\bf L.~McGinty}, and {\bf B.~Smyth},
+  Experiments in dynamic critiquing.
+\newblock {\em In\/} {\em Proceedings of the 10th international conference on
+  Intelligent user interfaces\/}. ACM, 2005.
 
 \bibitem[{McGinty and Reilly(2011)}]{mcginty11}
 {\bf McGinty, L.} and {\bf J.~Reilly}, On the evolution of critiquing

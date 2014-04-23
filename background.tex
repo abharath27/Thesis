@@ -312,17 +312,37 @@ Based on the new reference product and new preference model, the system recommen
 This process continues till the user find his target product and terminates the recommendation session.
 Figure \ref{fig:maut} shows a screenshot of PC recommender system developed based on the above approach.
 
+\subsection{Value functions of numeric attributes}
 In \cite{mautPaper}, the value functions that were used in the implementation are not mentioned.
-For nominal attributes (Eg:manufacturer), if we assume that all 'manufacturers' have equal value in the beginning of recommmendation session, updating weights of nominal attributes doesn't affect rankings because the $w_i*V_i(x_i)$ term for all cases in case-base will be the same.
-Instead of updating the weights of nominal attributes in each iteration, we update their value functions.
+In our implementation, we first classify numeric attributes into two categoires - LIB (Less is Better) and MIB (More is Better).
+For the Camera dataset, the attribute $Price$ is classified into LIB, since given two cameras which have all other features the same, user would prefer the camera which has lower $Price$.
+Similarly, the attribute $Weight$ is classified into LIB.
+The attributes $Optical Zoom$, $Digital Zoom$, $Storage Included$ and $Resolution$ are classified as MIB attributes.
+The value function for LIB attributes and MIB attributes is given in Equations \ref{eq:valueLIB} and \ref{eq:valueMIB} respectively. $i$ refers to the attribute, $x_i$ is the value of product's $i^th$ attribute, $max_i$ and $min_i$ are the maximum and minimum values of the attribute among all the products in the casebase.
+
+\begin{equation}
+\label{eq:valueLIB}
+V_i(x_i) =  \frac{max_i - x_i}{max_i - min_i}
+\end{equation}
+
+\begin{equation}
+\label{eq:valueMIB}
+V_i(x_i) =  \frac{x_i-min_i}{max_i - min_i}
+\end{equation}
+
+
 \subsection{Updating value functions of nominal attributes}
 \label{sec:valueFunc}
+As discussed earlier, in \cite{mautPaper}, the value functions that were used in the implementation are not mentioned.
+For nominal attributes (Eg:manufacturer), if we assume that all 'manufacturers' have equal value in the beginning of recommmendation session, updating weights of nominal attributes doesn't affect rankings because the $w_i*V_i(x_i)$ term for all cases in case-base will be the same.
+Instead of updating the weights of nominal attributes in each iteration, we update their value functions.
 The weights of all nominal attributes at the beginning of a recommendation session are initialized to $1$.
 Let $v_1, v_2, v_3,\hdots v_k$ be $k$ possible values that a nominal attribute $N$(say manufacturer) can take.
 Value associated with each of $v_1, v_2, v_3,\hdots, v_k$ is initialized to $1/k$ at the beginning of interaction.
 In the first cycle, if selected product's manufacturer is $v_1$, value associated with $v_1$ is changed to $(1+\gamma)/(k+\gamma)$; and the value associated with $v_2, v_3, \hdots, v_k$ will be $1/(1+\gamma)$ in the next cycle.
 In general, in cycle $t$,  each of $v_1, v_2, v_3,\hdots, v_k$ is multiplied by $(1 + t\gamma)$; if $v_p$ is the value of attribute $N$ in the selected product, then value associated with $v_p$ is increased by $\gamma$ and all the value functions associated with attribute $N$ are then normalized (so they all sum up to 1)  by dividing them all by $(1+ (t+1)\gamma)$.
 %We fix $\gamma = 0.5$ in the implementation of the original MAUT based recommendation.
+
 
 \subsection{Function to calculate utility of products}
 \label{sec:utility}

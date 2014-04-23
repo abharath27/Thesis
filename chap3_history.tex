@@ -1,0 +1,42 @@
+\section{Considering history of user selected products}
+In Figure \ref{fig:maut}, $ref$ is the product selected by the user in previous interaction cycle.
+Preference model is updated only considering the most recently selected product's attribute values.
+Instead, we now maintain a list of products selected by the user in previous interaction cycles and update the model according to the weighted average of these products' attributes.
+The function UpdateModel($PM$, $ref$) is updated as follows:
+
+
+%Before that put an equation with a sigma in that...
+%Give an example here...
+%That would be like putting the last nail of the coffin to settle things down
+
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+  %\Input{$PM$, $IS$}
+
+  $R \gets \{\}$\\
+  $CB' \gets IS$\\
+  \For{each attribute $x_i$ }{
+      $ref[x_i] = 0$;\\
+      $ws = 0$;\\
+      \For{each product p $\in$ refL }{
+          $ref[x_i] +=  hw_i \times p[x_i] $;\\
+          $ws += hw_i$;\\
+      }
+      $ref[x_i] = ref[x_i]/ws$; \\
+  }
+  \For{each attribute $x_i$ in ref }{
+      $[pv_i, pw_i] \leftarrow PM on x_i$;\\
+      \If {$V(x_i) \geq pv_i$} {
+          $pw_i' = pw_i \times \beta $;\\
+      }
+      \Else {
+          $pw_i' = pw_i / \beta $;\\
+      }
+      $PM' \leftarrow [V(x_i), pw_i']$;\\
+  }
+  \Return $PM$;\\
+
+  \caption{UpdateModel(PM, refL)}
+  \label{algo:history}
+\end{algorithm}

@@ -19,13 +19,18 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Generating Critique Patterns}{section.2.4}% 19
 \BOOKMARK [2][-]{subsection.2.4.2}{Mining Compound Critiques}{section.2.4}% 20
 \BOOKMARK [1][-]{section.2.5}{Multi Attribute Utility Theory \(MAUT\) based Generation of Dynamic Critiques}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.5.1}{Updating value functions of nominal attributes}{section.2.5}% 22
-\BOOKMARK [2][-]{subsection.2.5.2}{Function to calculate utility of products}{section.2.5}% 23
-\BOOKMARK [1][-]{section.2.6}{Offline Evaluation}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.7}{Live User Studies}{chapter.2}% 25
-\BOOKMARK [0][-]{chapter.3}{Modifications to MAUT Based Generation of compound critiques}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Limitations of MAUT Based Critiquing:}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{Diversity in Critiques}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.3}{Selectively updating value functions of nominal attributes}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.4}{Additional preference to products that are similar to the most recent user selected product}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.5}{Varying the level of diversity}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.2.5.1}{Value functions of numeric attributes}{section.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.5.2}{Updating value functions of nominal attributes}{section.2.5}% 23
+\BOOKMARK [2][-]{subsection.2.5.3}{Function to calculate utility of products}{section.2.5}% 24
+\BOOKMARK [1][-]{section.2.6}{Offline Evaluation}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.7}{Live User Studies}{chapter.2}% 26
+\BOOKMARK [0][-]{chapter.3}{Modifications to MAUT Based Generation of compound critiques}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Limitations of MAUT Based Critiquing:}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Diversity in Critiques}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.3}{Selectively updating value functions of nominal attributes}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.4}{Additional preference to products that are similar to the most recent user selected product}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.5}{Varying the level of diversity}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.6}{Initializing the value functions of nominal attributes differently}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.7}{Selectively updating the weights of numeric attributes}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.8}{Considering history of user selected products}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.9}{Similar Products in the First Cycle}{chapter.3}% 36

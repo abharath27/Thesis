@@ -1,6 +1,7 @@
 \chapter{Modifications to MAUT Based Generation of compound critiques}
 \label{chap:modifications}
 \section{Limitations of MAUT Based Critiquing:}
+\label{sec:limitations}
 
 We have seen in Sections \ref{sec:offline} and \ref{sec:liveUser} that MAUT based recommendation performs slightly better than Apriori algorithm in offline experiments and live user studies.
 However, there are several limitations to MAUT based recommendation, which when addressed can improve it's performance significantly.
@@ -12,7 +13,7 @@ The limitations to MAUT based recommendation are as follows:
 \item Top five products shown in the first cycle is same for all user-queries
 \item In a particular recommendation cycle, if all the critique strings have "Higher Price", user is forced to select a critique string with "Higher Price". We would ideally not want to update the weight of the attribute $price$, since we cannot infer whether user is willing to compromise on $price$ attribute. But MAUT based recommendation algorithm will actually decrease the weight of $price$ attribute by a factor of $\beta$.
 \item As an extension to the above point, Consider the case when there are 4 critique strings with "Lower Resolution" and 1 critique string with "Higher Resolution". If the user selects the critique string that has "Higher Resolution", we can update  the weight of 'Resolution' attribute by a higher factor.
-\item The fact that a particular product has been preferred over the remaining (k-1) rejected products is not exploited
+\item The fact that a particular product has been preferred over the remaining (k-1) rejected products is not exploited.
 
 \end{itemize}
 %put section numbers when all the description is done...
@@ -20,9 +21,12 @@ We try to address the above each of the above limitations in Sections (Numbers) 
 
 
 \input{chap3_diversity}
-
 \input{chap3_wMLTNominal}
 \input{chap3_additionalTerm}
 \input{chap3_adaptiveSelection}
+\input{chap3_marketEq}
+\input{chap3_selectiveWtUpdate}
+\input{chap3_history}
+\input{chap3_simProdFirstCycle}
 
 

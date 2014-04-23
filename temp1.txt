@@ -27,9 +27,9 @@ Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
 Package: `setspace' 6.7 <2000/12/01>
 ) (./atbeginend.sty)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/natbib/natbib.sty))
 (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/natbib/natbib.sty))
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/palatino.sty)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
@@ -173,8 +173,21 @@ dlers.code.tex)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarytopaths.code.tex))) (./macros.tex) (./rl-macros.tex)
-(./gp-macros.tex) (./sw-macros.tex) (./thesis.aux)
+s/tikzlibrarytopaths.code.tex)))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/varwidth/varwidth.sty)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mathtools.sty
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mhsetup.sty)) (./macros.tex)
+(./rl-macros.tex) (./gp-macros.tex) (./sw-macros.tex) (./thesis.aux)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ppl.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -187,8 +200,8 @@ s/tikzlibrarytopaths.code.tex))) (./macros.tex) (./rl-macros.tex)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (./thesis.out) (./thesis.out) ABD: EveryShipout initializing macros
-<iitm.pdf, id=99, 109.40875pt x 109.40875pt> <use iitm.pdf> [0{/usr/local/texli
-ve/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./iitm.pdf>]
+<iitm.pdf, id=131, 109.40875pt x 109.40875pt> <use iitm.pdf> [0{/usr/local/texl
+ive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./iitm.pdf>]
 (./intro.tex
 CHAPTER 1.
 [1] [2] [3]
@@ -199,9 +212,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--86
 
 [4] (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd) [5]
-<figures-bharath/critiquing.png, id=157, 487.8225pt x 524.96124pt>
+<figures-bharath/critiquing.png, id=190, 487.8225pt x 524.96124pt>
 <use figures-bharath/critiquing.png>
-<figures-bharath/rentMe.png, id=158, 497.86pt x 323.2075pt>
+<figures-bharath/rentMe.png, id=191, 497.86pt x 323.2075pt>
 <use figures-bharath/rentMe.png> [6 <./figures-bharath/critiquing.png> <./figur
 es-bharath/rentMe.png>]
 Overfull \hbox (7.1969pt too wide) in paragraph at lines 141--141
@@ -211,7 +224,7 @@ CHAPTER 2.
 [8] [9] [10] [11]
 Overfull \hbox (36.34294pt too wide) in paragraph at lines 110--125
  [][] 
-<figures-bharath/pbf.png, id=256, 885.3075pt x 522.95375pt>
+<figures-bharath/pbf.png, id=288, 885.3075pt x 522.95375pt>
 <use figures-bharath/pbf.png>
 Underfull \hbox (badness 10000) in paragraph at lines 140--159
 
@@ -219,7 +232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--159
 Underfull \hbox (badness 10000) in paragraph at lines 140--159
 
 [12] [13 <./figures-bharath/pbf.png>]
-<figures-bharath/entree.png, id=277, 704.6325pt x 430.60875pt>
+<figures-bharath/entree.png, id=309, 704.6325pt x 430.60875pt>
 <use figures-bharath/entree.png>
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlppl.fd)
 Underfull \hbox (badness 10000) in paragraph at lines 160--185
@@ -227,43 +240,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--185
 [14] [15 <./figures-bharath/entree.png>] [16]
 Overfull \hbox (4.2082pt too wide) in paragraph at lines 213--213
 []\OT1/ppl/b/n/17.28 Apriori Al-go-rithm Based Gen-er-a-tion of Dy-namic
-<figures-bharath/apriori.png, id=311, 629.7126pt x 542.025pt>
+<figures-bharath/apriori.png, id=343, 629.7126pt x 542.025pt>
 <use figures-bharath/apriori.png> [17 <./figures-bharath/apriori.png>]
-<figures-bharath/critiquePatterns.png, id=320, 912.40875pt x 312.16624pt>
+<figures-bharath/critiquePatterns.png, id=352, 912.40875pt x 312.16624pt>
 <use figures-bharath/critiquePatterns.png> [18 <./figures-bharath/critiquePatte
 rns.png>]
-Overfull \hbox (20.88275pt too wide) in paragraph at lines 263--263
+Overfull \hbox (20.88275pt too wide) in paragraph at lines 266--266
 []\OT1/ppl/b/n/17.28 Multi At-tribute Util-ity The-ory (MAUT) based Gen-
-<figures-bharath/maut.png, id=341, 652.4375pt x 653.44125pt>
+<figures-bharath/maut.png, id=373, 652.4375pt x 653.44125pt>
 <use figures-bharath/maut.png> [19]
-<figures-bharath/paperAlgo.png, id=347, 783.92876pt x 633.36626pt>
-<use figures-bharath/paperAlgo.png> [20 <./figures-bharath/maut.png>]
-<figures-bharath/pc_results.png, id=356, 610.28pt x 401.5pt>
+<figures-bharath/paperAlgo.png, id=383, 783.92876pt x 633.36626pt>
+<use figures-bharath/paperAlgo.png> [20 <./figures-bharath/maut.png>] [21 <./fi
+gures-bharath/paperAlgo.png>] [22]
+Overfull \hbox (4.57997pt too wide) in paragraph at lines 329--330
+\OT1/ppl/m/n/12 In ad-di-tion to the func-tions de-fined in Fig-ure []2.6[] the
+ func-tion $\OML/cmm/m/it/12 CalcUtility\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 PM; u
+\OT1/cmr/m/n/12 )$
+<figures-bharath/pc_results.png, id=413, 610.28pt x 401.5pt>
 <use figures-bharath/pc_results.png>
-<figures-bharath/apartment_results.png, id=357, 614.295pt x 403.5075pt>
-<use figures-bharath/apartment_results.png> [21 <./figures-bharath/paperAlgo.pn
-g>] [22 <./figures-bharath/pc_results.png> <./figures-bharath/apartment_results
-.png>] <figures-bharath/camera_liveUser.png, id=374, 371.3875pt x 277.035pt>
+<figures-bharath/apartment_results.png, id=418, 614.295pt x 403.5075pt>
+<use figures-bharath/apartment_results.png> [23 <./figures-bharath/pc_results.p
+ng> <./figures-bharath/apartment_results.png>]
+<figures-bharath/camera_liveUser.png, id=437, 371.3875pt x 277.035pt>
 <use figures-bharath/camera_liveUser.png>
-Underfull \hbox (badness 5652) in paragraph at lines 344--344
-\OT1/ppl/m/n/12 era dataset ([]Reilly \OT1/ppl/m/it/12 et al.[]
-<figures-bharath/accuracy_liveUser.png, id=379, 374.39874pt x 277.035pt>
+<figures-bharath/accuracy_liveUser.png, id=442, 374.39874pt x 277.035pt>
 <use figures-bharath/accuracy_liveUser.png>
-Underfull \hbox (badness 2134) in paragraph at lines 350--350
-[][]|\OT1/ppl/m/n/12 Avg rec-om-men-da-tion ac-
-) (./thesis.bbl [23 <./figures-bharath/camera_liveUser.png> <./figures-bharath/
-accuracy_liveUser.png>] [24] [25]) [26] (./thesis.aux) )
+Underfull \hbox (badness 10000) in paragraph at lines 414--444
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--444
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--444
+
+[24] [25 <./figures-bharath/camera_liveUser.png> <./figures-bharath/accuracy_li
+veUser.png>]
+<figures-bharath/firstQ_liveUser.png, id=465, 733.74126pt x 239.89626pt>
+<use figures-bharath/firstQ_liveUser.png>
+<figures-bharath/secondQ_liveUser.png, id=470, 726.715pt x 248.93pt>
+<use figures-bharath/secondQ_liveUser.png>) (./modifications.tex [26] [27 <./fi
+gures-bharath/firstQ_liveUser.png> <./figures-bharath/secondQ_liveUser.png>]
+CHAPTER 3.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsppl.fd)
+Overfull \hbox (9.74916pt too wide) in paragraph at lines 13--14
+[]\OT1/ppl/m/n/12 In a par-tic-u-lar rec-om-men-da-tion cy-cle, if all the cri-
+tique strings have "Higher
+(./chap3_diversity.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+[28] [29] <figures-bharath/diversity1.jpg, id=524, 338.26375pt x 380.42125pt>
+<use figures-bharath/diversity1.jpg>
+<figures-bharath/diversity2.jpg, id=525, 335.2525pt x 378.41376pt>
+<use figures-bharath/diversity2.jpg>) (./chap3_wMLTNominal.tex [30 <./figures-b
+harath/diversity1.jpg> <./figures-bharath/diversity2.jpg>])
+(./chap3_additionalTerm.tex [31]) (./chap3_adaptiveSelection.tex [32]))
+(./thesis.bbl [33] [34] [35]) [36] (./thesis.aux) )
 (see the transcript file for additional information){/usr/local/texlive/2011/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+ype1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/pa
-latino/uplb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/
-uplbi8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplr8a
-.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (27 pages, 3507150 bytes).
+ic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/pala
+tino/uplb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/up
+lbi8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
+fb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (37 pages, 3944074 bytes).
 Transcript written on thesis.log.

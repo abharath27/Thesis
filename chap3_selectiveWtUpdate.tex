@@ -1,0 +1,10 @@
+\section{Selectively updating the weights of numeric attributes}
+As seen in Section \ref{sec:maut}, the weight of a numeric attribute is either multiplied or divided by a constant factor $\beta (=2.0)$ depending on whether the new preference value is better than the old preference value or not.
+But this approach has some limitations as discussed in Section \ref{sec:limitations}.
+In a particular recommendation cycle, if all the critique strings have "Higher Price" as their sub-critique, the user is forced to select a critique string with "Higher Price".
+The MAUT based recommendation algorithm will decrease the weight of $price$ attribute by a factor of $\beta$ and the algorithm will thus promote higher priced products in the next cycle.
+We modify the implementation of MAUT based recommendation algorithm such that the weight of the $price$ attribute in such cases is not changed.
+As an extension to the above limitation, if we consider the case when there are four critique strings with "Lower Resolution" and one critique string with "Higher Resolution". 
+If the user selects critique string that has "Higher Resolution", we can infer that the user has strong preference for cameras with higher resolution and hence multiply the weight of the attribute 'resolution' by a higher factor.
+
+%Put table here...
