@@ -1,8 +1,9 @@
 \section{Additional preference to products that are similar to the most recent user selected product}
-In addition to updating weights of numeric attributes and updating value functions of nominal attributes, we give an additional preference to the products that have a similar critique pattern as that of the most recently selected product.
+In addition to updating weights of numeric attributes and value functions of nominal attributes, we give an additional preference to the products that have a similar critique pattern as that of the most recently selected product.
 The method of computing critique patterns for products has been discussed in Section \ref{sec:genCritique}.
-
-The $CalcUtility$ function (Algorithm \ref{algo:utility}) that is used to calculate utility of products at the beginning of each cycle is modified as follows:
+The intuition behind this modification is that, if the user selects the critique string "Lower Price, Higher Resolution but Higher Weight", he is interested in those products where this trade-off is obeyed.
+Considering only three attributes, Price, Resolution and Weight, if the critique pattern of the selected product is \{Price:$<$, Resolution:$>$, Weight:$>$\} and the critique pattern of a product $p$ in the case base is \{Price:$<$, Resolution:$>$, Weight:$<$\}, the overlap between the two critique patterns is 2/3.
+The function $CalcUtility(PM, u)$ (Algorithm \ref{algo:utility}), which is used to calculate utility of products at the beginning of each cycle is modified as follows:
 
 \begin{algorithm}[ht]
   \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
@@ -18,12 +19,24 @@ The $CalcUtility$ function (Algorithm \ref{algo:utility}) that is used to calcul
   retVal += $overlap(p1, p2)$;\\
   \Return retVal
   \caption{CalcUtility(PM, u)}
-  \label{algo:wMLT}
+  \label{algo:addPref}
 \end{algorithm}
 
 
 
 %\subsection{Generalization of the above where you can have multiple products}
+In Algorithm \ref{algo:addPref}, we have considered the critique overlap between a product in the case-base and the product that is most recently selected by the user.
+We now extend the above algorithm by considering the critique overlap of a product with all the products that have been selected so far.
+The additional term added to the utility of a product,\textit{overlapTerm} is calculated as follows:
+\begin{equation}
+\label{eq:addPref}
+addTerm(p) = \frac{\sum_{i=1}^{n} {w_i \times overlap(p,sel_i)}} {\sum_{i=1}^{n}w_i}
+\end{equation}
+In Equation \ref{eq:addPref}, $sel_i$ refers to the product selected by the user in $i^{th}$ cycle.
+$w_i$ is the weight/importance associated with the overlap between the product $p$ and product selected in $i^{th}$ cycle.
+In our implementation, we set $w_i = \frac{1}{2^{n-i}}$.
+The modified \textit{CalcUtility(PM, u)} function is as follows:
+
 \begin{algorithm}[ht]
   \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
   \DontPrintSemicolon
@@ -40,5 +53,5 @@ The $CalcUtility$ function (Algorithm \ref{algo:utility}) that is used to calcul
   }
   \Return retVal
   \caption{CalcUtility(PM, u)}
-  \label{algo:wMLT2}
+  \label{algo:addPref2}
 \end{algorithm}

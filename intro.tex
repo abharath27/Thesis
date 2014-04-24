@@ -4,8 +4,10 @@
 "Which digital camera should I buy? Which movie should I rent? Which book should I buy for my next vacation?" These are some situations where people have to make decisions about how they are going to spend money, or in a broader level, about their future.
 Traditionally, people have used a variety of strategies to solve such decision making problems: conversations with friends, obtaining information from a trusted third party, hiring an expert team or simply follow the crowd. 
 %It would be great to have an affordable personal advisor who helps us make good decisions efficiently.
-In the present age where e-commerce is flourishing, most e-commerce sites have very large number(often in millions) of products in their databases.
-For a user wanting to purchase a product, examining all the products (eg: books) present in the catalog one after another in the hope of a finding an product that is of interest to him is impractical.
+In the present age where e-commerce is flourishing, most e-commerce sites have very large number of products(often in millions) in their databases.
+For a user wanting to purchase a product, examining all the products (eg: mobile apps) present in the catalog one after another in the hope of a finding an product that is of interest to him is impractical.
+Keyword search is not going to be greatly helpful because an average user does not have a clear understanding of the product space and is often unclear with what kind of products he exactly wants.
+
 We would like to have systems that assist the user to find products of his interest and enable him to efficiently navigate through the complex product space.
 \textit{Recommender systems} are constructed for this purpose - assisting a user in his/her (online) decision-making.
 %In the present age when e-commerce is flourishing, sizes of product catalogs often is in thousands.
@@ -17,11 +19,11 @@ Recommender Systems are broadly classified into three categories: Collaborative,
 
 \section{Collaborative Recommender Systems}
 \label{sec:CF}
- The main idea in these systems is that if users share the same interests in the past - if they viewed or bought the same books - they will also have similar tastes in the future. 
+ The main idea in these systems is that if users share the same interests in the past - if they bought or similarly rated the same items - they will also have similar tastes in the future. 
 This technique is also called as \textit{Collaborative Filtering}(CF). 
 Pure CF based approaches require only rating data and do not require the additional knowledge about underlying users/items. 
 Hence, the algorithms are usually domain independent. Most commercial recommender sytems use collaborative filtering for recommending items.
-There are two approaches to do CF: Memory Based Approaches and Model Based Approaches
+There are two main approaches to perform CF: Memory Based Approaches and Model Based Approaches
 
 \subsection {Memory Based Approaches}
 In this approach, the original rating matrix is held in memory and directly used to generate predicted ratings and recommendations. There are two popular memory based approaches:\\
@@ -31,9 +33,9 @@ In this approach, the original rating matrix is held in memory and directly used
 
 
 \subsection {Model Based Approaches}
-As opposed to memory based approaches that use the ratings matrix to directly generate predictions, model based approaches learn models corresponding to each item and each user from ratings matrix and the learned models are used to make predictions at run time.
+As opposed to memory based approaches that use the ratings matrix to directly generate predictions, model based approaches learn models corresponding to each item and each user from the ratings matrix. The learned models are used to make predictions at run time.
 Model based approaches perform well in practice for large datasets.
-\textit{Matrix factorization} is a popular model based approach. The superiority of matrix factorization techniques over traditional CF in improving prediciton accuracy was clearly seen during \textit{The Netflix prize} competition.
+\textit{Matrix factorization} is a popular model based approach. The superiority of matrix factorization techniques over traditional CF in improving prediciton accuracy was clearly seen during \textit{'The Netflix prize'} competition(\cite{koren}).
 Broadly speaking, matrix factorization methods derive a set of latent(hidden) factors from the rating patterns and characterize each item and user as vectors of these factors.
 In the movie domain, such latent factors can correspond to some aspects of a movie like genre, but most of them are completely uninterpretable (\cite{koren})
 
@@ -41,10 +43,11 @@ In the movie domain, such latent factors can correspond to some aspects of a mov
 \subsection{Limitations of CF}
 \label{sec:limCF}
 \textbf{Cold Start Problem:} To provide recommendations for a user \textit{u}, pure CF techniques rely on \textit{u}'s ratings. This means that for a new user who has not yet rated a single item, there is no way of generating personalized recommendations (\textit{new-user problem}). 
-Similarly, a new item that has been recently added to the catalog and has not been rated by a single user, has no possibility of being recommended to a user (\textit{new-item problem})\\
+Similarly, for a new item that has been recently added to the catalog and has not been rated by a single user, there is no way for it to be recommended to a user (\textit{new-item problem}).\\
 \textbf{Sparsity:} The relavance and accuracy of CF recommender's predictions is high when the user-item ratings matrix is dense.
 But in real-world systems, the rating matrices are typically very sparse and thus, the quality of recommendations of pure CF approaches may not be good.
-For example, a user \textit{u} whose rating pattern is very different from most of the other users would find it difficult to receive useful recommendations because the number of similar users to \textit{u} is very less(\cite{balab1997}).
+As an example, consider a user \textit{u} whose rating pattern is very different from most of the other users. 
+He would find it difficult to receive useful recommendations because the number of similar users to \textit{u} is very less(\cite{balab1997}).
 
 
 
@@ -57,13 +60,13 @@ For example, a user \textit{u} whose rating pattern is very different from most 
 \label{sec:content}
 Collaborative Filtering Systems do not require any knowledge about underlying users/items to make recommendations.
 As opposed to this, content based recommender systems rely on item descriptions and explicit/learned user profiles to recommend items.
-For example, if the recommender system knows that "Harry Potter" is a fantasy novel and the user \textit{Alice} has always like fantasy novels, the system can recommend the new "Harry Potter" book right away. 
+For example, if the recommender system knows that \textit{Harry Potter} is a fantasy novel and the user Alice has always like fantasy novels, the system can recommend the new \textit{Harry Potter} book right away. 
 Content-based recommender systems need not rely on the existence of a large user base to generate recommendations.
-It overcomes the cold-start problem described in Section ~\ref{sec:limCF}. However, item characteristics are hard to acquire normally and hence, they have to be entered manually into the system, which can be potentially expensive for some domains.
+It overcomes the cold-start problem described in Section ~\ref{sec:limCF}. However, item characteristics are hard to acquire normally and hence, they have to be entered manually into the system, which can be potentially expensive for some domains (Eg: music).
 
 Having its roots in \textit{Information Retrieval}(IR), content based recommendation most often focuses on textual products - items which can be described in terms of textual features (Eg: documents, news articles and websites).
 Most news recommendation systems use content based recommendation to recommend relevant news articles to the users.
-A news recommendation system typically recommends news articles by comparing the main keywords of a news article with the keywords that appeared in other articles that the user has rated highly in the past.
+A news recommendation system typically recommends news articles by comparing the main keywords of a news article with the keywords in articles that the user has rated highly in the past.
 There are two ways in which content based systems can create user-profiles- 
 by explicitly asking the user to rate a set of items/topics/categories when the user is new to the system
 or by "learning" the user profile automatically by examining the user's past behavior/ratings.
@@ -71,38 +74,39 @@ Learning user profiles from user's past behavior can be expensive and sometimes 
 But it has the advantage that it requires no effort from the user.
 
 \subsection{Limitations of Content-based Recommendation}
-\textbf{Limited Content Analysis:} Content-based recommender systems perform a shallow content analysis which might not be sufficient in many scenarios (\cite{jannach}). Particularly for recommending resources such as web pages, aspects other than the keywords like aesthetics, usability and correctness of hyperlinks play a part in establishing the quality of recommendations (\cite{jannach}).
+\textbf{Limited Content Analysis:} Content-based recommender systems perform a shallow content analysis which might not be sufficient in many scenarios. Particularly, for recommending resources such as web pages, aspects other than the keywords like aesthetics, usability and correctness of hyperlinks play a part in establishing the quality of recommendations (\cite{jannach}).
 Also, content based recommender systems using limited content analysis based on just keywords, have no way to distinguish between well written and poorly written articles, both of which use the same set of keywords. 
-Feature extraction techniques for text documents is relatively mature, but the same cannot be said about many multimedia objects like images and videos
+Also, feature extraction techniques for text documents is relatively mature, but the same cannot be said about many multimedia objects like images and videos.
 Hence, the usability of content-based recommender systems is limited in multimedia domain. (\cite{adom2005})\\
 \\
 \textbf{Overspecialization:}  Another drawback of content based recommender systems is that they often tend to recommend items that the user might have already seen/rated. 
 A general goal therefore is to increase the serendipity of the recommendation lists - that is, to include "unexpected" items in which the user might be interested in.
-The system described by \cite{billsus} therefore defines a threshold to filter out not only items that are too different from the profile but also those that are too similar.\\
+The system described by \cite{billsus} therefore defines a threshold to filter out not only items that are too different from the user profile but also those that are too similar.\\
 \\
-\textbf{New user problem:} The cold-start problem discussed in Section \ref{sec:limCF} also exists for content based recommender systems.
+\textbf{New user problem:} The new user problem discussed in Section \ref{sec:limCF} also exists for content based recommender systems.
 Although content-based techniques do not require a large user community, they require at least an initial set of ratings from the user, typically a set of explicit \textit{like} and \textit{dislike} statements.
-The prediction accuracy of these systems improves with increase in the number of ratings.
+Content-based recommenders do not have the new item problem. 
+Given a new item, the recommender system matches the new item's features to existing user profiles and recommends it directly to relevant users.
 
 \section{Knowledge based recommender systems}
 Collaborative filtering systems, discussed in Section \ref{sec:CF} suggest items to user based on user's past ratings.
-Content based recommender systems, discussed in Section \ref{sec:content} recommend those items whose features match the user's profile.
-However there are some domains in which both collaborative and content based methods have limitations.
-Typically, we do not buy a house, a car or a computer very frequently. 
+Content based recommender systems, discussed in Section \ref{sec:content} recommend items whose features match the user's profile.
+Consider some high-risk product domains like houses, cars, computers etc.
+Typically, users do not buy a house, a car or a computer very frequently. 
 In such a scenario, both collaborative-filtering or content-based recommender systems may not be able to generate relavant recommendations because of the low number of available ratings.
 User-profiles learnt by content-based systems may not be useful for making recommendations due to a heavy influence of time effects(change in user's interests and product catalogs with time). 
-For example, if a user has given a high rating to a 'Pentium III' computer four years ago, we cannot rely on that rating for generating relevant recommendations.
+For example, if a user has given a high rating to a 'Pentium III' computer four years ago, the recommender system cannot rely on that rating for generating relevant recommendations for the current day.
 In complex and high-risk product domains such as computers, customers often want to define their requirements explicitly - for example, "the maximum price of the computer should be $x$ and the hard-disk capacity should be atleast \textit{500GB}".
 Knowledge based systems are used to provide recommendations in such scenarios.
 %In knowledge based systems, recommendations are made taking into account the explicit user preferences and the rich knowledge base available.
-Recommendation process of knowledge-based recommender applications is highly interactive, a foundational property that is a reason for their characterization as \textit{\textbf{conversational systems}}. The recommender system that we consider in this project is a conversational recommender system.
 
-Conversational systems assume that a user's initial query is merely a starting point for search, perhaps even an unreliable starting point. The job of a conversational system is to help the user refine his initial preference query as the interactions proceed.
-Knowledge-based recommender systems can be divided into two classes: constraint-based and case-based recommender systems.
+Knowledge-based recommender systems can be divided into two categories: constraint-based and case-based.
 Constraint-based recommender systems rely on explicit recommendation rules and case-based recommender systems use similarity/utility measures to generate recommendations. 
-Specifically, constraint-based recommendation is generated by looking at a collection of items satisfying the recommendation rules; case-based recommendation is typically generated based on similarity of the items in the database with the user defined query.
-MAUT based recommendation falls in the category of case-based recommendation. We discuss case-based recommendation in detail in Chapter \ref{chap:background}
+A case-based recommendation is typically generated based on similarity of the items in the casebase with the user defined query.
+Case-based recommendation and the algorithm for MAUT based recommendation are discussed in detail in Chapter \ref{chap:background}.
 
+Recommendation process of knowledge-based recommender applications is highly interactive, a foundational property that is a reason for their characterization as \textit{\textbf{conversational systems}}. The recommender system that we consider in this project is a conversational recommender system.
+Conversational systems assume that a user's initial query is merely a starting point for search, perhaps even an unreliable starting point. The job of a conversational system is to help the user refine his initial preference query as the interactions proceed.
 \subsection{Critiquing}
 \label{sec:critiquing}
 
@@ -123,7 +127,7 @@ MAUT based recommendation falls in the category of case-based recommendation. We
 \end{figure}
 \textit{\textbf{Critiquing}} is one of the most popular forms of feedback in conversational recommender systems. In each interaction cycle, the user is presented with a list of products.
 User selects a product and expresses directional preference(s) over one or more item feature values. 
-For example, one might indicate that he/she is looking for a less expensive restaurant or a more formal setting(Figure \ref{fig:rentMe}). These are two individual critiques, first critique being on the \textit{price} attribute and the second critique on the \textit{setting} attribute. 
+For example, one might indicate that he is looking for a less expensive restaurant or a more formal setting(Figure \ref{fig:rentMe}). These are two individual critiques, first critique being on the \textit{price} attribute and the second critique on the \textit{setting} attribute. 
 The recommender updates it's user model according to this feedback provides another set of products and proceeds to the next recommendation cycle. This continues till the user finally chooses a product. (Figure \ref{fig:critiquing})
 
 \textit{\textbf{Unit critiques}} allow users to express their preference over one attribute in each interaction cycle. \textit{\textbf{Compound critiques}} enable users to input their preferences on several attributes at a time. This can potentially shorten the number of interaction cycles in finding a target product.
@@ -135,8 +139,13 @@ The notion of \textit{\textbf{dynamic critiquing}} was first proposed by \cite{m
 Compound critiques are generated on-the-fly for each recommendation cycle. Dynamic critiquing has been shown to improve user-experience and lower the average number of interaction cycles it takes for a customer to find his desired product.
 
 There are two popular approaches to dynamic critiquing: Apriori algorithm based generation of compound critiques (\cite{mccarthy2004dynamic}) and MAUT based generation of compound critiques (\cite{mautPaper}). 
-The algorithm for MAUT based recommendation is discussed in Chapter \ref{chap:background}.
+The algorithm for MAUT based recommendation is discussed in Section \ref{sec:maut}.
 
+\subsection{Limitations of Knowledge based recommendation}
+Knowledge based recommenders require a high level of knowledge engineering effort.
+One needs to define local similarity functions, utility measures, assign weights to features etc.
+%Offline evaluation is generally not very reliable in these systems.
+%We need to conduct live user studies to prove the efficiency of 
 
 \section{Our contribution: Improvements to MAUT based recommendation}
 \section{Organization of the Thesis}

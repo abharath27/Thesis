@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  23 APR 2014 20:31
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  24 APR 2014 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,7 +922,7 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 50.
 
-<iitm.pdf, id=151, 109.40875pt x 109.40875pt>
+<iitm.pdf, id=159, 109.40875pt x 109.40875pt>
 File: iitm.pdf Graphic file (type pdf)
  <use iitm.pdf>
 Package pdftex.def Info: iitm.pdf used on input line 50.
@@ -937,230 +937,239 @@ CHAPTER 1.
 
 
 ] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 74--86
+Underfull \hbox (badness 10000) in paragraph at lines 77--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--86
+Underfull \hbox (badness 10000) in paragraph at lines 77--90
 
  []
 
 [4]
-LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
+) [5]
+Overfull \hbox (1.0599pt too wide) in paragraph at lines 103--107
+[]\OT1/ppl/m/n/12 Knowledge-based rec-om-mender sys-tems can be di-vided into t
+wo cat-e-gories:
+ []
+
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 98.
- [5]
-<figures-bharath/critiquing.png, id=210, 487.8225pt x 524.96124pt>
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 108.
+<figures-bharath/critiquing.png, id=216, 487.8225pt x 524.96124pt>
 File: figures-bharath/critiquing.png Graphic file (type png)
 
 <use figures-bharath/critiquing.png>
-Package pdftex.def Info: figures-bharath/critiquing.png used on input line 113.
+Package pdftex.def Info: figures-bharath/critiquing.png used on input line 117.
 
 (pdftex.def)             Requested size: 208.41644pt x 224.28708pt.
 
-<figures-bharath/rentMe.png, id=211, 497.86pt x 323.2075pt>
+<figures-bharath/rentMe.png, id=217, 497.86pt x 323.2075pt>
 File: figures-bharath/rentMe.png Graphic file (type png)
 
 <use figures-bharath/rentMe.png>
-Package pdftex.def Info: figures-bharath/rentMe.png used on input line 119.
+Package pdftex.def Info: figures-bharath/rentMe.png used on input line 123.
 (pdftex.def)             Requested size: 208.41644pt x 135.30237pt.
- [6 <./figures-bharath/critiquing.png> <./figures-bharath/rentMe.png>]
-Overfull \hbox (7.1969pt too wide) in paragraph at lines 141--141
+ [6 <./figures-bharath/critiquing.png> <./figures-bharath/rentMe.png>] [7]
+Overfull \hbox (7.1969pt too wide) in paragraph at lines 150--150
 []\OT1/ppl/b/n/17.28 Our con-tri-bu-tion: Im-prove-ments to MAUT based
  []
 
-) (./background.tex [7]
+) (./background.tex [8]
 CHAPTER 2.
-[8
+[9
 
-] [9]
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ˜ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ˜ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
+]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 51.
  [10]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
+Missing character: There is no ˜ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
- [11]
-Overfull \hbox (36.34294pt too wide) in paragraph at lines 110--125
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ˜ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+ [11] [12]
+Overfull \hbox (36.34294pt too wide) in paragraph at lines 119--134
  [][] 
  []
 
-<figures-bharath/pbf.png, id=309, 885.3075pt x 522.95375pt>
+[13] <figures-bharath/pbf.png, id=336, 885.3075pt x 522.95375pt>
 File: figures-bharath/pbf.png Graphic file (type png)
 
 <use figures-bharath/pbf.png>
-Package pdftex.def Info: figures-bharath/pbf.png used on input line 129.
+Package pdftex.def Info: figures-bharath/pbf.png used on input line 153.
 (pdftex.def)             Requested size: 416.83289pt x 246.22717pt.
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--180
 
  []
 
-[12] [13 <./figures-bharath/pbf.png>]
-<figures-bharath/entree.png, id=331, 704.6325pt x 430.60875pt>
+[14 <./figures-bharath/pbf.png>]
+<figures-bharath/entree.png, id=354, 704.6325pt x 430.60875pt>
 File: figures-bharath/entree.png Graphic file (type png)
 
 <use figures-bharath/entree.png>
-Package pdftex.def Info: figures-bharath/entree.png used on input line 170.
+Package pdftex.def Info: figures-bharath/entree.png used on input line 191.
 (pdftex.def)             Requested size: 416.83289pt x 254.72714pt.
-LaTeX Font Info:    Try loading font information for OML+ppl on input line 184.
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--206
+
+ []
+
+[15] [16 <./figures-bharath/entree.png>] [17]
+Overfull \hbox (4.2082pt too wide) in paragraph at lines 239--239
+[]\OT1/ppl/b/n/17.28 Apriori Al-go-rithm Based Gen-er-a-tion of Dy-namic
+ []
+
+<figures-bharath/apriori.png, id=387, 629.7126pt x 542.025pt>
+File: figures-bharath/apriori.png Graphic file (type png)
+
+<use figures-bharath/apriori.png>
+Package pdftex.def Info: figures-bharath/apriori.png used on input line 243.
+(pdftex.def)             Requested size: 333.46758pt x 287.0403pt.
+
+<figures-bharath/critiquePatterns.png, id=391, 912.40875pt x 312.16624pt>
+File: figures-bharath/critiquePatterns.png Graphic file (type png)
+
+<use figures-bharath/critiquePatterns.png>
+Package pdftex.def Info: figures-bharath/critiquePatterns.png used on input lin
+e 258.
+(pdftex.def)             Requested size: 416.83289pt x 142.61221pt.
+ [18]
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 271.
 
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlppl.fd
 File: omlppl.fd 
 )
 LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 184.
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--185
-
- []
-
-[14] [15 <./figures-bharath/entree.png>] [16]
-Overfull \hbox (4.2082pt too wide) in paragraph at lines 213--213
-[]\OT1/ppl/b/n/17.28 Apriori Al-go-rithm Based Gen-er-a-tion of Dy-namic
- []
-
-<figures-bharath/apriori.png, id=364, 629.7126pt x 542.025pt>
-File: figures-bharath/apriori.png Graphic file (type png)
-
-<use figures-bharath/apriori.png>
-Package pdftex.def Info: figures-bharath/apriori.png used on input line 217.
-(pdftex.def)             Requested size: 333.46758pt x 287.0403pt.
- [17 <./figures-bharath/apriori.png>]
-<figures-bharath/critiquePatterns.png, id=373, 912.40875pt x 312.16624pt>
-File: figures-bharath/critiquePatterns.png Graphic file (type png)
-
-<use figures-bharath/critiquePatterns.png>
-Package pdftex.def Info: figures-bharath/critiquePatterns.png used on input lin
-e 232.
-(pdftex.def)             Requested size: 416.83289pt x 142.61221pt.
- [18 <./figures-bharath/critiquePatterns.png>]
-Overfull \hbox (20.88275pt too wide) in paragraph at lines 266--266
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 271.
+ [19 <./figures-bharath/apriori.png> <./figures-bharath/critiquePatterns.png>] 
+[20]
+Overfull \hbox (20.88275pt too wide) in paragraph at lines 293--293
 []\OT1/ppl/b/n/17.28 Multi At-tribute Util-ity The-ory (MAUT) based Gen-
  []
 
-<figures-bharath/maut.png, id=394, 652.4375pt x 653.44125pt>
+<figures-bharath/maut.png, id=423, 652.4375pt x 653.44125pt>
 File: figures-bharath/maut.png Graphic file (type png)
 
 <use figures-bharath/maut.png>
-Package pdftex.def Info: figures-bharath/maut.png used on input line 276.
+Package pdftex.def Info: figures-bharath/maut.png used on input line 303.
 (pdftex.def)             Requested size: 333.46758pt x 333.98846pt.
- [19]
-<figures-bharath/paperAlgo.png, id=404, 783.92876pt x 633.36626pt>
+
+<figures-bharath/paperAlgo.png, id=428, 783.92876pt x 633.36626pt>
 File: figures-bharath/paperAlgo.png Graphic file (type png)
 
 <use figures-bharath/paperAlgo.png>
-Package pdftex.def Info: figures-bharath/paperAlgo.png used on input line 283.
+Package pdftex.def Info: figures-bharath/paperAlgo.png used on input line 310.
 (pdftex.def)             Requested size: 375.14705pt x 303.09424pt.
- [20 <./figures-bharath/maut.png>] [21 <./figures-bharath/paperAlgo.png>] [22]
-Overfull \hbox (23.82596pt too wide) in paragraph at lines 336--345
-\OT1/ppl/m/n/12 in the im-ple-men-ta-tion are not men-tioned. For nom-i-nal at-
-tributes (Eg:manufacturer),
- []
-
-
-Overfull \hbox (4.57997pt too wide) in paragraph at lines 349--350
+ [21] [22 <./figures-bharath/maut.png> <./figures-bharath/paperAlgo.png>] [23] 
+[24]
+Overfull \hbox (4.57997pt too wide) in paragraph at lines 382--383
 \OT1/ppl/m/n/12 In ad-di-tion to the func-tions de-fined in Fig-ure []2.6[] the
  func-tion $\OML/cmm/m/it/12 CalcUtility\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 PM; u
 \OT1/cmr/m/n/12 )$
  []
 
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 356.
-<figures-bharath/pc_results.png, id=440, 610.28pt x 401.5pt>
+<figures-bharath/pc_results.png, id=468, 610.28pt x 401.5pt>
 File: figures-bharath/pc_results.png Graphic file (type png)
 
 <use figures-bharath/pc_results.png>
-Package pdftex.def Info: figures-bharath/pc_results.png used on input line 375.
+Package pdftex.def Info: figures-bharath/pc_results.png used on input line 408.
 
 (pdftex.def)             Requested size: 187.57352pt x 123.40384pt.
 
-<figures-bharath/apartment_results.png, id=445, 614.295pt x 403.5075pt>
+<figures-bharath/apartment_results.png, id=473, 614.295pt x 403.5075pt>
 File: figures-bharath/apartment_results.png Graphic file (type png)
 
 <use figures-bharath/apartment_results.png>
 Package pdftex.def Info: figures-bharath/apartment_results.png used on input li
-ne 382.
+ne 415.
 (pdftex.def)             Requested size: 187.57352pt x 123.20813pt.
- [23] [24 <./figures-bharath/pc_results.png> <./figures-bharath/apartment_resul
-ts.png>]
-<figures-bharath/camera_liveUser.png, id=470, 371.3875pt x 277.035pt>
+ [25 <./figures-bharath/pc_results.png> <./figures-bharath/apartment_results.pn
+g>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 445.
+
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (30.33264pt too wide) in paragraph at lines 444--446
+\OT1/ppl/m/n/12 tributes. This data set is avail-able at []$\OT1/pcr/m/n/12 htt
+p : / / www . cs . ucd . ie / staff / lmcginty /
+ []
+
+<figures-bharath/camera_liveUser.png, id=495, 371.3875pt x 277.035pt>
 File: figures-bharath/camera_liveUser.png Graphic file (type png)
 
 <use figures-bharath/camera_liveUser.png>
 Package pdftex.def Info: figures-bharath/camera_liveUser.png used on input line
- 420.
+ 459.
 (pdftex.def)             Requested size: 187.57352pt x 139.92058pt.
 
-<figures-bharath/accuracy_liveUser.png, id=475, 374.39874pt x 277.035pt>
+<figures-bharath/accuracy_liveUser.png, id=500, 374.39874pt x 277.035pt>
 File: figures-bharath/accuracy_liveUser.png Graphic file (type png)
 
 <use figures-bharath/accuracy_liveUser.png>
 Package pdftex.def Info: figures-bharath/accuracy_liveUser.png used on input li
-ne 427.
+ne 466.
 (pdftex.def)             Requested size: 187.57352pt x 138.79614pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--464
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--464
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--464
-
- []
-
-[25 <./figures-bharath/camera_liveUser.png> <./figures-bharath/accuracy_liveUse
-r.png>] [26]
-<figures-bharath/firstQ_liveUser.png, id=496, 733.74126pt x 239.89626pt>
+<figures-bharath/firstQ_liveUser.png, id=507, 733.74126pt x 239.89626pt>
 File: figures-bharath/firstQ_liveUser.png Graphic file (type png)
 
 <use figures-bharath/firstQ_liveUser.png>
 Package pdftex.def Info: figures-bharath/firstQ_liveUser.png used on input line
- 471.
+ 483.
 (pdftex.def)             Requested size: 250.10226pt x 81.76863pt.
 
-<figures-bharath/secondQ_liveUser.png, id=501, 726.715pt x 248.93pt>
+<figures-bharath/secondQ_liveUser.png, id=512, 726.715pt x 248.93pt>
 File: figures-bharath/secondQ_liveUser.png Graphic file (type png)
 
 <use figures-bharath/secondQ_liveUser.png>
 Package pdftex.def Info: figures-bharath/secondQ_liveUser.png used on input lin
-e 474.
+e 486.
 (pdftex.def)             Requested size: 250.10226pt x 85.66823pt.
-) (./modifications.tex [27 <./figures-bharath/firstQ_liveUser.png> <./figures-b
-harath/secondQ_liveUser.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--516
+
+ []
+
+[26] [27 <./figures-bharath/camera_liveUser.png> <./figures-bharath/accuracy_li
+veUser.png> <./figures-bharath/firstQ_liveUser.png> <./figures-bharath/secondQ_
+liveUser.png>] [28]) (./modifications.tex [29]
 CHAPTER 3.
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 11.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsppl.fd
@@ -1174,38 +1183,43 @@ Overfull \hbox (9.74916pt too wide) in paragraph at lines 14--15
 tique strings have "Higher
  []
 
-(./chap3_diversity.tex [28
+(./chap3_diversity.tex [30
 
-] [29]
-<figures-bharath/diversity1.jpg, id=540, 338.26375pt x 380.42125pt>
+]
+<figures-bharath/diversity1.jpg, id=551, 338.26375pt x 380.42125pt>
 File: figures-bharath/diversity1.jpg Graphic file (type jpg)
 
 <use figures-bharath/diversity1.jpg>
-Package pdftex.def Info: figures-bharath/diversity1.jpg used on input line 62.
+Package pdftex.def Info: figures-bharath/diversity1.jpg used on input line 7.
 (pdftex.def)             Requested size: 187.57352pt x 210.95633pt.
 
-<figures-bharath/diversity2.jpg, id=541, 335.2525pt x 378.41376pt>
+<figures-bharath/diversity2.jpg, id=552, 335.2525pt x 378.41376pt>
 File: figures-bharath/diversity2.jpg Graphic file (type jpg)
 
 <use figures-bharath/diversity2.jpg>
-Package pdftex.def Info: figures-bharath/diversity2.jpg used on input line 69.
+Package pdftex.def Info: figures-bharath/diversity2.jpg used on input line 14.
 (pdftex.def)             Requested size: 187.57352pt x 211.71971pt.
-) (./chap3_wMLTNominal.tex [30 <./figures-bharath/diversity1.jpg> <./figures-bh
-arath/diversity2.jpg>])
-(./chap3_additionalTerm.tex [31]) (./chap3_adaptiveSelection.tex [32])
-(./chap3_marketEq.tex [33]) (./chap3_selectiveWtUpdate.tex [34])
-(./chap3_history.tex [35]) (./chap3_simProdFirstCycle.tex)) (./thesis.bbl
-[36] [37] [38
+ [31 <./figures-bharath/diversity1.jpg> <./figures-bharath/diversity2.jpg>]) (.
+/chap3_wMLTNominal.tex [32])
+(./chap3_additionalTerm.tex [33] [34]) (./chap3_adaptiveSelection.tex [35])
+(./chap3_marketEq.tex [36]) (./chap3_selectiveWtUpdate.tex [37])
+(./chap3_history.tex) (./chap3_simProdFirstCycle.tex) (./chap3_additive.tex
+[38]
+Overfull \hbox (19.9334pt too wide) in paragraph at lines 1--1
+[]\OT1/ppl/b/n/17.28 Additive model for up-dat-ing weights of at-tributes 
+ []
 
-] [39])
+)) (./thesis.bbl [39] [40
+
+] [41])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [40]
+ [42]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 862AA1D43D1875F297585D63C9C96623;3038.
+(rerunfilecheck)             Checksum: CF3846E1D28EF2B2DA20C26274816F8F;3233.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1213,11 +1227,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 19518 strings out of 493633
- 332597 string characters out of 3143377
- 432234 words of memory out of 3000000
- 22187 multiletter control sequences out of 15000+200000
- 20080 words of font info for 58 fonts, out of 3000000 for 9000
+ 19578 strings out of 493633
+ 333454 string characters out of 3143377
+ 433495 words of memory out of 3000000
+ 22224 multiletter control sequences out of 15000+200000
+ 20595 words of font info for 60 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  56i,15n,55p,476b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1232,14 +1246,15 @@ ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 11/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
 1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/te
-xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2011/texmf-dis
-t/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2011/texmf-dist/font
-s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
-/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (41 pages, 3955215 bytes).
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2011/texmf-dist
+/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
+urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/pal
+atino/uplri8a.pfb>
+Output written on thesis.pdf (43 pages, 3971632 bytes).
 PDF statistics:
- 773 PDF objects out of 1000 (max. 8388607)
- 667 compressed objects within 7 object streams
- 212 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 709 compressed objects within 8 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 
