@@ -1,23 +1,29 @@
-\section{Initializing the value functions of nominal attributes differently}
+\section{Initializing the value functions of nominal attributes with unequal values}
 The default strategy for initializing value functions of nominal attributes as described in Section \ref{sec:maut} is to initialize them with equal values. 
-For example, in the PC dataset, if there are 8 different manufacturers (Eg: 'Apple', 'HP', 'Compaq' etc.), the values associated with each of the manufacturers at the beginning of the recommendation session is initialized to $1/8$.
+For example, in the PC dataset, if there are 8 different manufacturers (Eg: 'Apple', 'HP', 'Compaq' etc.), the value associated with each of the manufacturers at the beginning of the recommendation session is initialized to $1/8$.
 In this section, we will look at a different way to initialize the value functions that can lead to better performance.
 
 A product $p$ is called as a \textit{dominator} of product $q$, if all the attribute values of  $p$ are 'better than' (or dominate) that of $q$. 
-We say that the product $q$ is \textit{dominated} by the product $p$.
+We can also say that the product $q$ is \textit{dominated} by the product $p$.
 For LIB ('Less Is Better') attributes (Eg: Price), lower price is 'better than' higher price.
-For MIB ('Less Is Better') attributes (Eg: Resolution), higher resolution is 'better than' lower resolution.
+For MIB ('Less Is Better') attributes (Eg: Disk Storage), higher storage is 'better than' lower storage.
 For nominal attributes (Eg: Manufacturer), it is challenging to define an ordering among the attribute values.
-Intuitively, we can see that a product $p$ should not have a dominator. 
+Consider two PCs $a$ and $b$ with 4 attributes.
+Product $a$: \{Manufacturer: Apple, Price: \$1400, Weight: 2.1kg, Storage: 320GB\}
+Product $b$: \{Manufacturer: Acer, Price: \$1000, Weight: 2.0kg, Storage: 500GB\}
+We can say that Product $b$ dominates Product $a$ with respect to all numeric attributes.
+Intuitively, we can see that any given product $p$ should not have a dominator $q$ with respect to all attributes.
 If there exists a product $q$ which is better than product $p$ in all attributes, there would be no demand for product $p$ in the market because people would just purchase product $q$ instead of $p$.
 
-Using the intuition above, we can say that products that have many dominators with respect to all the numeric attributes should have nominal attributes of high value.
-For example, in the PC dataset containing 120 PCs, "Apple" computers have 21.6 dominators on an average. 
+Using the intuition above, we can say that a product which has many dominators with respect to all the numeric attributes should have nominal attributes of high value.
+For example, in the PC dataset containing 120 PCs, an "Apple" computer has 21.6 dominators on an average (w.r.t. numeric attributes).
 So we can infer that the manufacturer "Apple" should have a higher value than other manufacturers. 
-If it were not the case, then "Apple" computers would have several dominating products and there would be no demand for them.
+If the manufacturer Apple did not have a higher value compared to other manufacturers, then Apple computers would cease to exist in the market.
 
-Instead, we compute the average number of dominators for products of each 'manufacturer' and initialize their values in the ratio of the number of dominators.
-The number of dominators for products of each manufacturer and the values with which each of them is initialized is given in Table \ref{tab:marketEq}
+We first compute the average number of dominators for products of each 'manufacturer' and initialize their values in the ratio of the number of dominators.
+The number of dominators for products of each manufacturer and the values with which each of them is initialized is given in Table \ref{tab:marketEq}.
+In the experiments, in both PC and Camera datasets, we have initialized only the "Manufacturer" attribute with unequal values. Other nominal attributes were initialized to equal values. This led to a decent performance improvement.
+We have consider initializing other nominal attributes with unequal values, but that performed worser than the actual MAUT algorithm.
 
 
 \begin{table}

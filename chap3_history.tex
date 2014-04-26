@@ -1,7 +1,22 @@
 \section{Considering history of user selected products}
-In Figure \ref{fig:maut}, $ref$ is the product selected by the user in previous interaction cycle.
-Preference model is updated only considering the most recently selected product's attribute values.
-Instead, we now maintain a list of products selected by the user in previous interaction cycles and update the model according to the weighted average of these products' attributes.
+%In Figure \ref{fig:maut}, $ref$ is the product selected by the user in previous interaction cycle.
+As seen in Section \ref{sec:maut}, after the user selects a critique string, preference model is updated only based on the product corresponding to this critiquing string.
+Instead, we now maintain a list of products corresponding to the critique strings selected by the user in previous interaction cycles and update the model according to the weighted average of these products' attributes.
+For example, if the prices of the products selected by the user in the first four cycles are \$250, \$200, \$200 and \$400.
+If he chooses a product with a price \$800 in the fifth cycle, the standard MAUT algorithm will make \$800 as the preferred value of 'price' attribute in it's user model and divide by weight of the price attribute by $\beta$, because the price of the reference product is \$350.
+However, the user might have most likely selected the product with price \$800 because he likes other features of the product.
+When this product becomes the reference product in the next cycle, the user will most likely choose "Lower Price" critique because all his previous preferrred products have a price around \$400.
+Instead of making \$800 as the preferred price, we compute the weighted average ($wa$) of all previous product prices and make that as the preferred price and update the weight of 'price' attribute based on the value of $wa$.
+%In general, the weights of numeric attributes will be updated based on weighted average of previously selected products' attribute values.
+In our implementation, we considered the weight associated with $i^{th}$ product is $\frac{1}{n}$. 
+Hence the preferred price for the given example will be:
+\begin{equation}
+wa = \frac{250+200+200+400+800} {5} = 370
+\end{equation}
+The value of new preferred price(\$370) is less than the old preferred price (\$400).
+Hence, the weight of the price attribute is multiplied by a factor of $\beta$ and lower priced products are promoted in the next cycle instead of higher priced ones.
+Note that this strategy is applicable only to numeric attributes.
+The value functions of nominal attributes are updated in the standard way as described in Section \ref{sec:valueFunc}.
 The function UpdateModel($PM$, $ref$) is updated as follows:
 
 

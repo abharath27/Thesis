@@ -184,11 +184,15 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz))
 (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/multicol.sty)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/multirow/multirow.sty)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mathtools.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/calc.sty)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mhsetup.sty)) (./macros.tex)
-(./rl-macros.tex) (./gp-macros.tex) (./sw-macros.tex) (./thesis.aux)
-(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ppl.fd)
+(./rl-macros.tex) (./gp-macros.tex) (./sw-macros.tex) (./thesis.aux
+
+LaTeX Warning: Label `eq:quality' multiply defined.
+
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ppl.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/ltcaption.sty)
@@ -200,101 +204,118 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (./thesis.out) (./thesis.out) ABD: EveryShipout initializing macros
-<iitm.pdf, id=131, 109.40875pt x 109.40875pt> <use iitm.pdf> [0{/usr/local/texl
+<iitm.pdf, id=159, 109.40875pt x 109.40875pt> <use iitm.pdf> [0{/usr/local/texl
 ive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./iitm.pdf>]
 (./intro.tex
 CHAPTER 1.
 [1] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 74--86
+Underfull \hbox (badness 10000) in paragraph at lines 77--90
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--86
+Underfull \hbox (badness 10000) in paragraph at lines 77--90
 
 [4] (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd) [5]
-<figures-bharath/critiquing.png, id=190, 487.8225pt x 524.96124pt>
+Overfull \hbox (1.0599pt too wide) in paragraph at lines 103--107
+[]\OT1/ppl/m/n/12 Knowledge-based rec-om-mender sys-tems can be di-vided into t
+wo cat-e-gories:
+<figures-bharath/critiquing.png, id=216, 487.8225pt x 524.96124pt>
 <use figures-bharath/critiquing.png>
-<figures-bharath/rentMe.png, id=191, 497.86pt x 323.2075pt>
+<figures-bharath/rentMe.png, id=217, 497.86pt x 323.2075pt>
 <use figures-bharath/rentMe.png> [6 <./figures-bharath/critiquing.png> <./figur
-es-bharath/rentMe.png>]
-Overfull \hbox (7.1969pt too wide) in paragraph at lines 141--141
+es-bharath/rentMe.png>] [7]
+Overfull \hbox (7.1969pt too wide) in paragraph at lines 150--150
 []\OT1/ppl/b/n/17.28 Our con-tri-bu-tion: Im-prove-ments to MAUT based
-) (./background.tex [7]
+) (./background.tex [8]
 CHAPTER 2.
-[8] [9] [10] [11]
-Overfull \hbox (36.34294pt too wide) in paragraph at lines 110--125
+[9] [10] [11] [12]
+Overfull \hbox (36.34294pt too wide) in paragraph at lines 119--134
  [][] 
-<figures-bharath/pbf.png, id=288, 885.3075pt x 522.95375pt>
+[13] <figures-bharath/pbf.png, id=336, 885.3075pt x 522.95375pt>
 <use figures-bharath/pbf.png>
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--180
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 160--180
 
-[12] [13 <./figures-bharath/pbf.png>]
-<figures-bharath/entree.png, id=309, 704.6325pt x 430.60875pt>
+[14 <./figures-bharath/pbf.png>]
+<figures-bharath/entree.png, id=354, 704.6325pt x 430.60875pt>
 <use figures-bharath/entree.png>
-(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlppl.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 160--185
+Underfull \hbox (badness 10000) in paragraph at lines 181--206
 
-[14] [15 <./figures-bharath/entree.png>] [16]
-Overfull \hbox (4.2082pt too wide) in paragraph at lines 213--213
+[15] [16 <./figures-bharath/entree.png>] [17]
+Overfull \hbox (4.2082pt too wide) in paragraph at lines 239--239
 []\OT1/ppl/b/n/17.28 Apriori Al-go-rithm Based Gen-er-a-tion of Dy-namic
-<figures-bharath/apriori.png, id=343, 629.7126pt x 542.025pt>
-<use figures-bharath/apriori.png> [17 <./figures-bharath/apriori.png>]
-<figures-bharath/critiquePatterns.png, id=352, 912.40875pt x 312.16624pt>
-<use figures-bharath/critiquePatterns.png> [18 <./figures-bharath/critiquePatte
-rns.png>]
-Overfull \hbox (20.88275pt too wide) in paragraph at lines 266--266
+<figures-bharath/apriori.png, id=387, 629.7126pt x 542.025pt>
+<use figures-bharath/apriori.png>
+<figures-bharath/critiquePatterns.png, id=391, 912.40875pt x 312.16624pt>
+<use figures-bharath/critiquePatterns.png> [18]
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlppl.fd) [19 <./figures-
+bharath/apriori.png> <./figures-bharath/critiquePatterns.png>] [20]
+Overfull \hbox (20.88275pt too wide) in paragraph at lines 293--293
 []\OT1/ppl/b/n/17.28 Multi At-tribute Util-ity The-ory (MAUT) based Gen-
-<figures-bharath/maut.png, id=373, 652.4375pt x 653.44125pt>
-<use figures-bharath/maut.png> [19]
-<figures-bharath/paperAlgo.png, id=383, 783.92876pt x 633.36626pt>
-<use figures-bharath/paperAlgo.png> [20 <./figures-bharath/maut.png>] [21 <./fi
-gures-bharath/paperAlgo.png>] [22]
-Overfull \hbox (4.57997pt too wide) in paragraph at lines 329--330
+<figures-bharath/maut.png, id=423, 652.4375pt x 653.44125pt>
+<use figures-bharath/maut.png>
+<figures-bharath/paperAlgo.png, id=428, 783.92876pt x 633.36626pt>
+<use figures-bharath/paperAlgo.png> [21] [22 <./figures-bharath/maut.png> <./fi
+gures-bharath/paperAlgo.png>] [23] [24]
+Overfull \hbox (4.57997pt too wide) in paragraph at lines 382--383
 \OT1/ppl/m/n/12 In ad-di-tion to the func-tions de-fined in Fig-ure []2.6[] the
  func-tion $\OML/cmm/m/it/12 CalcUtility\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 PM; u
 \OT1/cmr/m/n/12 )$
-<figures-bharath/pc_results.png, id=413, 610.28pt x 401.5pt>
+<figures-bharath/pc_results.png, id=468, 610.28pt x 401.5pt>
 <use figures-bharath/pc_results.png>
-<figures-bharath/apartment_results.png, id=418, 614.295pt x 403.5075pt>
-<use figures-bharath/apartment_results.png> [23 <./figures-bharath/pc_results.p
+<figures-bharath/apartment_results.png, id=473, 614.295pt x 403.5075pt>
+<use figures-bharath/apartment_results.png> [25 <./figures-bharath/pc_results.p
 ng> <./figures-bharath/apartment_results.png>]
-<figures-bharath/camera_liveUser.png, id=437, 371.3875pt x 277.035pt>
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd)
+Overfull \hbox (30.33264pt too wide) in paragraph at lines 444--446
+\OT1/ppl/m/n/12 tributes. This data set is avail-able at []$\OT1/pcr/m/n/12 htt
+p : / / www . cs . ucd . ie / staff / lmcginty /
+<figures-bharath/camera_liveUser.png, id=495, 371.3875pt x 277.035pt>
 <use figures-bharath/camera_liveUser.png>
-<figures-bharath/accuracy_liveUser.png, id=442, 374.39874pt x 277.035pt>
+<figures-bharath/accuracy_liveUser.png, id=500, 374.39874pt x 277.035pt>
 <use figures-bharath/accuracy_liveUser.png>
-Underfull \hbox (badness 10000) in paragraph at lines 414--444
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--444
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--444
-
-[24] [25 <./figures-bharath/camera_liveUser.png> <./figures-bharath/accuracy_li
-veUser.png>]
-<figures-bharath/firstQ_liveUser.png, id=465, 733.74126pt x 239.89626pt>
+<figures-bharath/firstQ_liveUser.png, id=507, 733.74126pt x 239.89626pt>
 <use figures-bharath/firstQ_liveUser.png>
-<figures-bharath/secondQ_liveUser.png, id=470, 726.715pt x 248.93pt>
-<use figures-bharath/secondQ_liveUser.png>) (./modifications.tex [26] [27 <./fi
-gures-bharath/firstQ_liveUser.png> <./figures-bharath/secondQ_liveUser.png>]
+<figures-bharath/secondQ_liveUser.png, id=512, 726.715pt x 248.93pt>
+<use figures-bharath/secondQ_liveUser.png>
+Underfull \hbox (badness 10000) in paragraph at lines 474--516
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--516
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--516
+
+[26] [27 <./figures-bharath/camera_liveUser.png> <./figures-bharath/accuracy_li
+veUser.png> <./figures-bharath/firstQ_liveUser.png> <./figures-bharath/secondQ_
+liveUser.png>] [28]) (./modifications.tex [29]
 CHAPTER 3.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsppl.fd)
-Overfull \hbox (9.74916pt too wide) in paragraph at lines 13--14
+Overfull \hbox (9.74916pt too wide) in paragraph at lines 14--15
 []\OT1/ppl/m/n/12 In a par-tic-u-lar rec-om-men-da-tion cy-cle, if all the cri-
 tique strings have "Higher
-(./chap3_diversity.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--12
-
-[28] [29] <figures-bharath/diversity1.jpg, id=524, 338.26375pt x 380.42125pt>
+(./chap3_diversity.tex [30]
+<figures-bharath/diversity1.jpg, id=551, 338.26375pt x 380.42125pt>
 <use figures-bharath/diversity1.jpg>
-<figures-bharath/diversity2.jpg, id=525, 335.2525pt x 378.41376pt>
-<use figures-bharath/diversity2.jpg>) (./chap3_wMLTNominal.tex [30 <./figures-b
-harath/diversity1.jpg> <./figures-bharath/diversity2.jpg>])
-(./chap3_additionalTerm.tex [31]) (./chap3_adaptiveSelection.tex [32]))
-(./thesis.bbl [33] [34] [35]) [36] (./thesis.aux) )
+<figures-bharath/diversity2.jpg, id=552, 335.2525pt x 378.41376pt>
+<use figures-bharath/diversity2.jpg> [31 <./figures-bharath/diversity1.jpg> <./
+figures-bharath/diversity2.jpg>]) (./chap3_wMLTNominal.tex [32])
+(./chap3_additionalTerm.tex [33] [34]) (./chap3_adaptiveSelection.tex [35])
+(./chap3_marketEq.tex [36] [37]) (./chap3_selectiveWtUpdate.tex [38])
+(./chap3_history.tex
+Overfull \hbox (3.82043pt too wide) in paragraph at lines 3--6
+\OT1/ppl/m/n/12 weighted av-er-age of these prod-ucts' at-tributes. The func-ti
+on UpdateModel($\OML/cmm/m/it/12 PM$\OT1/ppl/m/n/12 ,
+) (./chap3_simProdFirstCycle.tex) (./chap3_additive.tex [39]
+Overfull \hbox (19.9334pt too wide) in paragraph at lines 1--1
+[]\OT1/ppl/b/n/17.28 Additive model for up-dat-ing weights of at-tributes 
+)) (./thesis.bbl [40] [41] [42]) [43] (./thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
 (see the transcript file for additional information){/usr/local/texlive/2011/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/t
@@ -307,9 +328,10 @@ pe1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
 public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/pala
-tino/uplb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/up
-lbi8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
-fb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (37 pages, 3944074 bytes).
+/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/cour
+ier/ucrr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/upl
+b8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (44 pages, 3973461 bytes).
 Transcript written on thesis.log.

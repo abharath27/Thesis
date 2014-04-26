@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -160,6 +160,10 @@
 {\bf Smyth, B.} and {\bf P.~McClave}, Similarity vs. diversity.
 \newblock {\em In\/} {\em Case-Based Reasoning Research and Development\/}.
   Springer, 2001, 347--361.
+
+\bibitem[{Smyth and McGinty(2003)}]{suggestion}
+{\bf Smyth, B.} and {\bf L.~McGinty}, The power of suggestion.
+\newblock {\em In\/} {\em IJCAI\/}. 2003.
 
 \bibitem[{Thompson {\em et~al.\/}(2004)Thompson, G{\"o}ker, and
   Langley}]{thompson04}

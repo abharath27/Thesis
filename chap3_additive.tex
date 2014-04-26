@@ -1,2 +1,9 @@
 \section{Additive model for updating weights of attributes}
 \label{sec:additive}
+
+As discussed in Section \ref{sec:maut}, the weight of a numeric attribute is either multiplied or divided by a constant factor $\beta (=2.0)$ depending on whether the new preference value is better than the old preference value or not.
+Instead of the standard multiplicative model, we propose a new additive model for updating the weights of attributes.
+In a given interaction cycle, if the new preference value for a product is better than the old preference value, the weight of the attribute is increased by a factor $\beta$.
+Else, the weight of the attribute is not changed.
+The weights of numeric attributes are normalized after they are updated so that they sum up to one. 
+In our implementation, we have set $\beta$ = 0.5 and it gave the best results.
