@@ -7,12 +7,12 @@ Therefore, it is a good idea to introduce diversity in the beginning of a recomm
 
 We propose a new approach where diversity is varied adaptively according to whether user's preferences have stabilized.
 Consider an attribute 'Price'.
-If the maximum difference between prices of previous $K$(=3) products selected by the user is less than a pre-defined threshold, we assume that the user is satisfied with this particular product price and we promote cases that have a price closer to the average price of the $K$ products in the next cycle.
+If the maximum difference between prices of previous $T$(=3) products selected by the user is less than a pre-defined threshold, we assume that the user is satisfied with this particular product price and we promote cases that have a price closer to the average price of the $T$ products in the next cycle.
 %Consdiering camera dataset, if the difference between 'weight' of each of the previous $K$(=3) selected products is less than a certain threshold,
-If the maximum difference between the weights of the previous $K$(=3) products is greater than the pre-defined threshold, we assume that user's preference for the 'weight' attribute has not stabilized yet. 
+If the maximum difference between the 'weight's of the previous $T$(=3) products is greater than the pre-defined threshold, we assume that user's preference for the 'weight' attribute has not stabilized yet. 
 Hence, we try to display products that are diverse to each other in terms of 'weight' attribute.
-The numeric attributes for which we assume that user's preference has stabilized are classified into the set $simA$.
-The other numeric attributes are classified into the set $divA$.
+The numeric attributes for which we assume that user's preference has stabilized are classified into the set \textit{simA}.
+The other numeric attributes are classified into the set \textit{divA}.
 In the implementation, the function \textit{GenCritiqueItems(PM, IS)} is the same as described in Algorithm \ref{algo:div}.
 The function \textit{Quality(p, R, PM)} is modified as follows:
 

@@ -84,7 +84,7 @@ The complete implementation for all the algorithms described in Sections \ref{se
 %\url{https://github.com/abharath27/MAUTNew}.
 \cite{implementation}.
 
-\section{Highly Focused Recommendation Framework}
+\section{Highly Focused/Optimal Framework}
 \label{sec:focus}
 Evaluation in Highly Focused Recommendation Framework is the same way of evaluation described in Section \ref{sec:offline}.
 In this scenario we assume that the user is relatively sure of his preferences and hence chooses the critique string that is maximally compatible with the target product in each cycle.
@@ -113,21 +113,24 @@ In this scenario, the simulated user does not select the most optimal critique s
 This kind of evaluation is similar to the evaluation procedure described in \cite{suggestion}.
 Noise is introduced into the process by varying the compatibility scores of the critique strings within some threshold. 
 In our experiments, we have used a noise level of 10\%, i.e, the compatiblity scores can be changed by upto +/-10\% of their actual values.
-Due to the introduction of noise, the uesr makes sub-optimal choices in each cycle as shown in Figure \ref{fig:noisy}.
+Due to the introduction of noise, the user makes sub-optimal choices in each cycle as shown in Figure \ref{fig:noisy}.
 In the experiments, the simulated user selects a sub-optimal critique string for 28\% times on an average in noisy setting.
 The average number of interaction cycles in this scenario is slightly higher in this scenario compared to the number of cycles in highly focused recommendation framework because of sub-optimal choices made by the simulated user.
 
 
 \section{Results}
-\subsection{Diversity enhancing algorithms}
+\subsection{Diversity enhancing algorithms(DIV, DIV2)}
 \label{sec:div_results}
-The algorithm described in Section \ref{sec:div} (abbreivated as DIV), introduces diversity among critique strings in every cycle. 
-The algorithm described in Section \ref{sec:div2} (abbreivated as DIV2), introuduces diversity according to the extent to which the user's preferences have stabilized.
-The results for the algorithms DIV and DIV2 in both optimal and noisy settings for PC and Camera datasets are summarized in the Figures \ref{fig:div_camera_opt} to \ref{fig:div_pc_noisy}.
+The algorithm DIV, described in Section \ref{sec:div} introduces diversity among critique strings in every cycle. 
+DIV2, described in Section \ref{sec:div2}, varies the level of diveristy in critique strings according to the extent to which the user's preferences have stabilized.
+The results for the algorithms DIV and DIV2 in both optimal and noisy settings for PC and Camera datasets are summarized in Figures \ref{fig:div_camera_opt} to \ref{fig:div_pc_noisy}.
 For the queries of category Q1 on the in Figure \ref{fig:div_camera_opt}, the implementation of standard MAUT based recommendation takes 9.21 cycles on an average to reach a target product.
 DIV and DIV2 take 7.82 and 6.82 cycles on an average to reach the target product.
-DIV and DIV2 achieve a reduction of 22.6\% and 27.8\% respectively in the average number of cycles.
-The average number of cycles in MAUT is 10.35 in noisy setting, which is 12\% higher than the number of cycles in noisy setting.
+DIV and DIV2 achieve an average reduction of 22.6\% and 27.9\% respectively in the average number of interaction cycles in optimal setting for the camera dataset.
+The average number of cycles taken by MAUT to reach the target product is 10.35 in noisy setting, which is 12\% higher than the number of cycles in the optimal setting.
+DIV and DIV2 achieve an average improvement of 29.5\% and 39.8\% respectively in noisy setting for the camera dataset, which is higher than the reductions achieved in optimal setting.
+The results of the improvements achieved by various algorithms is summarized in Table \ref{tab:summary}.
+We can see from the table that most algorithms achieve a higher improvement in noisy setting than in optimal setting.
 
 
 
@@ -165,11 +168,12 @@ The average number of cycles in MAUT is 10.35 in noisy setting, which is 12\% hi
 \end{minipage}
 \end{figure}
 
-\subsection{Algorithms that combine similarity with utility}
-In Algorithm \ref{algo:addPref} (ADDPREF), we have promoted products that have a critique pattern similar to the product selected by the user in previous cycle.
-In Algorithm \ref{algo:addPref2} (ADDPREF2), an extension to ADDPREF, we consider critique overlap of a product with all the products that have been selected so far.
-The performance for both the algorithms are shown in Figures \ref{fig:addPref_camera_opt} to \ref{fig:addPref_pc_noisy}.
-In highly focused recommendation framework, ADDPREF and ADDPREF2 give an average improvement of 31.1\% and 33.8\% respectively.
+\subsection{Algorithms that combine similarity with utility(ADDPREF, ADDPREF2, SIM)}
+ADDPREF, described in Section \ref{sec:addTerm} promotes products that have a critique pattern similar to the product selected by the user in previous cycle.
+ADDPREF2, described in Section \ref{sec:addTerm} is an extension to ADDPREF, where we consider critique overlap of a product with all the products that have been selected so far.
+The results for both the algorithms are summarized in Figures \ref{fig:addPref_camera_opt} to \ref{fig:addPref_pc_noisy}.
+In optimal framework, ADDPREF and ADDPREF2 give an average improvement of 29.1\% and 33.7\% respectively on the camera dataset.
+The results for other evaluation settings have given in Table \ref{tab:summary}.
 
 \begin{figure}[h]
 \centering
@@ -205,48 +209,78 @@ In highly focused recommendation framework, ADDPREF and ADDPREF2 give an average
 \end{minipage}
 \end{figure}
 
-In Section \ref{sec:sim}, we have proposed a modification(SIM) where we introduce the products that are most similar to user's initial query.
+In Section \ref{sec:sim}, we have proposed a modification, SIM, where products that are most similar to user's initial query are chosen as the top$K$ products in the first cycle.
 This simple modification actually produces a very high improvement in the number of interaction cycles.
-SIM reduces the average number of cycles by 32.6\% on an average.
+For the camera dataset and in optimal setting, SIM reduces the number of cycles by 30.6\% on an average.
 SIM when combined with ADDPREF2, reduces the average number of cycles even further. 
 The reduction is 40.3\% on average in this case.
-The results obtained in the two scenarios for Camera and PC datasets have been shown in Figures \ref{fig:sim_camera_opt} to \ref{fig:sim_pc_noisy}.
+%The results obtained in the optimal setting for Camera and PC datasets have been shown in Figures \ref{fig:sim_camera_opt} and \ref{fig:sim_pc_opt}. 
+Results for the noisy setting and PC dataset are shown in Table \ref{tab:summary}.
 
-\begin{figure}[h]
-\centering
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{figures-bharath/sim_camera_opt}
-  \caption[]{Average number of interaction cycles on Camera dataset - optimal user model}
-  \label{fig:sim_camera_opt}
-\end{minipage}%
-\;\;\;\;\;\;
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{figures-bharath/sim_pc_opt}
-  \caption[]{Average number of interaction cycles on PC dataset - optimal user model}
-  \label{fig:sim_pc_opt}
-\end{minipage}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{figures-bharath/sim_camera_noisy}
-  \caption[]{Average number of interaction cycles on Camera dataset - noisy framework}
-  \label{fig:sim_camera_noisy}
-\end{minipage}%
-\;\;\;\;\;\;
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{figures-bharath/sim_pc_noisy}
-  \caption[]{Average number of interaction cycles on PC dataset - noisy framework}
-  \label{fig:sim_pc_noisy}
-\end{minipage}
-\end{figure}
-
+%\begin{figure}[h]
+%\centering
+%\begin{minipage}{.45\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{figures-bharath/sim_camera_opt}
+%  \caption[]{Average number of interaction cycles on Camera dataset - optimal user model}
+%  \label{fig:sim_camera_opt}
+%\end{minipage}%
+%\;\;\;\;\;\;
+%\begin{minipage}{.45\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{figures-bharath/sim_pc_opt}
+%  \caption[]{Average number of interaction cycles on PC dataset - optimal user model}
+%  \label{fig:sim_pc_opt}
+%\end{minipage}
+%\end{figure}
 \input{chap4_selNominal}
-\input{chap4_history}
-\input{chap4_marketEq}
-\input{chap4_additive}
+
+\input{chap4_finalMix}
+
+
+\begin{table}
+\caption{Summary of experimental results}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\label{tab:summary}
+
+\begin{tabular}{|p{3.5cm}|p{1.8cm}|p{1.9cm}|p{1.9cm}|p{1.9cm}|}
+ \cline{1-5}
+ & &\multicolumn{3}{c|}{\% improvement in number of interaction cycles}\\
+ \cline{1-5}
+
+Algorithm & Camera-OPT & Camera-Noisy & PC-OPT & PC-Noisy \\
+ \cline{1-5}
+DIV & 22.6  &29.5 &10.3 &18.9\\
+\hline
+DIV2 &27.9 &38.8 &11.4 &21.6\\
+\hline
+SELWEIGHT &14.8 &24.4 &10.5 &7.8\\
+\hline
+SELNOMINAL &22.2 &30.8 &12.3 &9.5\\
+\hline
+SELWEIGHT + SELNOMINAL &25.6 &34.5 &13.1 &15.1\\
+\hline
+ADDPREF &29.1 &29.9 &8.34 &17.6\\
+\hline
+ADDPREF2 &33.7 &36.1 &9.49 &21.6\\
+\hline
+SIM &30.6 &37.6 &29.8 &24.6\\
+\hline
+SIM + ADDPREF2 &40.3 &45.3 &26.2 &33.8\\
+\hline
+INIT &6.12 &10.1 &5.3 &5.7\\
+\hline
+ADD &7.2 &19.2 &5.7 &5.9\\
+\hline
+HIST &10.3 &19.4 &3.9 &4.5\\
+\hline
+
+
+
+
+
+\hline
+\end{tabular}
+\end{table}
+

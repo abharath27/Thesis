@@ -1,11 +1,11 @@
-\section{Additional preference to products that are similar to the most recent user selected product}
+\section{Additional preference to products that have a critique pattern similar to the most recently selected product}
 \label{sec:addTerm}
 As seen in Section \ref{sec:maut}, the weights of numeric attributes and the value functions of nominal attributes are updated in each cycle based on the critique string selected by the user.
-Utility of the remaining products in the case base are calculated as a weighted sum of value functions of all attributes according to Equation \ref{eq:utility}.
+Utilities of the remaining products in the case base are calculated as a weighted sum of value functions of all attributes according to Equation \ref{eq:utility}.
 Along with the weighted additive formula in Equation \ref{eq:utility} , we introduce an additional term in the utility function that favors the products having a similar critique pattern as that of the most recently selected product.
 The method of computing critique patterns for products has been discussed in Section \ref{sec:genCritique}.
 The intuition behind this modification is that, if the user selects the critique string "Lower Price, Higher Resolution but Higher Weight", he is interested in those products where this trade-off is obeyed.
-Considering only three attributes, Price, Resolution and Weight, if the critique pattern of the selected product is \{Price:$<$, Resolution:$>$, Weight:$>$\} and the critique pattern of a product $p$ in the case base is \{Price:$<$, Resolution:$>$, Weight:$<$\}, the overlap between the two critique patterns is 2/3.
+For example, considering only three attributes, Price, Resolution and Weight, if the critique pattern of the selected product is \{Price:$<$, Resolution:$>$, Weight:$>$\} and the critique pattern of a product $p$ in the case base is \{Price:$<$, Resolution:$>$, Weight:$<$\}, the overlap between the two critique patterns is 2/3.
 The function $CalcUtility(PM, u)$ (Algorithm \ref{algo:utility}), which is used to calculate utility of products at the beginning of each cycle is modified as follows:
 
 \begin{algorithm}[ht]
@@ -30,7 +30,7 @@ The function $CalcUtility(PM, u)$ (Algorithm \ref{algo:utility}), which is used 
 %\subsection{Generalization of the above where you can have multiple products}
 So far, we have considered the critique overlap between a product in the case-base and the product that is most recently selected by the user.
 We now extend this algorithm by considering the critique overlap of a product with all the products that have been selected so far.
-The additional term added to the utility of a product, \textit{overlapTerm} is now calculated as follows:
+The additional term added to the utility of a product $p$, \textit{addTerm(p)} is now calculated as follows:
 \begin{equation}
 \label{eq:addPref}
 addTerm(p) = \frac{\sum_{i=1}^{n} {w_i \times overlap(p,sel_i)}} {\sum_{i=1}^{n}w_i}

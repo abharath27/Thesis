@@ -2,7 +2,7 @@
 \label{sec:sel}
 As seen in Section \ref{sec:maut}, the weight of a numeric attribute is either multiplied or divided by a constant factor $\beta (=2.0)$ depending on whether the new preference value is better than the old preference value or not at the beginning of each cycle.
 But this approach has some limitations as discussed in Section \ref{sec:limitations}.
-In a particular recommendation cycle, if all the critique strings have "Higher Price" as their sub-critique, the user is forced to select a critique string with "Higher Price".
+For example, if in a particular recommendation cycle, all the critique strings have "Higher Price" as their sub-critique, the user is forced to select a critique string with "Higher Price".
 The original MAUT based recommendation algorithm will divide the weight of $price$ attribute by a factor of $\beta$, promoting higher priced products in the next cycle.
 To avoid this, we modify the implementation of MAUT based recommendation algorithm such that the weight of the $price$ attribute in such a case is not changed.
 As an extension to the above limitation, consider the case when there are four critique strings with "Lower Disk Storage" and one critique string with "Higher Disk Storage". 
@@ -19,54 +19,48 @@ We will refer to the above algorithm as \textbf{SELWEIGHT} in subsequent section
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.1}
  \centering
- \begin{tabular}{|p{3cm}| p{3cm}| p{3cm}| p{3cm}|}
+ \begin{tabular}{p{3cm} p{3cm}| p{3cm}| p{3cm}|}
  \cline{3-4}
- & &\multicolumn{2}{c|}{Value of $\beta$ (multiplication factor) when}\\
- \cline{3-4}
-
- \cline{1-4}
-   Number of critiques with "Lower Disk Storage(DS)" &
+ & & \multicolumn{2}{ c| }{Value of $\beta$ (multiplication factor) when} \\ \cline{3-4}
+\hline
+   \multicolumn{1}{|p{3cm}|}{Number of critiques with "Lower Disk Storage(DS)"} &
    Number of critiques with "Higher DS" &
    Critique with "Lower DS" selected &
-   Critique with "Higher DS" selected \\
+   Critique with "Higher DS" selected \\  \cline{1-4}
 
+  \multicolumn{1}{|l|}5 & 0 & 1  & 1 \\
+  \multicolumn{1}{|l|}4 & 1 & 1/2  & 8 \\
+  \multicolumn{1}{|l|}3 & 2 & 1/2  & 3 \\
+  \multicolumn{1}{|l|}2 & 3 & 1/3  & 2 \\
+  \multicolumn{1}{|l|}1 & 4 & 1/8  & 2 \\
+  \multicolumn{1}{|l|}0 & 5 & 1  & 1 \\
   \cline{1-4}
-  5 & 0 & 1  & 1 \\
-  4 & 1 & 1/2  & 8 \\
-  3 & 2 & 1/2  & 3 \\
-  2 & 3 & 1/3  & 2 \\
-  1 & 4 & 1/8  & 2 \\
-  0 & 5 & 1  & 1 \\
-  \cline{1-4} \hline
  \end{tabular}
  \caption{Factors with which weights of MIB attributes are multiplied in each cycle}
  \label{tab:selectiveWt}
 \end{table}
 
-
 \begin{table}[h]
-\renewcommand{\arraystretch}{1.3}
+\renewcommand{\arraystretch}{1.1}
  \centering
- \begin{tabular}{|p{3cm}| p{3cm}| p{3cm}| p{3cm}|}
+ \begin{tabular}{p{3cm} p{3cm}| p{3cm}| p{3cm}|}
  \cline{3-4}
- & &\multicolumn{2}{c|}{Value of $\beta$ (multiplication factor) when}\\
- \cline{3-4}
-
- \cline{1-4}
-   Number of critiques with "Lower Price" &
+ & & \multicolumn{2}{ c| }{Value of $\beta$ (multiplication factor) when} \\ \cline{3-4}
+\hline
+   \multicolumn{1}{|p{3cm}|}{Number of critiques with "Lower Price"} &
    Number of critiques with "Higher Price" &
    Critique with "Lower Price" selected &
-   Critique with "Higher Price" selected \\
+   Critique with "Higher Price" selected \\  \cline{1-4}
 
+  \multicolumn{1}{|l|}5 & 0 & 1  & 1 \\
+  \multicolumn{1}{|l|}4 & 1 & 2  & 1/8 \\
+  \multicolumn{1}{|l|}3 & 2 & 2  & 1/3 \\
+  \multicolumn{1}{|l|}2 & 3 & 3  & 1/2 \\
+  \multicolumn{1}{|l|}1 & 4 & 8  & 1/2 \\
+  \multicolumn{1}{|l|}0 & 5 & 1  & 1 \\
   \cline{1-4}
-  5 & 0 & 1  & 1 \\
-  4 & 1 & 1/2  & 8 \\
-  3 & 2 & 1/2  & 3 \\
-  2 & 3 & 1/3  & 2 \\
-  1 & 4 & 1/8  & 2 \\
-  0 & 5 & 1  & 1 \\
-  \cline{1-4} \hline
  \end{tabular}
  \caption{Factors with which weights of LIB attributes are multiplied in each cycle}
  \label{tab:selectiveWt2}
 \end{table}
+

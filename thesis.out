@@ -34,7 +34,7 @@
 \BOOKMARK [1][-]{section.3.1}{Limitations of MAUT Based Critiquing:}{chapter.3}% 34
 \BOOKMARK [1][-]{section.3.2}{Diversity in Critiques}{chapter.3}% 35
 \BOOKMARK [1][-]{section.3.3}{Varying the level of diversity}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.4}{Additional preference to products that are similar to the most recent user selected product}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.4}{Additional preference to products that have a critique pattern similar to the most recently selected product}{chapter.3}% 37
 \BOOKMARK [1][-]{section.3.5}{Similar Products in the First Cycle}{chapter.3}% 38
 \BOOKMARK [1][-]{section.3.6}{Selectively updating the weights of numeric attributes}{chapter.3}% 39
 \BOOKMARK [1][-]{section.3.7}{Selectively updating value functions of nominal attributes}{chapter.3}% 40
@@ -43,11 +43,12 @@
 \BOOKMARK [1][-]{section.3.10}{Additive model for updating weights of attributes}{chapter.3}% 43
 \BOOKMARK [0][-]{chapter.4}{Experimental Results}{}% 44
 \BOOKMARK [1][-]{section.4.1}{Experimental Methodology}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.2}{Highly Focused Recommendation Framework}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.2}{Highly Focused/Optimal Framework}{chapter.4}% 46
 \BOOKMARK [1][-]{section.4.3}{Noisy Framework}{chapter.4}% 47
 \BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.4.1}{Diversity enhancing algorithms}{section.4.4}% 49
-\BOOKMARK [2][-]{subsection.4.4.2}{Algorithms that combine similarity with utility}{section.4.4}% 50
-\BOOKMARK [2][-]{subsection.4.4.3}{Performance improvement for SELNOMINAL and SELMAUT}{section.4.4}% 51
-\BOOKMARK [0][-]{chapter.5}{Conclusions \046 Future Work}{}% 52
-\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.4.4.1}{Diversity enhancing algorithms\(DIV, DIV2\)}{section.4.4}% 49
+\BOOKMARK [2][-]{subsection.4.4.2}{Algorithms that combine similarity with utility\(ADDPREF, ADDPREF2, SIM\)}{section.4.4}% 50
+\BOOKMARK [2][-]{subsection.4.4.3}{Algorithms that selectively update weights and value functions of attributes\(SELWEIGHT and SELNOMINAL\)}{section.4.4}% 51
+\BOOKMARK [2][-]{subsection.4.4.4}{Results for the algorithms INIT, HIST, ADD}{section.4.4}% 52
+\BOOKMARK [0][-]{chapter.5}{Conclusions \046 Future Work}{}% 53
+\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 54

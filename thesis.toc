@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {3.1}Limitations of MAUT Based Critiquing:}{30}{section.3.1}
 \contentsline {section}{\numberline {3.2}Diversity in Critiques}{31}{section.3.2}
 \contentsline {section}{\numberline {3.3}Varying the level of diversity}{32}{section.3.3}
-\contentsline {section}{\numberline {3.4}Additional preference to products that are similar to the most recent user selected product}{34}{section.3.4}
+\contentsline {section}{\numberline {3.4}Additional preference to products that have a critique pattern similar to the most recently selected product}{34}{section.3.4}
 \contentsline {section}{\numberline {3.5}Similar Products in the First Cycle}{35}{section.3.5}
 \contentsline {section}{\numberline {3.6}Selectively updating the weights of numeric attributes}{36}{section.3.6}
 \contentsline {section}{\numberline {3.7}Selectively updating value functions of nominal attributes}{37}{section.3.7}
@@ -43,11 +43,12 @@
 \contentsline {section}{\numberline {3.10}Additive model for updating weights of attributes}{42}{section.3.10}
 \contentsline {chapter}{\numberline {4}Experimental Results}{43}{chapter.4}
 \contentsline {section}{\numberline {4.1}Experimental Methodology}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Highly Focused Recommendation Framework}{44}{section.4.2}
+\contentsline {section}{\numberline {4.2}Highly Focused/Optimal Framework}{44}{section.4.2}
 \contentsline {section}{\numberline {4.3}Noisy Framework}{45}{section.4.3}
 \contentsline {section}{\numberline {4.4}Results}{46}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Diversity enhancing algorithms}{46}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Algorithms that combine similarity with utility}{47}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Performance improvement for SELNOMINAL and SELMAUT}{49}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Conclusions \& Future Work}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Future Work}{52}{section.5.1}
+\contentsline {subsection}{\numberline {4.4.1}Diversity enhancing algorithms(DIV, DIV2)}{46}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Algorithms that combine similarity with utility(ADDPREF, ADDPREF2, SIM)}{46}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Algorithms that selectively update weights and value functions of attributes(SELWEIGHT and SELNOMINAL)}{48}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Results for the algorithms INIT, HIST, ADD}{50}{subsection.4.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions \& Future Work}{52}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{53}{section.5.1}

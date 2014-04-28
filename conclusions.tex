@@ -5,9 +5,9 @@ We have proposed several modifications to standard MAUT based recommendation alg
 We first started by introducing diversity in the critique strings shown to the user.
 DIV displays maximally diverse critiques to the user in every cycle. 
 Diverse critiques enable the user to navigate to different parts of the product space relatively quickly and hence, can potentially improve the performance of the algorithm.
-But, in an attempt to make the critiques diverse, the recommender will have to choose a few sub-optimal products as the top $K$ products in every cycle.
-So, there is also a risk of having prolonged sessions because of this, 
-Offline experiments in Section \ref{sec:div_results} have shown that DIV enables the user to arrive at his target product quicker than MAUT.
+%But, in an attempt to make the critiques diverse, the recommender will have to choose a few sub-optimal products as the top $K$ products in every cycle.
+%So, there is also a risk of having prolonged sessions because of this, 
+Offline experiments in Section \ref{sec:div_results} have shown that DIV enables the user to arrive at his target product much quicker than MAUT.
 DIV2 varies the level of diversity in critique strings according to the extent to which the user's preferences were stabilized.
 The performance of DIV2 is even better than DIV.
 
@@ -19,20 +19,24 @@ SIM is a very simple modification to the standard MAUT algorithm, but it results
 
 SELWEIGHT described in Section \ref{sec:sel}, exploits the fact that a product/critique string was chosen over the remaining (k-1) rejected products and updates weights of numeric attributes accordingly. 
 The default strategy in MAUT is to update weights of the attributes by a constant factor.
-But SELWEIGHT updates weights of numeric attributes by different factors based on the (k-1) rejected critique strings.
-SELNOMINAL described in Section \ref{sec:selNominal} also exploits the fact a product was chosen over remaining (k-1) rejected products and updates value functions of nominal attributes accordingly.
-Both SELWEIGHT and SELNOMINAL lead to significant improvements in the performance of MAUT.
+But SELWEIGHT updates weights of numeric attributes by different factors based on the critique patterns of the $k-1$ rejected products.
+SELNOMINAL described in Section \ref{sec:selNominal} updates value function of a nominal attribute not just by looking at the attribute value of the selected product, but also by examining the nominal attribute $k-1$ rejected products.
+Both SELWEIGHT and SELNOMINAL result in significant performance improvements.
 
-HIST, described in Section \ref{sec:hist}, computes the weighted average of the attribute values of products selected by the user in previous cycles and updates preference model according to these values.
+The algorithm HIST, described in Section \ref{sec:hist}, computes the weighted average of the attribute values of products selected by the user in previous cycles and updates preference model according to these values.
 INIT, described in Section \ref{sec:marketEq}, initializes the value functions of  nominal attributes of dominated products with higher values.
-Finally, we describe an additive model, ADD, for updating weights of numeric attributes in each cycle, which actually performs better than the standard MAUT algorithm.
+Finally, we describe an additive model, ADD(instead of the standard mulitplicative model) for updating weights of numeric attributes in each cycle, which actually performs better than the standard MAUT algorithm.
 
 
 \section{Future Work}
 In all the algorithms, we have used the simple weighted additive formula  (Equation \ref{eq:utility}) to estimate utilities of products assumes that the individual attributes are preferentially independent, which is not the case in real-world scenarios.
 There could be additional terms in the utility function which correspond to the trade-offs between pairs of attributes.
+
 We have also assumed very simple linear value functions for all the numeric attributes. 
-Using non-linear value functions could lead to improved perfomance.
+%Using non-linear value functions could lead to improved perfomance.
+%Exploring which kind of value functions 
 Inferring better value functions automatically from user trials and the case base will be an intersting problem to tackle.
-In Section \ref{sec:marketEq}, we have initialized only one attribute's value functions unequally. 
-There is a lot of potential scope for improvements to be done to the algorithm INIT.
+%In Section \ref{sec:marketEq}, we have initialized only one attribute's value functions unequally. 
+There is a lot of scope for improvements that can be done to the algorithm INIT described in Section \ref{sec:marketEq}.
+The algorithm for exploiting the history of user selected products, HIST, described in Section \ref{sec:hist} is very simplistic as of now. 
+Methods other than the one described in Section \ref{sec:hist} can be explored to exploit the history of user selected products better.
