@@ -1,4 +1,5 @@
 \section{Considering history of user selected products}
+\label{sec:hist}
 %In Figure \ref{fig:maut}, $ref$ is the product selected by the user in previous interaction cycle.
 As seen in Section \ref{sec:maut}, after the user selects a critique string, preference model is updated only based on the product corresponding to this critiquing string.
 Instead, we now maintain a list of products corresponding to the critique strings selected by the user in previous interaction cycles and update the model according to the weighted average of these products' attributes.
@@ -17,6 +18,7 @@ The value of new preferred price(\$370) is less than the old preferred price (\$
 Hence, the weight of the price attribute is multiplied by a factor of $\beta$ and lower priced products are promoted in the next cycle instead of higher priced ones.
 Note that this strategy is applicable only to numeric attributes.
 The value functions of nominal attributes are updated in the standard way as described in Section \ref{sec:valueFunc}.
+Algorithm \ref{algo:history} will referred to as \textbf{HIST} in the subsequent sections.
 The function UpdateModel($PM$, $ref$) is updated as follows:
 
 

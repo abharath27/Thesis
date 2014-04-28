@@ -7,3 +7,23 @@ In a given interaction cycle, if the new preference value for a product is bette
 Else, the weight of the attribute is not changed.
 The weights of numeric attributes are normalized after they are updated so that they sum up to one. 
 In our implementation, we have set $\beta$ = 0.5 and it gave the best results.
+Algorithm \ref{algo:add} will be referred to as \textbf{ADD} in subsequent sections.
+The function UpdateModel($PM$, $ref$) is updated as follows:
+
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+  %\Input{$PM$, $IS$}
+
+  \For{each attribute $x_i$ in ref }{
+      $[pv_i, pw_i] \leftarrow PM on x_i$;\\
+      \If {$V(x_i) \geq pv_i$} {
+          $pw_i' = pw_i + \beta $;\\
+      }
+      $PM' \leftarrow [V(x_i), norm(pw_i')]$;\\
+  }
+  \Return $PM$;\\
+
+  \caption{UpdateModel(PM, refL)}
+  \label{algo:add}
+\end{algorithm}

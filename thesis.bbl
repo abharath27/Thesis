@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{32}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -54,6 +54,12 @@
 \newblock {\em In\/} {\em Proceedings of the national conference on artificial
   intelligence\/}, volume 462. 1996.
 
+\bibitem[{CBRWiki(2009)}]{datasets}
+{\bf CBRWiki} (2009).
+\newblock Casebases.
+\newblock
+  \urlprefix\url{http://cbrwiki.fdi.ucm.es/mediawiki/index.php/Case_Bases}.
+
 \bibitem[{Jannach {\em et~al.\/}(2010)Jannach, Zanker, Felfernig, and
   Friedrich}]{jannach}
 {\bf Jannach, D.}, {\bf M.~Zanker}, {\bf A.~Felfernig}, and {\bf G.~Friedrich},
@@ -107,6 +113,11 @@
 {\bf McSherry, D.}, Similarity and compromise.
 \newblock {\em In\/} {\em Case-Based Reasoning Research and Development\/}.
   Springer, 2003, 291--305.
+
+\bibitem[{Reddy(2014)}]{implementation}
+{\bf Reddy, B.} (2014).
+\newblock Maut based recommendation - implementation.
+\newblock \urlprefix\url{https://github.com/abharath27/MAUTNew}.
 
 \bibitem[{Reilly {\em et~al.\/}(2004)Reilly, McCarthy, McGinty, and
   Smyth}]{reilly04}

@@ -1,4 +1,5 @@
 \section{Initializing the value functions of nominal attributes with unequal values}
+\label{sec:marketEq}
 The default strategy for initializing value functions of nominal attributes as described in Section \ref{sec:maut} is to initialize them with equal values. 
 For example, in the PC dataset, if there are 8 different manufacturers (Eg: 'Apple', 'HP', 'Compaq' etc.), the value associated with each of the manufacturers at the beginning of the recommendation session is initialized to $1/8$.
 In this section, we will look at a different way to initialize the value functions that can lead to better performance.
@@ -24,6 +25,7 @@ We first compute the average number of dominators for products of each 'manufact
 The number of dominators for products of each manufacturer and the values with which each of them is initialized is given in Table \ref{tab:marketEq}.
 In the experiments, in both PC and Camera datasets, we have initialized only the "Manufacturer" attribute with unequal values. Other nominal attributes were initialized to equal values. This led to a decent performance improvement.
 We have consider initializing other nominal attributes with unequal values, but that performed worser than the actual MAUT algorithm.
+The algorithm described above will be referred to as \textbf{INIT} in the subsequent sections.
 
 
 \begin{table}

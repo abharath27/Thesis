@@ -1,7 +1,8 @@
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{i}{chapter*.1}
 \contentsline {chapter}{ABSTRACT}{ii}{chapter*.2}
-\contentsline {chapter}{LIST OF TABLES}{v}{chapter*.4}
-\contentsline {chapter}{LIST OF FIGURES}{vi}{chapter*.5}
+\contentsline {chapter}{LIST OF TABLES}{vi}{chapter*.4}
+\contentsline {chapter}{LIST OF FIGURES}{vii}{chapter*.5}
+\contentsline {chapter}{ABBREVIATIONS}{viii}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Collaborative Recommender Systems}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Memory Based Approaches}{2}{subsection.1.1.1}
@@ -32,11 +33,21 @@
 \contentsline {chapter}{\numberline {3}Improvements to MAUT Based Generation of Compound Critiques}{30}{chapter.3}
 \contentsline {section}{\numberline {3.1}Limitations of MAUT Based Critiquing:}{30}{section.3.1}
 \contentsline {section}{\numberline {3.2}Diversity in Critiques}{31}{section.3.2}
-\contentsline {section}{\numberline {3.3}Selectively updating value functions of nominal attributes}{32}{section.3.3}
+\contentsline {section}{\numberline {3.3}Varying the level of diversity}{32}{section.3.3}
 \contentsline {section}{\numberline {3.4}Additional preference to products that are similar to the most recent user selected product}{34}{section.3.4}
-\contentsline {section}{\numberline {3.5}Varying the level of diversity}{35}{section.3.5}
-\contentsline {section}{\numberline {3.6}Initializing the value functions of nominal attributes with unequal values}{37}{section.3.6}
-\contentsline {section}{\numberline {3.7}Selectively updating the weights of numeric attributes}{38}{section.3.7}
-\contentsline {section}{\numberline {3.8}Considering history of user selected products}{39}{section.3.8}
-\contentsline {section}{\numberline {3.9}Similar Products in the First Cycle}{40}{section.3.9}
-\contentsline {section}{\numberline {3.10}Additive model for updating weights of attributes}{40}{section.3.10}
+\contentsline {section}{\numberline {3.5}Similar Products in the First Cycle}{35}{section.3.5}
+\contentsline {section}{\numberline {3.6}Selectively updating the weights of numeric attributes}{36}{section.3.6}
+\contentsline {section}{\numberline {3.7}Selectively updating value functions of nominal attributes}{37}{section.3.7}
+\contentsline {section}{\numberline {3.8}Considering history of user selected products}{38}{section.3.8}
+\contentsline {section}{\numberline {3.9}Initializing the value functions of nominal attributes with unequal values}{39}{section.3.9}
+\contentsline {section}{\numberline {3.10}Additive model for updating weights of attributes}{42}{section.3.10}
+\contentsline {chapter}{\numberline {4}Experimental Results}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experimental Methodology}{43}{section.4.1}
+\contentsline {section}{\numberline {4.2}Highly Focused Recommendation Framework}{44}{section.4.2}
+\contentsline {section}{\numberline {4.3}Noisy Framework}{45}{section.4.3}
+\contentsline {section}{\numberline {4.4}Results}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Diversity enhancing algorithms}{46}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Algorithms that combine similarity with utility}{47}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Performance improvement for SELNOMINAL and SELMAUT}{49}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}Conclusions \& Future Work}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{52}{section.5.1}

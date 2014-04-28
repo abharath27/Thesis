@@ -1,4 +1,5 @@
 \section{Selectively updating value functions of nominal attributes}
+\label{sec:selNominal}
 As seen in Section \ref{sec:valueFunc}, the value of $\gamma$ used to update the value functions of nominal attributes is constant in each cycle.
 Instead, we propose an alternative approach in which the value of $\gamma$ varies according to the number of alternatives the user rejected while choosing a particular attribute value. 
 Higher the number of rejected alternatives, higher is the value of $\gamma$.
@@ -18,6 +19,7 @@ This is the case when we cannot infer whether the user has a strong preference f
 This is similar to weighted MLT described in \cite{comparisonbr}.
 The value of $\gamma$ for each attribute when the product \textit{P3} is selected, is illustrated in Table \ref{tab:wMLT}.
 Varying the value of $\gamma$ according to the other products' attribute values results in a significant improvement in the number of interaction cycles.
+We will refer to this algorithm as \textbf{SELNOMINAL} in subsequent sections.
 
 
 

@@ -8,12 +8,12 @@ The reason for the improved performance of MAUT based recommendation is that com
 However, there are several limitations to MAUT based recommendation. Some of the limitations which we have addressed in this project are given below:
 \begin{itemize}
 \setlength{\itemsep}{5pt}
-\item Critique strings in a given iteration can be very similar to each other. This doesn't give the user too many options to choose from.
-\item Preference model is updated only based on the most recently selected product. History of user selected products/critique strings is not considered while updating the preference model.
-\item Top five products shown in the first cycle is same for all user-queries
-\item In a particular recommendation cycle, if all the critique strings have "Higher Price", user is forced to select a critique string with "Higher Price". We would ideally not want to update the weight of the attribute $price$, since we cannot infer whether user is willing to compromise on $price$ attribute. But MAUT based recommendation algorithm will actually decrease the weight of $price$ attribute by a factor of $\beta$.
-\item As an extension to the above point, Consider the case when there are 4 critique strings with "Lower Resolution" and 1 critique string with "Higher Resolution". If the user selects the critique string that has "Higher Resolution", we can update  the weight of 'Resolution' attribute by a higher factor.
-\item The fact that a particular product has been preferred over the remaining (k-1) rejected products is not exploited.
+\item Critique strings in a given iteration can be very similar to each other. Hence it limits the number of different options that users have.
+\item Preference model is updated only based on the most recently selected critique string. History of products/critique strings selected by the user is not considered while updating the preference model.
+\item Top five products shown in the first cycle is same for all recommendation sessions irrespective of the user query.
+\item In a particular recommendation cycle, if all the critique strings have "Higher Price", user is forced to select a critique string with "Higher Price". We would ideally not want to update the weight of the attribute $price$, since we cannot infer whether user is willing to compromise on $price$ attribute. But MAUT based recommendation algorithm will actually decrease the weight of $price$ attribute by a factor of $\beta$, thus promoting higher priced cameras in the next cycle.
+%\item As an extension to the above point, Consider the case when there are 4 critique strings with "Lower Resolution" and 1 critique string with "Higher Resolution". If the user selects the critique string that has "Higher Resolution", we can update  the weight of 'Resolution' attribute by a higher factor.
+\item The fact that a particular product has been preferred over the remaining (k-1) rejected products is not exploited when updating the preference model.
 
 \end{itemize}
 %put section numbers when all the description is done...
@@ -21,13 +21,13 @@ We address each of the above limitations and also propose some additional improv
 
 
 \input{chap3_diversity}
-\input{chap3_wMLTNominal}
-\input{chap3_additionalTerm}
 \input{chap3_adaptiveSelection}
-\input{chap3_marketEq}
-\input{chap3_selectiveWtUpdate}
-\input{chap3_history}
+\input{chap3_additionalTerm}
 \input{chap3_simProdFirstCycle}
+\input{chap3_selectiveWtUpdate}
+\input{chap3_wMLTNominal}
+\input{chap3_history}
+\input{chap3_marketEq}
 \input{chap3_additive}
 
 

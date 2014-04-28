@@ -1,4 +1,5 @@
 \section{Additional preference to products that are similar to the most recent user selected product}
+\label{sec:addTerm}
 As seen in Section \ref{sec:maut}, the weights of numeric attributes and the value functions of nominal attributes are updated in each cycle based on the critique string selected by the user.
 Utility of the remaining products in the case base are calculated as a weighted sum of value functions of all attributes according to Equation \ref{eq:utility}.
 Along with the weighted additive formula in Equation \ref{eq:utility} , we introduce an additional term in the utility function that favors the products having a similar critique pattern as that of the most recently selected product.
@@ -37,6 +38,7 @@ addTerm(p) = \frac{\sum_{i=1}^{n} {w_i \times overlap(p,sel_i)}} {\sum_{i=1}^{n}
 In Equation \ref{eq:addPref}, $sel_i$ refers to the product selected by the user in $i^{th}$ cycle.
 $w_i$ is the weight/importance associated with the overlap between the product $p$ and product selected in $i^{th}$ cycle.
 In our implementation, we set $w_i = \frac{1}{2^{n-i}}$.
+We will refer to Algorithms \ref{algo:addPref} and \ref{algo:addPref2} as ADDPREF and ADDPREF2 respectively in the subsequent sections.
 The modified \textit{CalcUtility(PM, u)} function is as follows:
 
 \begin{algorithm}[ht]
@@ -57,3 +59,4 @@ The modified \textit{CalcUtility(PM, u)} function is as follows:
   \caption{CalcUtility(PM, u)}
   \label{algo:addPref2}
 \end{algorithm}
+
