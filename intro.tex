@@ -5,7 +5,7 @@ In many situations, people will have to make decisions about the products they a
 Traditionally, people have used a variety of strategies to solve this decision making problem: conversations with friends, obtaining information from a trusted third party, hiring an expert team or simply follow the crowd. 
 %It would be great to have an affordable personal advisor who helps us make good decisions efficiently.
 In the present age where e-commerce is flourishing, most e-commerce sites have very large number of products (often in millions) in their databases.
-For a user wanting to purchase a product, examining all the products (eg: mobile applications) present in the catalog one after another in the hope of a finding an product that is of interest to him is impractical.
+For a user wanting to purchase a product, examining all the products (eg: mobile applications) present in the catalog one after another in the hope of finding a product that is of interest to him is impractical.
 Keyword search is not going to be greatly helpful because an average user does not have a clear understanding of the product space and is often unclear with what kind of products he exactly wants.
 
 We would like to have systems that assist the user to find products of his interest and enable him to efficiently navigate through the complex product space.
@@ -27,7 +27,7 @@ There are two main approaches to perform CF: Memory Based Approaches and Model B
 
 \subsection {Memory Based Approaches}
 In this approach, the original rating matrix is held in memory and directly used to generate predicted ratings and recommendations. There are two popular memory based approaches:\\
-\textbf{User based Nearest Neighbor(NN) Recommendation:} Given a user \textit{u}, the system computes top \textit{K} similar users to \textit{u} according to a pre-defined similarity measure. It recommends those items to user that haven't been rated/purchased by \textit{u} but liked by the top \textit{K} similar users.\\
+\textbf{User based Nearest Neighbor(NN) Recommendation:} Given a user \textit{u}, the system computes top \textit{K} similar users to \textit{u} according to a pre-defined similarity measure. It recommends the items that haven't been rated/purchased by \textit{u} but liked by the top \textit{K} similar users.\\
 \textbf{Item based NN Recommendation:} Given a user \textit{u}, the system recommends items that have received similar ratings to the ones that \textit{u} had previously liked.
  
 
@@ -56,7 +56,7 @@ He would find it difficult to receive useful recommendations because the number 
 
 %
 
-\section{Content based recommender systems}
+\section{Content Based Recommender Systems}
 \label{sec:content}
 Collaborative Filtering Systems do not require any knowledge about underlying users/items to make recommendations.
 As opposed to this, content based recommender systems rely on item descriptions and explicit/learned user profiles to recommend items.
@@ -88,7 +88,7 @@ Although content-based techniques do not require a large user community, they re
 Content-based recommenders do not have the new item problem. 
 Given a new item, the recommender system matches the new item's features to existing user profiles and recommends it directly to relevant users.
 
-\section{Knowledge based recommender systems}
+\section{Knowledge Based Recommender Systems}
 Collaborative filtering systems, discussed in Section \ref{sec:CF} suggest items to user based on user's past ratings.
 Content based recommender systems, discussed in Section \ref{sec:content} recommend items whose features match the user's profile.
 Consider some high-risk product domains like houses, cars, computers etc.
@@ -128,7 +128,7 @@ Conversational systems assume that a user's initial query is merely a starting p
 \textit{\textbf{Critiquing}} is one of the most popular forms of feedback in conversational recommender systems. In each interaction cycle, the user is presented with a list of products.
 User selects a product and expresses directional preference(s) over one or more item feature values. 
 For example, one might indicate that he is looking for a less expensive restaurant or a more formal setting(Figure \ref{fig:rentMe}). These are two individual critiques, first critique being on the \textit{price} attribute and the second critique on the \textit{setting} attribute. 
-The recommender updates it's user model according to this feedback provides another set of products and proceeds to the next recommendation cycle. This continues till the user finally chooses a product. (Figure \ref{fig:critiquing})
+The recommender updates it's user model according to this feedback and provides another set of products and proceeds to the next recommendation cycle. This continues till the user finally chooses a product. (Figure \ref{fig:critiquing})
 
 \textit{\textbf{Unit critiques}} allow users to express their preference over one attribute in each interaction cycle. \textit{\textbf{Compound critiques}} enable users to input their preferences on several attributes at a time. This can potentially shorten the number of interaction cycles in finding a target product.
 The early FindMe Systems \cite{burkeEarlierSystems} had \textit{\textbf{static critiques}}. The critiques wouldn't change when users selected a particular critique. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  4 MAY 2014 21:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.4.17)  4 MAY 2014 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,7 +1151,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--126
 
  []
 
-[12] <figures-bharath/pbf.png, id=543, 885.3075pt x 522.95375pt>
+[12] <figures-bharath/pbf.png, id=541, 885.3075pt x 522.95375pt>
 File: figures-bharath/pbf.png Graphic file (type png)
 
 <use figures-bharath/pbf.png>
@@ -1171,7 +1171,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--171
  []
 
 [13 <./figures-bharath/pbf.png>]
-<figures-bharath/entree.pdf, id=560, 1083.04625pt x 650.43pt>
+<figures-bharath/entree.pdf, id=558, 1083.04625pt x 650.43pt>
 File: figures-bharath/entree.pdf Graphic file (type pdf)
 
 <use figures-bharath/entree.pdf>
@@ -1182,27 +1182,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--197
 
  []
 
-[14] [15 <./figures-bharath/entree.pdf>] [16]
+[14] [15 <./figures-bharath/entree.pdf>]
 Overfull \hbox (4.2082pt too wide) in paragraph at lines 230--230
 []\OT1/ppl/b/n/17.28 Apriori Al-go-rithm Based Gen-er-a-tion of Dy-namic
  []
 
-<figures-bharath/apriori.png, id=595, 629.7126pt x 542.025pt>
+<figures-bharath/apriori.png, id=588, 629.7126pt x 542.025pt>
 File: figures-bharath/apriori.png Graphic file (type png)
 
 <use figures-bharath/apriori.png>
 Package pdftex.def Info: figures-bharath/apriori.png used on input line 234.
 (pdftex.def)             Requested size: 333.46758pt x 287.0403pt.
- [17 <./figures-bharath/apriori.png>]
-LaTeX Font Info:    Try loading font information for OML+ppl on input line 292.
+ [16]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 292.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlppl.fd
 File: omlppl.fd 
 )
 LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 292.
- [18]
+ [17 <./figures-bharath/apriori.png>] [18]
 Overfull \hbox (20.88275pt too wide) in paragraph at lines 314--314
 []\OT1/ppl/b/n/17.28 Multi At-tribute Util-ity The-ory (MAUT) based Gen-
  []
@@ -1215,34 +1217,29 @@ Package pdftex.def Info: figures-bharath/maut.png used on input line 324.
 (pdftex.def)             Requested size: 333.46758pt x 333.98846pt.
  [19] [20 <./figures-bharath/maut.png>] [21]
 [22] [23] [24]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 521.
-
- (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (30.33264pt too wide) in paragraph at lines 520--522
-\OT1/ppl/m/n/12 tributes. This data set is avail-able at []$\OT1/pcr/m/n/12 htt
-p : / / www . cs . ucd . ie / staff / lmcginty /
+Overfull \hbox (9.41443pt too wide) in paragraph at lines 520--524
+\OT1/ppl/m/n/12 tributes. Ta-ble []2.2[] shows the av-er-age in-ter-ac-tion cy-
+cles for PC, apart-ment datasets
  []
 
 
-Overfull \hbox (7.98665pt too wide) in paragraph at lines 563--605
+Overfull \hbox (7.98665pt too wide) in paragraph at lines 562--604
 \OT1/ppl/m/n/12 have used two datasets- PC dataset con-tain-ing 403 com-put-ers
  and cam-era dataset
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--605
+Underfull \hbox (badness 10000) in paragraph at lines 562--604
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--605
+Underfull \hbox (badness 10000) in paragraph at lines 562--604
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--605
+Underfull \hbox (badness 10000) in paragraph at lines 562--604
 
  []
 
@@ -1263,14 +1260,14 @@ tique strings have "Higher
 [28
 
 ] (./chap3_diversity.tex
-<figures-bharath/diversity1.jpg, id=733, 338.26375pt x 380.42125pt>
+<figures-bharath/diversity1.jpg, id=732, 338.26375pt x 380.42125pt>
 File: figures-bharath/diversity1.jpg Graphic file (type jpg)
 
 <use figures-bharath/diversity1.jpg>
 Package pdftex.def Info: figures-bharath/diversity1.jpg used on input line 7.
 (pdftex.def)             Requested size: 187.57352pt x 210.95633pt.
 
-<figures-bharath/diversity2.jpg, id=734, 335.2525pt x 378.41376pt>
+<figures-bharath/diversity2.jpg, id=733, 335.2525pt x 378.41376pt>
 File: figures-bharath/diversity2.jpg Graphic file (type jpg)
 
 <use figures-bharath/diversity2.jpg>
@@ -1380,7 +1377,7 @@ Overfull \hbox (0.49908pt too wide) in paragraph at lines 16--24
 e-ferred price ($400).
  []
 
-) (./chap3_marketEq.tex [37] [38]) (./chap3_additive.tex
+[37]) (./chap3_marketEq.tex [38]) (./chap3_additive.tex
 Overfull \hbox (19.9334pt too wide) in paragraph at lines 1--1
 []\OT1/ppl/b/n/17.28 Additive model for up-dat-ing weights of at-tributes 
  []
@@ -1389,7 +1386,7 @@ Overfull \hbox (19.9334pt too wide) in paragraph at lines 1--1
 CHAPTER 4.
 [41
 
-] <figures-bharath/focus.pdf, id=935, 345.29pt x 272.01625pt>
+] <figures-bharath/focus.pdf, id=934, 345.29pt x 272.01625pt>
 File: figures-bharath/focus.pdf Graphic file (type pdf)
 
 <use figures-bharath/focus.pdf>
@@ -1399,7 +1396,7 @@ Package pdftex.def Info: figures-bharath/focus.pdf used on input line 97.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures-bharath/noisy.pdf, id=936, 345.29pt x 272.01625pt>
+<figures-bharath/noisy.pdf, id=935, 345.29pt x 272.01625pt>
 File: figures-bharath/noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/noisy.pdf>
@@ -1410,7 +1407,7 @@ Package pdftex.def Info: figures-bharath/noisy.pdf used on input line 105.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [42] [43 <./figures-bharath/focus.pdf> <./figures-bharath/noisy.pdf>]
-<figures-bharath/div_camera_opt.pdf, id=1008, 512.91624pt x 504.88625pt>
+<figures-bharath/div_camera_opt.pdf, id=1007, 512.91624pt x 504.88625pt>
 File: figures-bharath/div_camera_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/div_camera_opt.pdf>
@@ -1418,7 +1415,7 @@ Package pdftex.def Info: figures-bharath/div_camera_opt.pdf used on input line
 141.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/div_pc_opt.pdf, id=1009, 512.91624pt x 504.88625pt>
+<figures-bharath/div_pc_opt.pdf, id=1008, 512.91624pt x 504.88625pt>
 File: figures-bharath/div_pc_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/div_pc_opt.pdf>
@@ -1429,7 +1426,7 @@ Package pdftex.def Info: figures-bharath/div_pc_opt.pdf used on input line 148.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures-bharath/div_camera_noisy.pdf, id=1010, 512.91624pt x 504.88625pt>
+<figures-bharath/div_camera_noisy.pdf, id=1009, 512.91624pt x 504.88625pt>
 File: figures-bharath/div_camera_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/div_camera_noisy.pdf>
@@ -1437,7 +1434,7 @@ Package pdftex.def Info: figures-bharath/div_camera_noisy.pdf used on input lin
 e 158.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/div_pc_noisy.pdf, id=1011, 512.91624pt x 504.88625pt>
+<figures-bharath/div_pc_noisy.pdf, id=1010, 512.91624pt x 504.88625pt>
 File: figures-bharath/div_pc_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/div_pc_noisy.pdf>
@@ -1455,7 +1452,7 @@ F,
  []
 
 [44]
-<figures-bharath/addPref_camera_opt.pdf, id=1023, 512.91624pt x 504.88625pt>
+<figures-bharath/addPref_camera_opt.pdf, id=1022, 512.91624pt x 504.88625pt>
 File: figures-bharath/addPref_camera_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/addPref_camera_opt.pdf>
@@ -1463,7 +1460,7 @@ Package pdftex.def Info: figures-bharath/addPref_camera_opt.pdf used on input l
 ine 182.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/addPref_pc_opt.pdf, id=1024, 512.91624pt x 504.88625pt>
+<figures-bharath/addPref_pc_opt.pdf, id=1023, 512.91624pt x 504.88625pt>
 File: figures-bharath/addPref_pc_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/addPref_pc_opt.pdf>
@@ -1475,7 +1472,7 @@ Package pdftex.def Info: figures-bharath/addPref_pc_opt.pdf used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures-bharath/addPref_camera_noisy.pdf, id=1025, 512.91624pt x 504.88625pt>
+<figures-bharath/addPref_camera_noisy.pdf, id=1024, 512.91624pt x 504.88625pt>
 File: figures-bharath/addPref_camera_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/addPref_camera_noisy.pdf>
@@ -1483,7 +1480,7 @@ Package pdftex.def Info: figures-bharath/addPref_camera_noisy.pdf used on input
  line 199.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/addPref_pc_noisy.pdf, id=1026, 512.91624pt x 504.88625pt>
+<figures-bharath/addPref_pc_noisy.pdf, id=1025, 512.91624pt x 504.88625pt>
 File: figures-bharath/addPref_pc_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/addPref_pc_noisy.pdf>
@@ -1505,7 +1502,7 @@ c-
 [46 <./figures-bharath/addPref_camera_opt.pdf> <./figures-bharath/addPref_pc_op
 t.pdf> <./figures-bharath/addPref_camera_noisy.pdf> <./figures-bharath/addPref_
 pc_noisy.pdf>]
-<figures-bharath/sel_camera_opt.pdf, id=1263, 512.91624pt x 504.88625pt>
+<figures-bharath/sel_camera_opt.pdf, id=1262, 512.91624pt x 504.88625pt>
 File: figures-bharath/sel_camera_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/sel_camera_opt.pdf>
@@ -1513,14 +1510,14 @@ Package pdftex.def Info: figures-bharath/sel_camera_opt.pdf used on input line
 17.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/sel_pc_opt.pdf, id=1264, 512.91624pt x 504.88625pt>
+<figures-bharath/sel_pc_opt.pdf, id=1263, 512.91624pt x 504.88625pt>
 File: figures-bharath/sel_pc_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/sel_pc_opt.pdf>
 Package pdftex.def Info: figures-bharath/sel_pc_opt.pdf used on input line 24.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/sel_camera_noisy.pdf, id=1265, 512.91624pt x 504.88625pt>
+<figures-bharath/sel_camera_noisy.pdf, id=1264, 512.91624pt x 504.88625pt>
 File: figures-bharath/sel_camera_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/sel_camera_noisy.pdf>
@@ -1528,7 +1525,7 @@ Package pdftex.def Info: figures-bharath/sel_camera_noisy.pdf used on input lin
 e 34.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/sel_pc_noisy.pdf, id=1266, 512.91624pt x 504.88625pt>
+<figures-bharath/sel_pc_noisy.pdf, id=1265, 512.91624pt x 504.88625pt>
 File: figures-bharath/sel_pc_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/sel_pc_noisy.pdf>
@@ -1538,7 +1535,7 @@ Package pdftex.def Info: figures-bharath/sel_pc_noisy.pdf used on input line 41
 ) (./chap4_finalMix.tex [47 <./figures-bharath/sel_camera_opt.pdf> <./figures-b
 harath/sel_pc_opt.pdf> <./figures-bharath/sel_camera_noisy.pdf> <./figures-bhar
 ath/sel_pc_noisy.pdf>]
-<figures-bharath/finalMix_camera_opt.pdf, id=1388, 512.91624pt x 504.88625pt>
+<figures-bharath/finalMix_camera_opt.pdf, id=1387, 512.91624pt x 504.88625pt>
 File: figures-bharath/finalMix_camera_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/finalMix_camera_opt.pdf>
@@ -1546,7 +1543,7 @@ Package pdftex.def Info: figures-bharath/finalMix_camera_opt.pdf used on input
 line 16.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/finalMix_pc_opt.pdf, id=1389, 512.91624pt x 504.88625pt>
+<figures-bharath/finalMix_pc_opt.pdf, id=1388, 512.91624pt x 504.88625pt>
 File: figures-bharath/finalMix_pc_opt.pdf Graphic file (type pdf)
 
 <use figures-bharath/finalMix_pc_opt.pdf>
@@ -1554,14 +1551,14 @@ Package pdftex.def Info: figures-bharath/finalMix_pc_opt.pdf used on input line
  23.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/finalMix_camera_noisy.pdf, id=1390, 512.91624pt x 504.88625pt>
+<figures-bharath/finalMix_camera_noisy.pdf, id=1389, 512.91624pt x 504.88625pt>
 File: figures-bharath/finalMix_camera_noisy.pdf Graphic file (type pdf)
 <use figures-bharath/finalMix_camera_noisy.pdf>
 Package pdftex.def Info: figures-bharath/finalMix_camera_noisy.pdf used on inpu
 t line 33.
 (pdftex.def)             Requested size: 187.57352pt x 184.63246pt.
 
-<figures-bharath/finalMix_pc_noisy.pdf, id=1391, 512.91624pt x 504.88625pt>
+<figures-bharath/finalMix_pc_noisy.pdf, id=1390, 512.91624pt x 504.88625pt>
 File: figures-bharath/finalMix_pc_noisy.pdf Graphic file (type pdf)
 
 <use figures-bharath/finalMix_pc_noisy.pdf>
@@ -1612,6 +1609,11 @@ i-tive for-mula (Equa-
  []
 
 ) (./thesis.bbl [51]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 66.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
 Underfull \hbox (badness 2932) in paragraph at lines 63--67
 []\OT1/ppl/b/n/12 CBRWiki \OT1/ppl/m/n/12 (2009).  Case-bases.  URL []$\OT1/pcr
 /m/n/12 http : / / cbrwiki . fdi . ucm . es /
@@ -1627,7 +1629,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 81CBF70AC5D11DE790ECD405696EAA01;4351.
+(rerunfilecheck)             Checksum: C2611631E96B160CE46FC9A80EB53C1A;4351.
  ) 
 Here is how much of TeX's memory you used:
  20436 strings out of 493633
@@ -1654,7 +1656,7 @@ xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2011/texmf-dist
 type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
 urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/pal
 atino/uplri8a.pfb>
-Output written on thesis.pdf (64 pages, 4808956 bytes).
+Output written on thesis.pdf (64 pages, 4808226 bytes).
 PDF statistics:
  1682 PDF objects out of 1728 (max. 8388607)
  1432 compressed objects within 15 object streams

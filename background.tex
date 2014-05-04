@@ -12,7 +12,7 @@ Once suitable similarity measures are devised, case-based recommender systems ar
 
 Consider a user who specifies the following query to the system: "I need a camera having a resolution of 8 Megapixels, manufactured by Canon, with a price less than \$500".
 A case-based recommender might retrieve all cameras that have 'Canon' as their manufacturer and are similar in terms of 'Price' and 'Resolution' as mentioned in user's query and display them as recommendations.
-The similarity between a query $q$ and a camera $C$, similarity is estimated according to weighted similarity model as:
+The similarity between a query $q$ and a camera $C$, is estimated according to weighted similarity model as:
 \begin{equation}
 \label{eq:sim}
 Similarity(q, C) = \frac{\sum_{i=1}^{n}{w_i \times sim_i(q_i, C_i)}}{\sum_{i=1}^{n}w_i}
@@ -132,8 +132,8 @@ As we can see from the above example, this mode of getting user feedback require
 It is generally accepted that the users are not particularly fond of long question answer sessions. 
 Additionally, it is possible that the user might not be able to answer the question that the system might ask him. 
 Oftentimes they will not know the answers to questions that demand a high-level of domain knowledge or they may reject questions that ask for sensitive or personal information.
-Finally, there are a lot of interfacing issues in implementing text based question answer system. 
-For example, expecting the users to answer specific questions in a text based format might not be appropriate in the context of recommendations over devices such as mobile phones (\cite{smyth2007}).
+%Finally, there are a lot of interfacing issues in implementing text based question answer system. 
+%For example, expecting the users to answer specific questions in a text based format might not be appropriate in the context of recommendations over devices such as mobile phones (\cite{smyth2007}).
 
 
 
@@ -222,7 +222,7 @@ An alternative strategy is to use \textit{compound critiques}, which operate on 
 The application of compound critiques enables the user to take larger steps in the recommendation space and hence they can arrive very quickly towards their target product.
 As seen in Section \ref{sec:critiquing}, \textit{static} critiques do not change as the recommendation session progresses. 
 On the other hand, \textit{dynamic} critiques change in each interaction cycle.
-In Sections \ref{sec:apriori} and \ref{sec:maut}, we discuss the two most popular approaches to generating of \textit{dynamic, compound} critiques, namely Apriori Algorithm based  and Multi-Attribute Utility Theory (MAUT) based generation of compound critiques.
+In Sections \ref{sec:apriori} and \ref{sec:maut}, we discuss the two most popular approaches for generating dynamic critiques - Apriori Algorithm based approach  and Multi-Attribute Utility Theory (MAUT) based approach.
 
 
 
@@ -280,7 +280,7 @@ Price (\$) & 1400 & 1000 & $<$\\
 \end{tabular}
 \end{table}
 
-In any given interaction cycle, when the user selects a critique, remaining cases in the case base are filtered using that critique and the product that is most similar to previous recommended case is shown as the next recommendation.
+In any given interaction cycle, when the user selects a critique, remaining cases in the case base are filtered using that critique and the product that is most similar to previously recommended case is shown as the next recommendation.
 We call this product as the \textit{current product}.
 Each remaining case in the case-base is compared to the \textit{current product} to generate a so-called \textit{critique pattern}. 
 Table \ref{tab:critiquePatterns} illustrates how critique pattern is generated.
@@ -299,7 +299,7 @@ For example, if we find 40\% of the remaining cases have a lower price and lower
 Apriori Algorithm (\cite{aprioriAlgo}) is used to generate recurring item subsets as association rules in the form of $A \rightarrow B$.
 Apriori measures the importance of a rule in terms of \textit{support} and \textit{confidence}.
 The support of a rule $A \rightarrow B$ is the percentage of patterns for which the rule is correct.
-Confidence is the ratio of the number of patterns that contain both $A$ and $B$ divided by the total number of patterns that contain $A$.
+Confidence is the ratio of the number of patterns that contain both $A$ and $B$ and the total number of patterns that contain $A$.
 For example, the rule [Monitor $<$] $\rightarrow$ [Price $<$] has support 0.6 if there are 100 critique patterns but only 60 of them contain both [Monitor $<$] and [Price $<$]. 
 The confidence of the rule would be 0.75 if exactly 80 critique patterns contain [Monitor $<$].
 During any given cycle, there will be a large number of association rules/ compound critiques mined by the Apriori algorithm.
@@ -314,7 +314,7 @@ Thus we can intuitively understand why application of compound critiques with lo
 \section{Multi Attribute Utility Theory (MAUT) based Generation of Dynamic Critiques}
 \label{sec:maut}
 Apriori algorithm based generation of compound critiques described in Section \ref{sec:apriori} was one of the first proposed approaches to dynamic critiquing.
-It was proven to offer significant benefits in terms of reduction of number of interaction cycles and educating the user about the domain through live-user studies.
+It was proven to offer significant benefits in terms of reduction of number of interaction cycles compared to other approaches that use unit critiques (\cite{aprioriUserStudy}).
 However, there is a serious limitation to the above approach - it does not take user's preferences into account while generating compound critiques.
 There is no guarantee that the compound critiques generated by this methodology will be relevant to the user, since only product domain knowledge is utilized in generation of compound critiques.
 \cite{mautPaper} propose an alternative methodology that relies on user preference knowledge.
@@ -518,9 +518,8 @@ This interaction continues till the target product $C$ appears in the top five p
 Each product in the dataset is appointed as the target product 10 times and the average number of interaction cycles for all the experiments is calculated.
 
 Two different datasets were used in the experiments: apartment data-set containing 50 apartments with 6 attributes: \textit{type, price, size, bathroom, kitchen,} and \textit{distance}.
-The PC dataset contains contains 120 PCs with 8 different attributes. This data set is available at \url{http://www.cs.ucd.ie/staff/lmcginty/PCdataset.zip}.
-
-Table \ref{tab:paperResults} show the average interaction cycles for PC, apartment datasets for different approaches.
+The PC dataset contains contains 120 PCs with 8 different attributes. 
+Table \ref{tab:paperResults} shows the average interaction cycles for PC, apartment datasets for different approaches.
 Critique\_MAUT approach reduces the number of interaction cycles by 20\% compared to Critique\_Apriori approach.
 
 

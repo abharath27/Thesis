@@ -8,9 +8,9 @@
 \contentsline {subsection}{\numberline {1.1.1}Memory Based Approaches}{2}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Model Based Approaches}{2}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Limitations of CF}{3}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}Content based recommender systems}{3}{section.1.2}
+\contentsline {section}{\numberline {1.2}Content Based Recommender Systems}{3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Limitations of Content-based Recommendation}{4}{subsection.1.2.1}
-\contentsline {section}{\numberline {1.3}Knowledge based recommender systems}{5}{section.1.3}
+\contentsline {section}{\numberline {1.3}Knowledge Based Recommender Systems}{5}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Critiquing}{7}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Limitations of Knowledge based recommendation}{8}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Our contribution: Improvements to MAUT based recommendation}{8}{section.1.4}
@@ -36,10 +36,10 @@
 \contentsline {section}{\numberline {3.4}Additional preference to products that have a critique pattern similar to the most recently selected product}{32}{section.3.4}
 \contentsline {section}{\numberline {3.5}Similar Products in the First Cycle}{33}{section.3.5}
 \contentsline {section}{\numberline {3.6}Selectively updating the weights of numeric attributes}{34}{section.3.6}
-\contentsline {section}{\numberline {3.7}Selectively updating value functions of nominal attributes}{35}{section.3.7}
-\contentsline {section}{\numberline {3.8}Considering history of user selected products}{36}{section.3.8}
+\contentsline {section}{\numberline {3.7}Selectively updating value functions of nominal attributes}{36}{section.3.7}
+\contentsline {section}{\numberline {3.8}Considering history of user selected products}{37}{section.3.8}
 \contentsline {section}{\numberline {3.9}Initializing the value functions of nominal attributes with unequal values}{38}{section.3.9}
-\contentsline {section}{\numberline {3.10}Additive model for updating weights of attributes}{39}{section.3.10}
+\contentsline {section}{\numberline {3.10}Additive model for updating weights of attributes}{40}{section.3.10}
 \contentsline {chapter}{\numberline {4}Experimental Results}{41}{chapter.4}
 \contentsline {section}{\numberline {4.1}Experimental Methodology}{41}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Highly Focused/Optimal Framework}{42}{subsection.4.1.1}

@@ -5,7 +5,7 @@ Utilities of the remaining products in the case base are calculated as a weighte
 Along with the weighted additive formula in Equation \ref{eq:utility} , we introduce an additional term in the utility function that favors the products having a similar critique pattern as that of the most recently selected product.
 The method of computing critique patterns for products has been discussed in Section \ref{sec:genCritique}.
 The intuition behind this modification is that, if the user selects the critique string "Lower Price, Higher Resolution but Higher Weight", he is interested in those products where this trade-off is obeyed.
-For example, considering only three attributes, Price, Resolution and Weight, if the critique pattern of the selected product is \{Price:$<$, Resolution:$>$, Weight:$>$\} and the critique pattern of a product $p$ in the case base is \{Price:$<$, Resolution:$>$, Weight:$<$\}, the overlap between the two critique patterns is 2/3.
+For example, considering only three attributes, Price, Resolution and Weight, if the critique pattern of the selected product (w.r.t. current reference product) is \{Price:$<$, Resolution:$>$, Weight:$>$\} and the critique pattern of a product $p$ in the case base is \{Price:$<$, Resolution:$>$, Weight:$<$\}, the overlap between the two critique patterns is 2/3.
 The function $CalcUtility(PM, u)$, which is used to calculate utility of products at the beginning of each cycle is given in Algorithm \ref{algo:addPref}.
 
 \begin{algorithm}[ht]
@@ -35,7 +35,7 @@ The additional term added to the utility of a product $p$, \textit{addTerm(p)} i
 \label{eq:addPref}
 addTerm(p) = \frac{\sum_{i=1}^{n} {w_i \times overlap(p,sel_i)}} {\sum_{i=1}^{n}w_i}
 \end{equation}
-In Equation \ref{eq:addPref}, $sel_i$ refers to the product selected by the user in $i^{th}$ cycle.
+In Equation \ref{eq:addPref}, $sel_i$ refers to the product selected by the user in $i^{th}$ cycle and $n$ refers to the total number of cycles elapsed in the recommendation session.
 $w_i$ is the weight/importance associated with the overlap between the product $p$ and product selected in $i^{th}$ cycle.
 In our implementation, we set $w_i = \frac{1}{2^{n-i}}$.
 We will refer to Algorithms \ref{algo:addPref} and \ref{algo:addPref2} as ADDPREF and ADDPREF2 respectively in the subsequent sections.
