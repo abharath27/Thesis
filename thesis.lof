@@ -2,22 +2,14 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Critiquing\relax }}{6}{figure.caption.7}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces RentMe Recommender System: \cite {burkeRentMe}\relax }}{6}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Recommender System that uses preference based feedback (\cite {smyth2007}\relax }}{14}{figure.caption.10}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Entree Restaurant Recommender System\relax }}{16}{figure.caption.11}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot of digital camera recommender system that uses Apriori algorithm to generate compound critiques\relax }}{19}{figure.caption.12}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Critique Pattern for the product p(\cite {reilly04})\relax }}{19}{figure.caption.13}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Screenshot of user interface of the recommender system that uses MAUT to generate compound critiques(\cite {mautPaper}\relax }}{22}{figure.caption.14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Algorithm for critiquing based on MAUT (\cite {mautPaper}\relax }}{22}{figure.caption.15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Average interaction cycles for PC Dataset(\cite {mautPaper})\relax }}{25}{figure.caption.17}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Average interaction cycles for Apartment dataset(\cite {mautPaper})\relax }}{25}{figure.caption.17}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Avg session lengths on camera dataset (\cite {liveUserStudy}\relax }}{27}{figure.caption.18}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Avg recommendation accuracy (\cite {liveUserStudy})\relax }}{27}{figure.caption.18}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Final Questionnaire - Question 1 (Blue - Apriori, Pink - MAUT, Yellow - No difference)(\cite {liveUserStudy}\relax }}{27}{figure.caption.19}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Final Questionnaire - Question 2 (\cite {liveUserStudy}\relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Recommender System that uses preference based feedback (\cite {smyth2007})\relax }}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Entree Restaurant Recommender System (\cite {entree})\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Screen-shot of digital camera recommender system that uses Apriori algorithm to generate compound critiques\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Screen-shot of user interface of the recommender system that uses MAUT to generate compound critiques(\cite {mautPaper}\relax }}{20}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Before diversifying critique strings\relax }}{31}{figure.caption.20}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces After diversifying critique strings\relax }}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Before diversifying critique strings\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces After diversifying critique strings\relax }}{28}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Numbers in the boxes represent the compatibilities of each of the five critique strings with the target product. Simulated user selects the most compatible critique string (red) in each cycle.\relax }}{45}{figure.caption.34}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulated user selects sub-optimal critique strings due to the introduction of noise\relax }}{45}{figure.caption.35}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Numbers in the boxes represent the compatibilities of each of the five critique strings with the target product. Simulated user selects the most compatible critique string (red) in each cycle.\relax }}{42}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulated user selects sub-optimal critique strings due to the introduction of noise\relax }}{42}{figure.caption.31}
 \addvspace {10\p@ }

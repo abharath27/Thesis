@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -46,6 +46,11 @@
 \newblock Knowledge-based recommender systems.
 \newblock {\em Encyclopedia of library and information systems\/}, {\bf
   69}(Supplement 32), 175--186.
+
+\bibitem[{Burke {\em et~al.\/}(1997)Burke, Hammond, and Yound}]{entree}
+{\bf Burke, R.~D.}, {\bf K.~J. Hammond}, and {\bf B.~Yound} (1997).
+\newblock The findme approach to assisted browsing.
+\newblock {\em IEEE Expert\/}, {\bf 12}(4), 32--40.
 
 \bibitem[{Burke {\em et~al.\/}(1996)Burke, Hammond, and
   Young}]{burkeEarlierSystems}

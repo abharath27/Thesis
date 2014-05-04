@@ -6,7 +6,7 @@ Instead, we now maintain a list of products corresponding to the critique string
 For example, if the prices of the products selected by the user in the first four cycles are \$250, \$200, \$200 and \$400.
 If he chooses a product with a price \$800 in the fifth cycle, the standard MAUT algorithm will make \$800 as the preferred value of 'price' attribute in it's user model and divide by weight of the price attribute by $\beta$, because the price of the reference product is \$350.
 However, the user might have most likely selected the product with price \$800 because he likes other features of the product.
-When this product becomes the reference product in the next cycle, the user will most likely choose "Lower Price" critique because all his previous preferrred products have a price around \$400.
+When this product becomes the reference product in the next cycle, the user will most likely choose "Lower Price" critique because all his previous preferred products have a price around \$400.
 Instead of making \$800 as the preferred price, we compute the weighted average ($wa$) of all previous product prices and make that as the preferred price and update the weight of 'price' attribute based on the value of $wa$.
 %In general, the weights of numeric attributes will be updated based on weighted average of previously selected products' attribute values.
 In our implementation, we considered the weight associated with $i^{th}$ product is $\frac{1}{n}$. 

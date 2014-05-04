@@ -1,0 +1,153 @@
+\documentclass[Dual]{iitm-thesis}
+
+\usepackage[font=small]{caption}
+\usepackage{palatino}
+\usepackage{framed}
+\usepackage{mdframed}
+
+\usepackage{graphicx}
+\usepackage{hyperref} % hyperlinks for references.
+\hypersetup{ 
+  pdftitle          = {Improving the performance of dynamic critiquing},
+  pdfauthor         = {Bharath Reddy <bharath270392@gmail.com>},
+}
+\usepackage{amsmath} % easier math formulae, align, subequations \ldots
+\usepackage{amsfonts}   
+\usepackage{amssymb}   
+\usepackage{amsthm}   
+
+\usepackage{longtable}% for long tables
+\usepackage{booktabs} % Table rules
+\usepackage{subfig} 
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e} 
+
+\usepackage{tikz} 
+\usepackage{varwidth}
+\usepackage{algpseudocode}
+
+\usepackage{fancyvrb}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{lipsum}
+
+
+
+\input{macros}
+\input{rl-macros}
+\input{gp-macros}
+\input{sw-macros}
+
+\newcommand{\mytitle}{Improving the performance of Dynamic Critiquing}
+\newcommand{\myauthor}{Bharath Reddy A}
+
+\title{\mytitle}
+\author{\myauthor}
+\date{April 2014}
+\department{COMPUTER SCIENCE AND ENGINEERING}
+
+\begin{document}
+
+% Title page
+%\nocite{*}
+\maketitle
+
+%uncomment the next 8 lines when report is done..
+% Certificate
+%\input{trivia/certificate}
+
+% Acknowledgements
+%\input{trivia/ack}
+
+% Abstract
+%\input{abstract}
+
+\pagebreak
+
+% Table of contents etc.
+% Uncomment these lines when this report is done...
+%\begin{singlespace}
+%\tableofcontents
+%\thispagestyle{empty}
+%\listoftables
+%\addcontentsline{toc}{chapter}{LIST OF TABLES}
+%\listoffigures
+%\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+%\end{singlespace}
+
+% Abbreviations
+%\input{trivia/abbreviations.tex}
+\pagebreak
+%\input{trivia/notation.tex}
+%\pagebreak
+\clearpage
+
+% The main text will follow from this point so set the page numbering
+% to arabic from here on.
+\pagenumbering{arabic}
+
+% Chapters-old
+%\input{slinky/intro}
+%\input{slinky/background}
+%\input{slinky/related-work}
+%\input{slinky/searching-homomorphisms}
+%\input{slinky/small-world-options}
+%\input{slinky/conclusions}
+%\input{slinky/papers}
+
+% Chapters-new
+%\input{intro}
+%\input{background}
+%\input{modifications}
+%\input{chapter4}
+%\input{conclusions}
+%\input{temp2}
+
+\lipsum[1]
+\begin{algorithm}
+\begin{multicols}{2}
+\begin{algorithmic}[1]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+  %\Input{$PM$, $IS$}
+
+  $R \gets \{\}$\\
+  $CB' \gets IS$\\
+  \For{each attribute $x_i$ }{
+      $ref[x_i] = 0$;\\
+      $ws = 0$;\\
+      \For{each product p $\in$ refL }{
+          $ref[x_i] +=  hw_i \times p[x_i] $;\\
+          $ws += hw_i$;\\
+      }
+      $ref[x_i] = ref[x_i]/ws$; \\
+  }
+  \For{each attribute $x_i$ in ref }{
+      $[pv_i, pw_i] \leftarrow PM on x_i$;\\
+      \If {$V(x_i) \geq pv_i$} {
+          $pw_i' = pw_i \times \beta $;\\
+      }
+      \Else {
+          $pw_i' = pw_i / \beta $;\\
+      }
+      $PM' \leftarrow [V(x_i), pw_i']$;\\
+  }
+  \Return $PM$;\\
+  \caption{genAlgorithm}
+  \label{algo:genAlgorithm}
+\end{algorithmic}
+\end{multicols}
+\end{algorithm}
+\lipsum[2]
+
+% Appendices.
+%\appendix
+
+%\input{slinky/alt-hom-approaches}
+
+\begin{singlespace}
+  \nocite{*}
+%  \bibliography{thesis}
+\end{singlespace}
+
+\end{document}

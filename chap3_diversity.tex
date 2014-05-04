@@ -27,10 +27,10 @@ So, there is a risk of having prolonged sessions because of this.
 
 The default strategy for selecting the short-list of $K$ products is to select $K$ products that have highest utility.
 Instead, we use a variant of \textit{\textbf{Bounded Greedy Selection}} algorithm described in \cite{boundedGreedy} to select the top $K$ products.
-The main idea of this approach is that we select products with a high utility while maximizing the product's average dis-similarity to the cases/compound critiques selected so far.
+The main idea of this approach is that we select products with a high utility while maximizing the product's average dissimilarity to the cases/compound critiques selected so far.
 A metric that is similar to Equation \ref{eq:quality} is used to compute $Quality$ scores of products in each cycle.
 \begin{equation}
-\label{eq:quality}
+\label{eq:quality2}
 Quality(c, P) = \alpha * utility(c) + (1-\alpha)*critiqueSim(c, P)
 \end{equation}
 %

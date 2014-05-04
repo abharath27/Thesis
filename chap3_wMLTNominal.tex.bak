@@ -1,0 +1,42 @@
+\section{Selectively updating value functions of nominal attributes}
+\label{sec:selNominal}
+As seen in Section \ref{sec:valueFunc}, the value of $\gamma$ used to update the value functions of nominal attributes is constant in each cycle.
+Instead, we propose an alternative approach in which the value of $\gamma$ varies according to the number of alternatives the user rejected while choosing a particular attribute value. 
+Higher the number of rejected alternatives, higher is the value of $\gamma$.
+The intuition for varying the value of $\gamma$ is as follows: Consider the case when there are five PCs displayed to the user and the manufacturers of the five PCs are "Compaq", "HP", "Apple", "Dell" and "Toshiba".
+If the user selects the PC with "Compaq" as the manufacturer, we can see that he has accepted "Compaq" and rejected four other manufacturers.
+Thus, we infer that the user has a strong preference for "Compaq" PCs.
+On the other hand, if all the five PCs have a screen size of 15 inches and the user selects the PC with screen-size of 15 inches, we cannot really infer whether the user has a strong preference for 15 inch PCs.
+Generalizing the examples above, if $k$ is the value of the attribute N selected in a cycle and $R$ is the list of values of attribute $N$ of the top-K products other than the selected product, we define
+%
+\begin{equation}
+\gamma = \frac{\#\: of\: alternatives\: to\: k\: in\: R}{|R|}
+\end{equation}
+%
+If attribute $N$ = "Manufacturer"; $\gamma$ = 1 when manufacturer of all the remaining products is different from the selected product's manufacturer($M$) and also different from each other; meaning that the user has a strong preference for $M$.
+$\gamma$ = 0 when manufacturer of all remaining products is same as the selected product's manufacturer($M$).
+This is the case when we cannot infer whether the user has a strong preference for $M$.
+This is similar to weighted MLT described in \cite{comparisonbr}.
+The value of $\gamma$ for each attribute when the product \textit{P3} is selected, is illustrated in Table \ref{tab:wMLT}.
+Varying the value of $\gamma$ according to the other products' attribute values results in a significant improvement in the number of interaction cycles.
+We will refer to this algorithm as \textbf{SELNOMINAL} in subsequent sections.
+
+
+
+\begin{table}
+\renewcommand{\arraystretch}{1.5}
+ \centering
+ \begin{tabular}{|l| l l l l l |l|}
+  \hline \hline
+   Feature & P1 & P2 & \textbf{P3} & P4 & P5 & $\gamma$ \\
+  \hline
+  Manufacturer & Dell & Apple & \textbf{Compaq} & HP & Toshiba & 1.0 \\
+  Type & Laptop & Laptop & \textbf{Laptop} & Laptop & Laptop & 0 \\
+  Processor & Core-i3 & AMD-E1 & \textbf{Core-i7} & AMD-E1 & Core-i3 & 0.5\\
+  Screen-size & 15 & 13.3 & \textbf{15} & 15 & 15 & 0.25\\
+  \hline \hline
+ \end{tabular}
+ \caption{Values of $\gamma$ when P3 is selected by the user}
+ \label{tab:wMLT}
+\end{table}
+

@@ -9,45 +9,45 @@ Warning--string name "april" is undefined
 --line 291 of file thesis.bib
 Warning--entry type for "datasets" isn't style-file defined
 --line 296 of file thesis.bib
-You've used 32 entries,
+You've used 33 entries,
             2930 wiz_defined-function locations,
-            791 strings with 9572 characters,
-and the built_in function-call counts, 20930 in all, are:
-= -- 1593
-> -- 841
+            796 strings with 9687 characters,
+and the built_in function-call counts, 21614 in all, are:
+= -- 1644
+> -- 872
 < -- 20
-+ -- 285
-- -- 243
-* -- 1639
-:= -- 2913
-add.period$ -- 95
-call.type$ -- 32
-change.case$ -- 274
-chr.to.int$ -- 32
-cite$ -- 32
-duplicate$ -- 1794
-empty$ -- 1776
-format.name$ -- 349
-if$ -- 4258
++ -- 297
+- -- 252
+* -- 1700
+:= -- 3009
+add.period$ -- 98
+call.type$ -- 33
+change.case$ -- 282
+chr.to.int$ -- 33
+cite$ -- 33
+duplicate$ -- 1852
+empty$ -- 1829
+format.name$ -- 361
+if$ -- 4390
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 310
-newline$ -- 148
-num.names$ -- 128
-pop$ -- 748
+missing$ -- 321
+newline$ -- 153
+num.names$ -- 132
+pop$ -- 770
 preamble$ -- 1
-purify$ -- 207
+purify$ -- 214
 quote$ -- 0
-skip$ -- 607
+skip$ -- 621
 stack$ -- 0
-substring$ -- 890
-swap$ -- 892
+substring$ -- 922
+swap$ -- 925
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 285
+type$ -- 294
 warning$ -- 0
-while$ -- 145
+while$ -- 150
 width$ -- 0
-write$ -- 390
+write$ -- 403
 (There were 3 warnings)

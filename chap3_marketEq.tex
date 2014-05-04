@@ -4,7 +4,7 @@ The default strategy for initializing value functions of nominal attributes as d
 For example, in the PC dataset, if there are 8 different manufacturers (Eg: 'Apple', 'HP', 'Compaq' etc.), the value associated with each of the manufacturers at the beginning of the recommendation session is initialized to $1/8$.
 In this section, we will look at a different way to initialize the value functions that can lead to better performance.
 
-A product $p$ is called as a \textit{dominator} of product $q$, if all the attribute values of  $p$ are 'better than' (or dominate) that of $q$. 
+A product $p$ \textit{dominates} a product $q$, if all the attribute values of $p$ are 'better than' (or dominate) that of $q$. 
 We can also say that the product $q$ is \textit{dominated} by the product $p$.
 For LIB ('Less Is Better') attributes (Eg: Price), lower price is 'better than' higher price.
 For MIB ('Less Is Better') attributes (Eg: Disk Storage), higher storage is 'better than' lower storage.
