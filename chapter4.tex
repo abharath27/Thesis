@@ -88,7 +88,7 @@ The complete implementation for all the algorithms described in Sections \ref{se
 \label{sec:focus}
 Evaluation in Highly Focused Recommendation Framework is the same way of evaluation described in Section \ref{sec:offline}.
 In this scenario we assume that the user is relatively sure of his preferences and hence chooses the critique string that is maximally compatible with the target product in each cycle.
-The notion of selecting the most compatible critique string is shown in Figure \ref{fig:focus}
+The notion of selecting the most compatible critique string in every recommendation cycle is shown in Figure \ref{fig:focus}.
 
 %This will help  us to illustrate the noisy framework better.
 \begin{figure}[h]
@@ -114,7 +114,7 @@ This kind of evaluation is similar to the evaluation procedure described in \cit
 Noise is introduced into the process by varying the compatibility scores of the critique strings within some threshold. 
 In our experiments, we have used a noise level of 10\%, i.e, the compatibility scores can be changed by up to +/-10\% of their actual values.
 Due to the introduction of noise, the user makes sub-optimal choices in each cycle as shown in Figure \ref{fig:noisy}.
-In the experiments, the simulated user selects a sub-optimal critique string for 28\% times on an average in noisy setting.
+In the experiments, the simulated user selects a sub-optimal critique string for 38\% times on an average in noisy setting.
 The average number of interaction cycles in this scenario is slightly higher in this scenario compared to the number of cycles in highly focused recommendation framework because of sub-optimal choices made by the simulated user.
 
 

@@ -6,7 +6,7 @@ Along with the weighted additive formula in Equation \ref{eq:utility} , we intro
 The method of computing critique patterns for products has been discussed in Section \ref{sec:genCritique}.
 The intuition behind this modification is that, if the user selects the critique string "Lower Price, Higher Resolution but Higher Weight", he is interested in those products where this trade-off is obeyed.
 For example, considering only three attributes, Price, Resolution and Weight, if the critique pattern of the selected product is \{Price:$<$, Resolution:$>$, Weight:$>$\} and the critique pattern of a product $p$ in the case base is \{Price:$<$, Resolution:$>$, Weight:$<$\}, the overlap between the two critique patterns is 2/3.
-The function $CalcUtility(PM, u)$, which is used to calculate utility of products at the beginning of each cycle is modified as follows:
+The function $CalcUtility(PM, u)$, which is used to calculate utility of products at the beginning of each cycle is given in Algorithm \ref{algo:addPref}.
 
 \begin{algorithm}[ht]
   \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}

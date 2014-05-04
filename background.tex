@@ -33,7 +33,7 @@ $max(P)$ and $min(P)$ refer to the maximum and minimum values of $price$ feature
 As we can see from Equation \ref{eq:localSim}, greater the difference between $p_i$ and $p_j$, lesser is the similarity between them.
 Similarity measures for other numeric attributes of a product can be defined similar to Equation \ref{eq:localSim}.
 Defining similarity measures for nominal attributes is challenging.
-Specialized domain knowledge is required to estimate the similarities between the nominal feature (Eg:"manufacturer") values of two cameras.\\
+Specialized domain knowledge is required to estimate the similarities between the nominal feature (Eg:"manufacturer") values of two products.\\
 Case-based recommenders can be classified into two categories - 'Single-shot systems' and 'conversational systems'.
 
 
@@ -133,7 +133,7 @@ It is generally accepted that the users are not particularly fond of long questi
 Additionally, it is possible that the user might not be able to answer the question that the system might ask him. 
 Oftentimes they will not know the answers to questions that demand a high-level of domain knowledge or they may reject questions that ask for sensitive or personal information.
 Finally, there are a lot of interfacing issues in implementing text based question answer system. 
-For example, expecting the users to answer specific questions in a text based format might not be appropriate in the context of recommendations over devices such as mobile phones (\cite{smyth2007})
+For example, expecting the users to answer specific questions in a text based format might not be appropriate in the context of recommendations over devices such as mobile phones (\cite{smyth2007}).
 
 
 
@@ -154,8 +154,8 @@ There are three important kinds of feedback: Ratings-based feedback, Preference-
 \\
 \textbf{Ratings-based feedback:} In this kind of feedback, the recommender system provides a list of recommendations and  asks the user to provide an explicit rating for each item in the list.
 One of the most famous systems that used this kind of feedback was the PTV system (\cite{smyth99tv}).
-This system allowed the user the grade the T.V. programs recommended to them into two categories - positive and negative. 
-These ratings then were made part of the user profile which was used to generate further recommendations.\\
+This system allows the user the grade the T.V. programs recommended to them into two categories - positive and negative. 
+These ratings then are made part of the user profile which was used to generate further recommendations.\\
 \\
 \textbf{Preference-based feedback:} This is the simplest form of feedback which requires the user to indicate a preference for one recommendation over another. 
 It is also particularly well suited to domains where users have very little domain knowledge.
@@ -163,7 +163,7 @@ Consider the example of the bridal dresses recommender system shown in Figure \r
 The system shows 3 different items along with the feature values of each item in each cycle. 
 The user can select one of the items as his preference.
 The system takes user preference into account and generates 3 new recommendations in the next cycle.
-Bridal wedding dresses is a good example of a domain where average shopper is likely to have a limited knowledge, in terms of the technical feature values of the items (\cite{smyth2007})
+Bridal wedding dresses is a good example of a domain where average shopper is likely to have a limited knowledge, in terms of the technical feature values of the items (\cite{smyth2007}).
 However, most users will be able to select one dress as preference over the other.
 Unfortunately, while this approach carries very little feedback overhead from a user’s perspective, it is ultimately limited in its ability to guide the recommendation process.
 For example, a user might have chosen a particular item because he likes certain features of the item, but we can never be sure about which features compelled the user to select that item.
@@ -214,7 +214,7 @@ In comparison to the standard value elicitation approach, critiquing is a very l
 
 %In Sections \ref{sec:evolutionBeg}  we discuss various challenges in critique-based recommendation that have been addressed by various researchers over the past decade.
 
-Most early systems that implemented critiquing for recommendation, used \textit{unit critiques}.
+Most early systems that implemented critiquing used \textit{unit critiques}.
 Unit critiques operate only on a single feature in a recommendation cycle. 
 This ultimately limits the ability of the recommender to narrow its focus which can result in unnecessarily long recommendation dialogues.
 Furthermore, a user may not understand the feature trade-offs that exist within a particular domain.
@@ -333,6 +333,52 @@ They use Multi Attribute Utility Theory (MAUT) for dynamically generating compou
 %\label{fig:paperAlgo}
 %\end{figure}
 
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+    $PM$ = userQuery();\\
+    $ref$ = generateFirstItem();\\
+    $CB$ = $CB$- $ref$;\\
+    \While {user does not accept $ref$}{
+        $topK$ = GenCritiqueItems($PM$, $CB$);\\
+        $CS$ = convertToStrings($ref$, $topK$);\\
+        showInterface(CS);\\
+        $index$ = userSelectedString(CS);\\
+        $ref$ = $topK[index]$;\\
+        $CB$ = $CB$ - $topK$;\\
+        $PM$ = UpdateModel($PM$, $ref$);\\
+    }
+\caption{Critique\_MAUT()}
+\label{algo:paperAlgo}
+\end{algorithm}
+
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+    \For{each item $p$ in CB} {
+        $U(p)$ = CalcUtility($PM$, $p$);\\
+    }
+    $CB'$ = SortByUtility($CB$, $U$);\\
+    \Return topK($CB'$);
+\caption{GenCritiqueItems($PM$, $CB$)}
+\label{algo:genItems}
+\end{algorithm}
+
+\begin{algorithm}[ht]
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \DontPrintSemicolon
+  %\Input{$PM$, $IS$}
+
+  $retVal \gets 0$;\\
+  \For{ each attribute $x_i$ in $u$ }{
+      retVal += $pw_i \times V(x_i)$
+  }
+  \Return retVal
+  \caption{CalcUtility(PM, u)}
+  \label{algo:utility}
+\end{algorithm}
+
+
 MAUT is a well-known  and powerful method in decision theory for ranking a list of multi-attribute products according to their utilities.
 \cite{mautPaper} use a very simple additive form to calculate the utility of a product $O = \langle x_1,\hdots,x_n\rangle$ as described below:
 \begin{equation}
@@ -342,7 +388,8 @@ U(\langle x_1,\hdots,x_n \rangle) = \sum_{i=1}^n w_iV_i(x_i)
 %
 In Equation \ref{eq:utility}, $n$ is the number of attributes that each of the products has, $w_i$ is the weight/importance associated with the attribute $i$. 
 $V_i$ is the value function associated with the attribute $i$ and it is given by experts during design time.
-%The algorithm for MAUT based compound critiquing is illustrated in Figure \ref{fig:paperAlgo}.
+The algorithm for MAUT based compound critiquing is illustrated in Algorithm \ref{algo:paperAlgo}.
+The functions \textit{GenCritiqueItems} and \textit{CalcUtility} have also been illustrated in Algorithms \ref{algo:genItems} and \ref{algo:utility} respectively.
 The authors use a preference model which contains the weights and preferred values of product attributes to represent user's preferences.
 The weights of all numeric attributes are initialized to $1/n$.
 At the beginning of the interaction process, user gives some initial preferences to the system (Eg: \textit{HardDisk} = 500GB, \textit{Price} $<$ \$400 etc.).
@@ -362,7 +409,7 @@ This process continues till the user find his target product and terminates the 
 Figure \ref{fig:maut} shows a screen-shot of PC recommender system developed based on the above approach.
 
 \subsection{Value functions of numeric attributes}
-In \cite{mautPaper}, the value functions that were used in the implementation are not mentioned.
+In \cite{mautPaper}, the value functions of numeric attributes that were used in their implementation are not mentioned.
 In our implementation, we first classify numeric attributes into two categories - LIB (Less is Better) and MIB (More is Better).
 For the Camera dataset, the attribute \textit{Price} is classified into LIB, since given two cameras which have all other features the same, users would prefer the camera which has lower \textit{Price}.
 Similarly, the attribute \textit{Weight} is classified into LIB.
@@ -402,25 +449,12 @@ In general, in cycle $t$,  each of $v_1, v_2, v_3,\hdots, v_k$ is multiplied by 
 %\label{sec:utility}
 %The function $CalcUtility(PM, u)$ is as follows:
 %
-%\begin{algorithm}[ht]
-%  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
-%  \DontPrintSemicolon
-%  %\Input{$PM$, $IS$}
-%
-%  $retVal \gets 0$;\\
-%  \For{ each attribute $x_i$ in $u$ }{
-%      retVal += $pw_i \times V(x_i)$
-%  }
-%  \Return retVal
-%  \caption{CalcUtility(PM, u)}
-%  \label{algo:utility}
-%\end{algorithm}
 
 
 
 
 
-\section{Offline Evaluation}
+\section{Offline Experiments}
 \label{sec:offline}
 %\begin{figure}
 %\centering
@@ -545,9 +579,9 @@ The performance of both the approaches was compared using metrics like Recommend
 \textbf{Recommendation Efficiency:} To be successful, recommender systems must be able to quickly and efficiently guide a user through a product-space. 
 Shorter the length of recommendation session, better is the recommendation efficiency.
 Sequencing bias was eliminated by randomizing the presentation order in terms of critiquing technique and dataset.
-For the camera dataset, MAUT performed better (4.1 cycles) compared to Apriori (8.5 cycles).
-The average session length for two trials for the camera dataset is graphically shown in Figure \ref{fig:camera_liveUser}.
-But for the PC dataset, Apriori performed better (7.0 cycles) compared to MAUT (10.1 cycles).
+The average session length for two trials for both camera and PC datasets is shown in Table \ref{tab:liveUserStudies}.
+For the camera dataset, MAUT performed better (3.8 cycles) compared to Apriori (7.3 cycles).
+But for the PC dataset, Apriori performed better (6.4 cycles) compared to MAUT (8.5 cycles).
 A possible explanation as to why Apriori performed better in PC domain and MAUT performed better in camera domain is that Apriori is likely to perform on larger and more complex datasets.
 Overall, both recommenders are quite efficient.\\
 \\
@@ -557,7 +591,7 @@ After a user has interacted with the recommender system and chosen a product $p$
 The user is then asked whether he is willing to retain $p$  or change it for another better product in the catalog.
 The accuracy of the recommender is evaluated in terms of percentage of times that the user chooses to retain his selected product($p$).
 Higher the number of times a user retains the selected product($p$), higher is the accuracy of the recommender system.
-Accuracy results for both approaches are shown in Figure \ref{fig:accuracy_liveUser}.
+Accuracy results for both approaches are shown in Table \ref{tab:liveUserStudies}.
 MAUT achieves 68.4\% accuracy on PC dataset and 82.5\% accuracy on camera dataset.
 Apriori achieves 57.9\% and 64.6\% accuracy on PC and camera datasets respectively.
 Therefore, MAUT seems to be recommending optimal products to the users. \\

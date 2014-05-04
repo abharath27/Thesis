@@ -89,8 +89,8 @@
 \RequirePackage{atbeginend} % used to redefine the list environs
 \setstretch{1.5}
 
-\BeforeBegin{itemize}{\vspace*{-5ex}\begin{singlespace}}
-\AfterEnd{itemize}{\end{singlespace}}
+%\BeforeBegin{itemize}{\vspace*{-5ex}\begin{singlespace}}
+%\AfterEnd{itemize}{\end{singlespace}}
 
 \BeforeBegin{enumerate}{\vspace*{-5ex}\begin{singlespace}}
 \AfterEnd{enumerate}{\end{singlespace}}

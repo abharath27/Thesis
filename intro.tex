@@ -1,10 +1,10 @@
 
 \chapter{Introduction}
 \label{chap:intro}
-In many situations, people will have to make decisions about how they are going to spend their money and which products they are going to purchase.
+In many situations, people will have to make decisions about the products they are going to purchase and how they are going to spend their money 
 Traditionally, people have used a variety of strategies to solve this decision making problem: conversations with friends, obtaining information from a trusted third party, hiring an expert team or simply follow the crowd. 
 %It would be great to have an affordable personal advisor who helps us make good decisions efficiently.
-In the present age where e-commerce is flourishing, most e-commerce sites have very large number of products(often in millions) in their databases.
+In the present age where e-commerce is flourishing, most e-commerce sites have very large number of products (often in millions) in their databases.
 For a user wanting to purchase a product, examining all the products (eg: mobile applications) present in the catalog one after another in the hope of a finding an product that is of interest to him is impractical.
 Keyword search is not going to be greatly helpful because an average user does not have a clear understanding of the product space and is often unclear with what kind of products he exactly wants.
 
@@ -19,7 +19,7 @@ Recommender Systems are broadly classified into three categories: Collaborative,
 
 \section{Collaborative Recommender Systems}
 \label{sec:CF}
- The main idea in these systems is that if users share the same interests in the past - if they bought or similarly rated the same items - they will also have similar tastes in the future. 
+ The main idea in these systems is that if users have shared the same interests in the past - if they bought or similarly rated the same items - they will also have similar tastes in the future. 
 This technique is also called as \textit{Collaborative Filtering}(CF). 
 Pure CF based approaches require only rating data and do not require the additional knowledge about underlying users/items. 
 Hence, the algorithms are usually domain independent. Most commercial recommender systems use collaborative filtering for recommending items.
@@ -96,7 +96,7 @@ Typically, users do not buy a house, a car or a computer very frequently.
 In such a scenario, both collaborative-filtering or content-based recommender systems may not be able to generate relevant recommendations because of the low number of available ratings.
 User-profiles learnt by content-based systems may not be useful for making recommendations due to a heavy influence of time effects(change in user's interests and product catalogs with time). 
 For example, if a user has given a high rating to a 'Pentium III' computer four years ago, the recommender system cannot rely on that rating for generating relevant recommendations for the current day.
-In complex and high-risk product domains such as computers, customers often want to define their requirements explicitly - for example, "the maximum price of the computer should be $x$ and the hard-disk capacity should be at least \textit{500GB}".
+In complex and high-risk product domains such as computers, customers often want to define their requirements explicitly - for example, "the maximum price of the computer should be \$1400 and the hard-disk capacity should be at least 500GB".
 Knowledge based systems are used to provide recommendations in such scenarios.
 %In knowledge based systems, recommendations are made taking into account the explicit user preferences and the rich knowledge base available.
 
@@ -142,18 +142,18 @@ There are two popular approaches to dynamic critiquing: Apriori algorithm based 
 The algorithm for MAUT based recommendation is discussed in Section \ref{sec:maut}.
 
 \subsection{Limitations of Knowledge based recommendation}
-Knowledge based recommenders require a high level of knowledge engineering effort.
-One needs to define local similarity functions, utility measures, assign weights to features etc.
+One of the obvious limitations of knowledge based recommenders is that they require a high level of knowledge engineering effort.
+One needs to define local similarity functions, utility measures, assign weights to features etc. and the recommendation efficiency and accuracy is very sensitive to how we define them.
 %Offline evaluation is generally not very reliable in these systems.
 %We need to conduct live user studies to prove the efficiency of 
 
 \section{Our contribution: Improvements to MAUT based recommendation}
-MAUT based recommendation has been shown (through both user studies and offline experiments) to be one of the best performing recommendation algorithms in the domain of critiquing based recommendation.
+MAUT based recommendation has been shown using both offline experiments and live user studies (Sections \ref{sec:offline} and \ref{sec:liveUser}) to be one of the best performing recommendation algorithms in the domain of critiquing based recommendation.
 Our goal in this project is to improve the performance of MAUT based recommendation.
 To this end, we have proposed several algorithms in Chapter \ref{chap:modifications} that led to significant performance improvements.
 
 \section{Organization of the Thesis}
-In Chapter \ref{chap:background}, we present an overview of case based recommendation and discuss the algorithms for Apriori and  MAUT based generation of dynamic critiques in detail. We also discuss the offline experiments and live user studies that were conducted to compared the performances of Apriori and MAUT based critiquing.
+In Chapter \ref{chap:background}, we present an overview of case based recommendation and discuss the algorithms for Apriori and  MAUT based generation of dynamic critiques in detail. We also discuss the offline experiments and live user studies that were conducted in the past to compare the performances of Apriori and MAUT based critiquing.
 In Chapter \ref{chap:modifications}, we describe several modifications proposed to MAUT based recommendation algorithm that have led to significant performance improvements.
 In Chapter \ref{chap:results}, we describe the experimental procedure and report the the improvements achieved by each of the proposed modifications.
 Finally, we present conclusions and possible directions for future work in Chapter \ref{chap:conclusions}.

@@ -7,9 +7,9 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Screen-shot of digital camera recommender system that uses Apriori algorithm to generate compound critiques\relax }}{17}{figure.caption.11}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Screen-shot of user interface of the recommender system that uses MAUT to generate compound critiques(\cite {mautPaper}\relax }}{20}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Before diversifying critique strings\relax }}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces After diversifying critique strings\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Before diversifying critique strings\relax }}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces After diversifying critique strings\relax }}{29}{figure.caption.19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Numbers in the boxes represent the compatibilities of each of the five critique strings with the target product. Simulated user selects the most compatible critique string (red) in each cycle.\relax }}{42}{figure.caption.30}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulated user selects sub-optimal critique strings due to the introduction of noise\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Numbers in the boxes represent the compatibilities of each of the five critique strings with the target product. Simulated user selects the most compatible critique string (red) in each cycle.\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Simulated user selects sub-optimal critique strings due to the introduction of noise\relax }}{43}{figure.caption.34}
 \addvspace {10\p@ }
